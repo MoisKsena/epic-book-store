@@ -1,4 +1,91 @@
 .page {
   font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif; }
 
+body {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%; }
+
+.page-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ffffff; }
+
+.page-header__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0 auto;
+  padding: 16px 60px;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.logo {
+  margin: 0;
+  padding: 0; }
+
+.worktime {
+  margin: 0;
+  padding: 0 30px;
+  color: #828282; }
+
+.main-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-flex: 5;
+      -ms-flex-positive: 5;
+          flex-grow: 5;
+  margin: 0;
+  padding: 0; }
+
+.main-nav__toggle {
+  display: none; }
+
+.main-nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0 auto;
+  padding: 0; }
+
+.main-nav__item {
+  margin: 0;
+  padding-right: 20px;
+  list-style: none; }
+
+.main-nav__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: 700; }
+
 /*# sourceMappingURL=style.css.map */
