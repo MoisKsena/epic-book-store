@@ -18,7 +18,7 @@ body {
 .page-header__inner {
 	display: flex;
 	flex-direction: row;
-	margin: 0 auto;
+	margin: 0;
 	padding: 16px 60px;
 	width: 100%;
 	justify-content: space-between;
@@ -40,7 +40,8 @@ body {
 .main-nav {
 	display: flex;
 	flex-direction: row;
-	flex-grow: 5;
+	justify-content: flex-end;
+	flex-grow: 1;
 	margin: 0;
 	padding: 0;
 }
@@ -52,7 +53,7 @@ body {
 .main-nav__list {
 	display: flex;
 	flex-direction: row;
-	margin: 0 auto;
+	margin: 0;
 	padding: 0;
 }
 
