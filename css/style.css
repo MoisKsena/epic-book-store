@@ -1,10 +1,10 @@
 .page {
-  font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif; }
+  font-family: Montserrat, sans-serif; }
 
 body {
+  width: 1280px;
   margin: 0 auto;
-  padding: 0;
-  width: 100%; }
+  padding: 0; }
 
 .page-header {
   display: -webkit-box;
@@ -26,13 +26,13 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
   margin: 0;
   padding: 16px 60px;
-  width: 100%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -47,6 +47,9 @@ body {
 .worktime {
   margin: 0;
   padding: 0 30px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
   color: #828282; }
 
 .main-nav {
@@ -78,7 +81,10 @@ body {
       -ms-flex-direction: row;
           flex-direction: row;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  font-size: 14px; }
 
 .main-nav__item {
   margin: 0;
@@ -87,8 +93,163 @@ body {
 
 .main-nav__link {
   text-decoration: none;
-  text-transform: uppercase;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
   color: #000000;
   font-weight: 700; }
+
+.page-header__icon {
+  margin: 0;
+  padding-left: 80px; }
+
+.page-header__btn {
+  margin-left: 24px;
+  padding: 0;
+  border: none;
+  background-color: #ffffff; }
+
+.promo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 600px;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5; }
+
+.promo__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0;
+  padding: 50px 60px; }
+
+.slider__item-title {
+  display: none;
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+  color: #000000; }
+
+.catalog {
+  margin: 0;
+  padding: 0; }
+
+.catalog__title {
+  display: none;
+  margin: 0;
+  padding: 0; }
+
+.catalog__tabs-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0 60px;
+  background-color: #e8e8e8; }
+
+.catalog__tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 50px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0;
+  padding-left: 40px; }
+
+.catalog__tab-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding-left: 50px;
+  list-style-type: none; }
+
+.catalog__tab-link {
+  text-decoration: none;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #000000; }
+
+.catalog__list-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 52px 20px 52px 60px;
+  background-color: #f5f5f5; }
+
+.catalog__list-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.catalog__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.product-card-mini {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 260px;
+  margin: 0;
+  padding-right: 40px; }
+
+.product-card-mini__img {
+  width: 100%; }
+
+.page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-top: 82px;
+  padding: 0; }
+
+.page__list,
+.separator {
+  margin: 0;
+  padding-right: 20px;
+  list-style-type: none; }
+
+.page__link {
+  text-decoration: none;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #000000; }
 
 /*# sourceMappingURL=style.css.map */
