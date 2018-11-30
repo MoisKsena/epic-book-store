@@ -369,7 +369,11 @@ body {
   padding: 0; }
 
 .delivery-box__desc {
-  text-align: center; }
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #000000; }
 
 .newitems {
   margin: 0;
