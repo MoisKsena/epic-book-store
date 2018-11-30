@@ -1,0 +1,36 @@
+.delivery {
+	margin: 0;
+	padding: 0;
+	background-color: #f5f5f5;
+}
+
+.delivery__wrap {
+	margin: 0;
+	padding: 0 30px;
+	border: solid 8px #e8e8e8;
+}
+
+.delivery__cap {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	padding: 55px 60px 65px 60px;
+}
+
+.delivery__section {
+	display: flex;
+	flex-direction: row;
+	margin: 0;
+	padding: 0 30px;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+
+.delivery__section-box {
+	display: flex;
+	width: 260px;
+	display: flex;
+	margin: 0;
+	padding: 0;
+
+}
