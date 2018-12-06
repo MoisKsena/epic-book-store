@@ -6,11 +6,11 @@ body {
 
 .page-header {
 	display: flex;
+	width: 100%;
 	height: 50px;
 	flex-direction: row;
 	margin: 0 auto;
-	padding: 0;
-	width: 100%;
+	padding: 0;	
 	align-items: center;
 	background-color: #ffffff;
 }
@@ -80,6 +80,7 @@ body {
 .page-header__icon {
 	margin: 0;
 	padding-left: 80px;
+	align-items: flex-start;
 }
 
 .page-header__btn {
@@ -87,4 +88,8 @@ body {
 	padding: 0;
 	border: none;
 	background-color: #ffffff;
+}
+
+@media (min-width: 320px) {
+ 
 }

@@ -1,15 +1,13 @@
-@import 'variables';
+@import 'variables.scss';
 
-@import 'blocks/page';
+@import './blocks/page-header.scss';
 
-@import 'blocks/page-header';
+@import './blocks/promo.scss';
 
-@import 'blocks/promo';
+@import './blocks/catalog.scss';
 
-@import 'blocks/catalog';
+@import './blocks/delivery.scss';
 
-@import 'blocks/delivery';
+@import './blocks/newitems.scss';
 
-@import 'blocks/newitems';
-
-@import 'blocks/page-footer';
+@import './blocks/page-footer.scss';
