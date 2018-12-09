@@ -1,13 +1,13 @@
 @import 'variables.scss';
+@import 'fonts.scss';
+@import 'global.scss';
 
 @import './blocks/page-header.scss';
-
+@import './blocks/main-nav.scss';
 @import './blocks/promo.scss';
-
+@import './blocks/slider.scss';
 @import './blocks/catalog.scss';
-
+@import './blocks/product-card-mini.scss';
+@import './blocks/page.scss';
 @import './blocks/delivery.scss';
-
-@import './blocks/newitems.scss';
-
-@import './blocks/page-footer.scss';
+@import './blocks/newitems-card.scss';

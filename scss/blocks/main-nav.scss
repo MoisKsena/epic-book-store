@@ -1,0 +1,51 @@
+.main-nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	flex-grow: 1;
+	margin: 0;
+	padding: 0;
+
+	@media (min-width: $screen-xs) {
+		display: none;
+	}
+
+	@media (min-width: $screen-lg) {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+		flex-grow: 1;
+		margin: 0;
+		padding: 0;
+	}
+
+	&__toggle {
+		display: none;
+		margin: 0;
+		padding: 0;
+
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: row;
+		margin: 0;
+		padding: 0;
+		font-weight: 700;
+		font-size: $font-size-xs;
+	}
+
+	&__item {	
+		margin: 0;
+		padding-right: 20px;
+		list-style: none;
+	}
+
+	&__link {
+		text-decoration: none;
+		font-family: $font-family;
+		color: $text-color;
+		font-weight: 700;
+	}
+}
+

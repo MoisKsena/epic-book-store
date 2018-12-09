@@ -1,95 +1,78 @@
-body {
-	width: 1280px;
-	margin: 0 auto;
-	padding: 0;
-}
-
 .page-header {
 	display: flex;
 	width: 100%;
 	height: 50px;
-	flex-direction: row;
-	margin: 0 auto;
-	padding: 0;	
-	align-items: center;
-	background-color: #ffffff;
-}
-
-.page-header__inner {
-	display: flex;
-	width: 100%;
-	flex-direction: row;
 	margin: 0;
-	padding: 16px 60px;
-	justify-content: space-between;
-	align-items: center;
+	padding: 0;	
+	background-color: $bcg;
+
+	@media (min-width: $screen-xs) {
+	 
+	}
+
+	@media (min-width: $screen-sm) {
+	 
+	}
+	
+	@media (min-width: $screen-lg) {
+		width: 100%;		
+		flex-direction: row;	
+		align-items: center;
+		
+	}
+	
+	&__inner {
+		display: flex;
+		width: 100%;
+		margin: 0 auto;
+		padding: 0;
+
+		@media (min-width: $screen-xs) {
+			display: flex;
+			width: 100%;
+			margin: 0;
+			padding: 0 30px;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		@media (min-width: $screen-sm) {
+		 
+		}
+		
+		@media (min-width: $screen-lg) {
+			width: 1280px;	
+			margin: 0;	
+			padding: 16px 60px;
+			flex-direction: row;	
+			justify-content: space-between;
+			align-items: center;
+		}
+	}
 }
 
-.logo {
+
+.page-header__logo {
 	margin: 0;
 	padding: 0;
+
+	@media (min-width: $screen-xs) {
+		display: flex;
+		justify-content: flex-start;
+		flex-grow: 1;
+	}
 }
 
-.worktime {
+.page-header__worktime {
 	margin: 0;
 	padding-left: 30px;
 	font-family: $font-family;
 	font-weight: 400;
 	font-size: $font-size-xs;
 	color: #828282;
-}
 
-.main-nav {
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-end;
-	flex-grow: 1;
-	margin: 0;
-	padding: 0;
-}
+	@media (min-width: $screen-xs) {
+		display: none;
+	}
 
-.main-nav__toggle {
-	display: none;
-	margin: 0;
-	padding: 0;
-}
-
-.main-nav__list {
-	display: flex;
-	flex-direction: row;
-	margin: 0;
-	padding: 0;
-	font-family: $font-family;
-	font-weight: 700;
-	font-size: $font-size-xs;
-}
-
-.main-nav__item {	
-	margin: 0;
-	padding-right: 20px;
-	list-style: none;
-}
-
-.main-nav__link {
-	text-decoration: none;
-	font-family: $font-family;
-	color: $text-color;
-	font-weight: 700;
-}
-
-.page-header__icon {
-	margin: 0;
-	padding-left: 80px;
-	align-items: flex-start;
-}
-
-.page-header__btn {
-	margin-left: 24px;
-	padding: 0;
-	border: none;
-	background-color: #ffffff;
-}
-
-@media (min-width: 320px) {
- 
 }
