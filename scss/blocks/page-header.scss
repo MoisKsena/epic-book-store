@@ -3,76 +3,105 @@
 	width: 100%;
 	height: 50px;
 	margin: 0;
-	padding: 0;	
-	background-color: $bcg;
+	padding: 0;
 
 	@media (min-width: $screen-xs) {
-	 
+
 	}
 
 	@media (min-width: $screen-sm) {
-	 
+
 	}
-	
+
 	@media (min-width: $screen-lg) {
-		width: 100%;		
-		flex-direction: row;	
+		flex-direction: row;
 		align-items: center;
-		
+
 	}
-	
+
 	&__inner {
 		display: flex;
-		width: 100%;
 		margin: 0 auto;
 		padding: 0;
 
 		@media (min-width: $screen-xs) {
-			display: flex;
-			width: 100%;
-			margin: 0;
-			padding: 0 30px;
+      width: 320px;
+			margin: 0 auto;
+			padding: 0;
 			justify-content: space-between;
 			align-items: center;
 		}
 
 		@media (min-width: $screen-sm) {
-		 
+      width: 688px;
 		}
-		
+
 		@media (min-width: $screen-lg) {
-			width: 1280px;	
-			margin: 0;	
-			padding: 16px 60px;
-			flex-direction: row;	
+      width: 1280px;
+			margin: 0 auto;
+			padding: 0 60px;
+			flex-direction: row;
 			justify-content: space-between;
 			align-items: center;
 		}
 	}
+
+  &__logo {
+  margin: 0;
+  padding: 0;
+  justify-content: flex-start;
+
+  @media (min-width: $screen-xs) {
+
+  }
+
+  @media (min-width: $screen-sm) {
+
+  }
+
+  @media (min-width: $screen-lg) {
+
+  }
+  }
+
+  &__worktime {
+    display: flex;
+    margin: 0;
+
+    @media (min-width: $screen-xs) {
+      display: none;
+    }
+
+    @media (min-width: $screen-sm) {
+      display: flex;
+      padding-left: 37px;
+      font-weight: 400;
+      font-size: $font-size-xs;
+      color: $gray;
+    }
+
+    @media (min-width: $screen-lg) {
+      display: flex;
+      padding-left: 30px;
+      font-weight: 400;
+      font-size: $font-size-xs;
+      color: $gray;
+    }
+
+  }
+
+  &__icon {
+    margin: 0;
+    padding-left: 80px;
+    align-items: center;
+  }
+
+  &__btn {
+    margin-left: 24px;
+    padding: 0;
+    border: none;
+    background-color: #ffffff;
+    background-color: transparent;
+  }
 }
 
-
-.page-header__logo {
-	margin: 0;
-	padding: 0;
-
-	@media (min-width: $screen-xs) {
-		display: flex;
-		justify-content: flex-start;
-		flex-grow: 1;
-	}
-}
-
-.page-header__worktime {
-	margin: 0;
-	padding-left: 30px;
-	font-family: $font-family;
-	font-weight: 400;
-	font-size: $font-size-xs;
-	color: #828282;
-
-	@media (min-width: $screen-xs) {
-		display: none;
-	}
-
-}

@@ -53,4 +53,4 @@ const dataBooks = {
       ]
     };
 
-    export default dataBooks;
+

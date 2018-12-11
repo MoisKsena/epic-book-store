@@ -1,6 +1,6 @@
 
 import addPage from './modules/addPage.js';
-import dataBooks from './modules/dataBooks.js';
+
 import bookCardTemplate from './modules/bookCardTemplate.js';
 import tabManager from './modules/tabManager.js';
 import pageManager from './modules/pageManager.js';

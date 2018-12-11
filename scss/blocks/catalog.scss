@@ -1,22 +1,116 @@
 .catalog {
+  padding: 0;
+  background-color: $bcg;
 
 	&__title {
-
+    display: none;
+    margin: 0;
+    padding: 0;
 	}
+
 	&__tabs-wrap {
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+    background-color: $gray;
 
+    @media (min-width: $screen-xs) {
+
+    }
+
+    @media (min-width: $screen-sm) {
+
+    }
+
+    @media (min-width: $screen-lg) {
+    }
 	}
+
 	&__tabs {
+    display: flex;
+    min-height: 50px;
+    flex-direction: row;
+    margin: 0;
+    padding-left: 40px;
+    align-items: flex-end;
 
+    @media (min-width: $screen-xs) {
+
+    }
+
+    @media (min-width: $screen-sm) {
+
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 1280px;
+      margin: 0;
+      padding-left: 160px;
+    }
 	}
-	&__tab-item {
 
+	&__tab-item {
+    display: flex;
+    margin: 0;
+    list-style-type: none;
 	}
 
 	&__tab-link {
+    margin: 0;
+    padding-bottom: 9px;
+    text-decoration: none;
 
+    @media (min-width: $screen-xs) {
+      padding-left: 30px;
+    }
+
+    @media (min-width: $screen-sm) {
+      padding-left: 50px;
+    }
+
+    @media (min-width: $screen-lg) {
+      padding-left: 50px;
+      font-weight: 500;
+      font-size: $font-size-s;
+      color: $text-color;
+    }
 	}
-  &__list-wrap {
 
+  &__list-wrap {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+
+    @media (min-width: $screen-xs) {
+    }
+
+    @media (min-width: $screen-sm) {
+
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 1280px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    @media (min-width: $screen-xs) {
+
+    }
+
+    @media (min-width: $screen-sm) {
+
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 1280px;
+      padding: 0 60px;
+    }
   }
 }
