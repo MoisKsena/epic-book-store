@@ -106,7 +106,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _cre
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\nvar bookCardTemplate = {\n  wrap: '.js-catalog__list',\n  tag: 'div',\n  tagClass: 'book-card',\n  setContent: function setContent(book) {\n    return \"<a href=\\\"\\\" class=\\\"book-card__img-wrap\\\"><img src=\\\"booksAll/\".concat(book.uri, \".png\\\" alt=\\\"\\\" class=\\\"product-card-mini__img\\\"></a>\\n\\t\\t\\t\\t\\t<h2 class=\\\"book-card__title\\\">\").concat(book.name, \"</h2>\\n\\t\\t\\t\\t\\t<p class=\\\"book-card__descr\\\">\").concat(book.desc, \"</p>\\n\\t\\t\\t\\t\\t<div class=\\\"book-card__price\\\">\").concat(book.price, \" &#8381;</div>\");\n  }\n};\n/* harmony default export */ __webpack_exports__[\"default\"] = (bookCardTemplate);\n\n//# sourceURL=webpack:///./src/js/modules/bookCardTemplate.js?");
+eval("__webpack_require__.r(__webpack_exports__);\nvar bookCardTemplate = {\n  wrap: '.js-catalog__list',\n  tag: 'div',\n  tagClass: 'book-card',\n  setContent: function setContent(book) {\n    return \"<a href=\\\"\\\" class=\\\"book-card__img-wrap\\\"><img src=\\\"/img/booksAll/\".concat(book.uri, \".png\\\" alt=\\\"\\\" class=\\\"product-card-mini__img\\\"></a>\\n\\t\\t\\t\\t\\t<h2 class=\\\"book-card__title\\\">\").concat(book.name, \"</h2>\\n\\t\\t\\t\\t\\t<p class=\\\"book-card__descr\\\">\").concat(book.desc, \"</p>\\n\\t\\t\\t\\t\\t<div class=\\\"book-card__price\\\">\").concat(book.price, \" &#8381;</div>\");\n  }\n};\n/* harmony default export */ __webpack_exports__[\"default\"] = (bookCardTemplate);\n\n//# sourceURL=webpack:///./src/js/modules/bookCardTemplate.js?");
 
 /***/ }),
 

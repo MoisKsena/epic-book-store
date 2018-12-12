@@ -1,8 +1,14 @@
 .page {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+
   &__list {
   }
+
   &__link {
   }
+
   &__separator {
   }
 }

@@ -14,34 +14,30 @@
 	}
 
 	@media (min-width: $screen-lg) {
-		flex-direction: row;
-		align-items: center;
 
 	}
 
 	&__inner {
 		display: flex;
 		margin: 0 auto;
-		padding: 0;
+    justify-content: space-between;
 
 		@media (min-width: $screen-xs) {
       width: 320px;
-			margin: 0 auto;
-			padding: 0;
-			justify-content: space-between;
+			padding: 0 30px;
 			align-items: center;
 		}
 
 		@media (min-width: $screen-sm) {
-      width: 688px;
+      width: 840px;
+      padding: 0 40px;
+
 		}
 
 		@media (min-width: $screen-lg) {
       width: 1280px;
-			margin: 0 auto;
 			padding: 0 60px;
 			flex-direction: row;
-			justify-content: space-between;
 			align-items: center;
 		}
 	}
@@ -74,7 +70,7 @@
 
     @media (min-width: $screen-sm) {
       display: flex;
-      padding-left: 37px;
+      padding-left: 33px;
       font-weight: 400;
       font-size: $font-size-xs;
       color: $gray;
@@ -92,8 +88,15 @@
 
   &__icon {
     margin: 0;
-    padding-left: 80px;
     align-items: center;
+
+    @media (min-width: $screen-sm) {
+      padding-left: 40px;
+    }
+
+    @media (min-width: $screen-lg) {
+      padding-left: 80px;
+    }
   }
 
   &__btn {

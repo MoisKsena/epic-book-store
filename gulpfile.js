@@ -47,6 +47,13 @@ function copyImg() {
 }
 exports.copyImg = copyImg;
 
+function copyBookImg() {
+  return src(`${dir.src}img/booksAll/*.{jpg,jpeg,png,gif,svg,webp}`)
+    .pipe(plumber())
+    .pipe(dest(`${dir.build}img/booksAll/`));
+}
+exports.copyBookImg = copyBookImg;
+
 function copyFonts() {
   return src(`${dir.src}fonts/*.{woff,woff2}`)
     .pipe(plumber())
@@ -111,6 +118,6 @@ function serve() {
 
 exports.default = series(
   clean,
-  parallel(styles, copyHTML, copyImg, copyFonts, javascript),
+  parallel(styles, copyHTML, copyImg, copyBookImg, copyFonts, javascript),
   serve
 );
