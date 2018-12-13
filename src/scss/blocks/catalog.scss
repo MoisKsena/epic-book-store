@@ -1,4 +1,5 @@
 .catalog {
+  width: 100%;
   padding: 0;
   margin: 0;
   background-color: $bcg;
@@ -9,7 +10,8 @@
 
 	&__tabs-wrap {
     display: flex;
-    margin: 0 auto;
+    width: 100%;
+    margin: 0;
     padding: 0;
     background-color: $gray;
 
@@ -27,6 +29,7 @@
 
 	&__tabs {
     display: flex;
+    width: 100%;
     min-height: 50px;
     flex-direction: row;
     align-items: flex-end;
@@ -82,29 +85,31 @@
     flex-direction: column;
 
     @media (min-width: $screen-xs) {
+      width: 320px;
     }
 
     @media (min-width: $screen-sm) {
-
+      width: 768px;
     }
 
     @media (min-width: $screen-lg) {
-
+      width: 1280px;
     }
   }
 
   &__list {
     display: flex;
     margin: 0 auto;
-    padding: 0;
     flex-direction: row;
     flex-wrap: wrap;
 
     @media (min-width: $screen-xs) {
-
+      width: 320px;
+      padding-top: 40px;
     }
 
     @media (min-width: $screen-sm) {
+      width: 768px;
       padding-top: 50px;
     }
 
