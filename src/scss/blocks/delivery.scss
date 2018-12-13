@@ -1,5 +1,7 @@
 .delivery {
   width: 100%;
+  display: flex;
+  justify-content: center;
   margin: 0 auto;
   padding-top: 160px;
   background-color: $bcg;
@@ -7,11 +9,12 @@
 
 
   &__wrap {
-    margin: 0 auto;
     padding: 0;
     border: solid 8px $gray;
 
   @media (min-width: $screen-xs) {
+    width: 320px;
+    margin: 0 12px;
 
   }
 
@@ -44,12 +47,24 @@
 
   &__section {
     display: flex;
+    margin: 0 auto;
+
+  @media (min-width: $screen-xs) {
+    flex-direction: column;
+  }
+
+  @media (min-width: $screen-sm) {
+
+  }
+
+  @media (min-width: $screen-lg) {
+    width: 1280px;
     flex-direction: row;
-    margin: 0;
-    padding-bottom: 84px;
-    padding-right: 55px;
     flex-wrap: nowrap;
     justify-content: space-between;
+    padding-bottom: 84px;
+    padding-right: 55px;
+  }
   }
 
   &__sectionBox {

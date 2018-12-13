@@ -9,7 +9,7 @@
     flex-direction: row;
     justify-content: space-between;
     margin: 0 auto;
-    padding: 112px 60px 50px 60px;
+
 
   @media (min-width: $screen-xs) {
 
@@ -21,6 +21,7 @@
 
   @media (min-width: $screen-lg) {
     width: 1280px;
+    padding: 114px 36px 50px 36px;
   }
   }
 
@@ -41,30 +42,17 @@
 
   &__list-wrap {
     display: flex;
-    height: 492px;
+    width: 100%;
     margin: 0 auto;
     padding: 0;
     justify-content: space-between;
-    background-color: $pink-light;
-
-  @media (min-width: $screen-xs) {
-
-  }
-
-  @media (min-width: $screen-sm) {
-
-  }
-
-  @media (min-width: $screen-lg) {
-
-  }
+    background: linear-gradient(to top, $pink-light 80%, $bcg 80%);
   }
 
   &__list {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    padding: 0 60px;
     margin: 0 auto;
     align-items: flex-end;
 
@@ -78,6 +66,7 @@
 
   @media (min-width: $screen-lg) {
     width: 1280px;
+    padding: 0 0 82px 36px;
   }
   }
 }
@@ -87,9 +76,22 @@
   flex-direction: column;
   width: 260px;
   height: 512px;
-  margin: 0;
-  padding-right: 40px;
-  padding-bottom: 88px;
+  padding: 0;
+
+
+  @media (min-width: $screen-xs) {
+
+  }
+
+  @media (min-width: $screen-sm) {
+
+  }
+
+  @media (min-width: $screen-lg) {
+    width: 1280px;
+    margin: 0 auto;
+    padding-right: 38px;
+  }
 
   &__img-wrap {
   }
@@ -118,6 +120,7 @@
   }
 
   &__link {
+    color: $text-color;
   }
 
   &__descr {
