@@ -1,18 +1,19 @@
 .slider {
   display: flex;
+  width: 100%;
   margin: 0 auto;
   padding: 0;
 
   @media (min-width: $screen-xs) {
-    width: 320px;
+
   }
 
   @media (min-width: $screen-sm) {
-    width: 768px;
+
   }
 
   @media (min-width: $screen-lg) {
-    width: 1280px;
+
   }
 
   &__inner {
@@ -29,25 +30,28 @@
     }
 
     @media (min-width: $screen-lg) {
-
+      width: 1042px;
+      height: 450px;
     }
   }
 
   &__item {
     display: flex;
-    margin: 0;
+    margin: 0 auto;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
 
     @media (min-width: $screen-xs) {
-
+      padding: 0;
     }
 
     @media (min-width: $screen-sm) {
-
+      padding: 0;
     }
 
     @media (min-width: $screen-lg) {
       align-items: flex-start;
-      margin: 0;
       padding-top: 52px;
     }
   }
@@ -59,7 +63,7 @@
     padding: 0;
 
     @media (min-width: $screen-xs) {
-
+      align-items: center;
     }
 
     @media (min-width: $screen-sm) {
@@ -77,13 +81,14 @@
 
   &__item-descr {
     display: flex;
-    width: 400px;
     margin: 0;
     font-weight: 400;
     font-style: italic;
 
     @media (min-width: $screen-xs) {
-      padding-left: 16px;
+      padding-top: 34px;
+      padding-left: 32px;
+      padding-bottom: 28px;
       font-size: $font-size-xs;
     }
 
@@ -94,7 +99,8 @@
     }
 
     @media (min-width: $screen-lg) {
-      padding-left: 36px;
+      width: 400px;
+      padding-left: 0;
       font-size: $font-size-s;
     }
   }
@@ -103,11 +109,13 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     border: solid 8px $gray;
 
     @media (min-width: $screen-xs) {
+      margin: 0 auto;
+      padding: 0;
       width: 335px;
       height: 275px;
     }
@@ -179,9 +187,11 @@
 
     @media (min-width: $screen-lg) {
       display: flex;
-      margin: 0;
-      padding-left: 130px;
-      padding-top: 20px;
+      width: 305px;
+      height: 428px;
+      padding: 0;
+      margin-left: 130px;
+      margin-top: 20px;
     }
   }
 

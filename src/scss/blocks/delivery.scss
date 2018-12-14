@@ -9,6 +9,7 @@
 
 
   &__wrap {
+    position: relative;
     padding: 0;
     border: solid 8px $gray;
 
@@ -26,6 +27,28 @@
     width: 1280px;
   }
   }
+
+   &__wrap:before{
+    content:'';
+    position: absolute;
+    top: -8px;
+    left: 10%;
+    width: 30%;
+    height: 8px;
+    background-color: $bcg;
+    z-index: 100;
+   }
+
+   &__wrap:after{
+    content:'';
+    position: absolute;
+    bottom: -8px;
+    right: 10%;
+    width: 30%;
+    height: 8px;
+    background-color: $bcg;
+    z-index: 100;
+   }
 
   &__cap {
     display: flex;

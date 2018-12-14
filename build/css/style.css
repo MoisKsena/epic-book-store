@@ -342,34 +342,44 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   margin: 0 auto;
   padding: 0; }
-  @media (min-width: 320px) {
-    .slider {
-      width: 320px; } }
-  @media (min-width: 768px) {
-    .slider {
-      width: 768px; } }
-  @media (min-width: 1280px) {
-    .slider {
-      width: 1280px; } }
   .slider__inner {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin: 0 auto;
     padding: 0; }
+    @media (min-width: 1280px) {
+      .slider__inner {
+        width: 1042px;
+        height: 450px; } }
   .slider__item {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin: 0; }
+    margin: 0 auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    @media (min-width: 320px) {
+      .slider__item {
+        padding: 0; } }
+    @media (min-width: 768px) {
+      .slider__item {
+        padding: 0; } }
     @media (min-width: 1280px) {
       .slider__item {
         -webkit-box-align: start;
             -ms-flex-align: start;
                 align-items: flex-start;
-        margin: 0;
         padding-top: 52px; } }
   .slider__item-text {
     display: -webkit-box;
@@ -381,19 +391,25 @@ img {
             flex-direction: column;
     margin: 0;
     padding: 0; }
+    @media (min-width: 320px) {
+      .slider__item-text {
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; } }
   .slider__item-title {
     display: none; }
   .slider__item-descr {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 400px;
     margin: 0;
     font-weight: 400;
     font-style: italic; }
     @media (min-width: 320px) {
       .slider__item-descr {
-        padding-left: 16px;
+        padding-top: 34px;
+        padding-left: 32px;
+        padding-bottom: 28px;
         font-size: 14px; } }
     @media (min-width: 768px) {
       .slider__item-descr {
@@ -402,7 +418,8 @@ img {
         font-size: 16px; } }
     @media (min-width: 1280px) {
       .slider__item-descr {
-        padding-left: 36px;
+        width: 400px;
+        padding-left: 0;
         font-size: 16px; } }
   .slider__item-border {
     display: -webkit-box;
@@ -414,11 +431,13 @@ img {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     border: solid 8px #e8e8e8; }
     @media (min-width: 320px) {
       .slider__item-border {
+        margin: 0 auto;
+        padding: 0;
         width: 335px;
         height: 275px; } }
     @media (min-width: 768px) {
@@ -469,9 +488,11 @@ img {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      margin: 0;
-      padding-left: 130px;
-      padding-top: 20px; } }
+      width: 305px;
+      height: 428px;
+      padding: 0;
+      margin-left: 130px;
+      margin-top: 20px; } }
   .slider__item-img {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -574,7 +595,8 @@ img {
     @media (min-width: 320px) {
       .catalog__list {
         width: 320px;
-        padding-top: 40px; } }
+        padding-top: 40px;
+        padding-bottom: 60px; } }
     @media (min-width: 768px) {
       .catalog__list {
         width: 768px;
@@ -596,7 +618,7 @@ img {
   @media (min-width: 320px) {
     .book-card {
       width: 220px;
-      height: 500px;
+      height: 490px;
       margin-left: 30px;
       margin-bottom: 50px; } }
   @media (min-width: 768px) {
@@ -684,6 +706,7 @@ img {
   padding-top: 160px;
   background-color: #f5f5f5; }
   .delivery__wrap {
+    position: relative;
     padding: 0;
     border: solid 8px #e8e8e8; }
     @media (min-width: 320px) {
@@ -693,6 +716,24 @@ img {
     @media (min-width: 1280px) {
       .delivery__wrap {
         width: 1280px; } }
+  .delivery__wrap:before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: 10%;
+    width: 30%;
+    height: 8px;
+    background-color: #f5f5f5;
+    z-index: 100; }
+  .delivery__wrap:after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    right: 10%;
+    width: 30%;
+    height: 8px;
+    background-color: #f5f5f5;
+    z-index: 100; }
   .delivery__cap {
     display: -webkit-box;
     display: -ms-flexbox;
