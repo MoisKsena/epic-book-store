@@ -10,10 +10,16 @@ const pageManager = {
 		} else {
 			data.perPage = 3;
 		}
-		data.type = type;
+
+		data.type = type || 'all';
 
 		return data;
-	}
+	},
+  prepareUrl: function(type){
+    const data = pageManager.prepare(type);
+
+    return `https://api.do-epixx.ru/htmlpro/bookstore/books/get/${data.page}/${data.perPage}/${data.type}`;
+  }
 };
 
 export default pageManager;
