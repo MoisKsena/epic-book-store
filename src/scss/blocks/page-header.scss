@@ -1,49 +1,46 @@
 .page-header {
-	display: flex;
-	height: 50px;
-	margin: 0;
-	padding: 0;
-
-	&__inner {
-		display: flex;
-		margin: 0 auto;
-    justify-content: space-between;
-
-		@media (min-width: $screen-xs) {
-      width: 320px;
-			padding: 0 30px;
-			align-items: center;
-		}
-
-		@media (min-width: $screen-sm) {
-      width: 840px;
-      padding: 0 40px;
-		}
-
-		@media (min-width: $screen-lg) {
-      width: 1280px;
-			padding: 0 60px;
-			flex-direction: row;
-			align-items: center;
-		}
-	}
-
-  &__logo {
+  display: flex;
+  height: 50px;
   margin: 0;
   padding: 0;
-  justify-content: flex-start;
 
-  @media (min-width: $screen-xs) {
+  &__inner {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
 
+    @media (min-width: $screen-xs) {
+      width: 320px;
+      padding: 0 30px;
+      align-items: center;
+    }
+
+    @media (min-width: $screen-sm) {
+      width: 840px;
+      padding: 0 40px;
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 1280px;
+      padding: 0 60px;
+      flex-direction: row;
+      align-items: center;
+    }
   }
 
-  @media (min-width: $screen-sm) {
+  &__logo {
+    margin: 0;
+    padding: 0;
+    justify-content: flex-start;
 
-  }
+    @media (min-width: $screen-xs) {
+    }
 
-  @media (min-width: $screen-lg) {
+    @media (min-width: $screen-sm) {
+    }
 
-  }
+    @media (min-width: $screen-lg) {
+    }
   }
 
   &__worktime {
@@ -69,7 +66,6 @@
       font-size: $font-size-xs;
       color: $gray;
     }
-
   }
 
   &__icon {
@@ -89,7 +85,6 @@
     margin-left: 24px;
     padding: 0;
     border: none;
-    background-color: #ffffff;
     background-color: transparent;
   }
 }

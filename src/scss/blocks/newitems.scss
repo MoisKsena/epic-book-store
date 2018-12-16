@@ -9,23 +9,23 @@
     margin: 0 auto;
 
 
-  @media (min-width: $screen-xs) {
-    flex-direction: column;
-    padding-top: 112px;
-    padding-bottom: 38px;
-    padding-left: 30px;
-  }
+    @media (min-width: $screen-xs) {
+      flex-direction: column;
+      padding-top: 112px;
+      padding-bottom: 38px;
+      padding-left: 30px;
+    }
 
-  @media (min-width: $screen-sm) {
+    @media (min-width: $screen-sm) {
 
-  }
+    }
 
-  @media (min-width: $screen-lg) {
-    width: 1280px;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 114px 36px 50px 36px;
-  }
+    @media (min-width: $screen-lg) {
+      width: 1280px;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 114px 36px 50px 36px;
+    }
   }
 
   &__title {
@@ -70,22 +70,22 @@
     margin: 0 auto;
     align-items: flex-end;
 
-  @media (min-width: $screen-xs) {
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    padding-bottom: 82px;
-    padding-left: 30px;
-  }
+    @media (min-width: $screen-xs) {
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      padding-bottom: 82px;
+      padding-left: 30px;
+    }
 
-  @media (min-width: $screen-sm) {
+    @media (min-width: $screen-sm) {
 
-  }
+    }
 
-  @media (min-width: $screen-lg) {
-    width: 1280px;
-    padding-bottom: 82px;
-    padding-left: 36px;
-  }
+    @media (min-width: $screen-lg) {
+      width: 1280px;
+      padding-bottom: 82px;
+      padding-left: 36px;
+    }
   }
 }
 

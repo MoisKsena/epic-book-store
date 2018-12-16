@@ -4,11 +4,11 @@
   margin: 0;
   background-color: $bcg;
 
-	&__title {
+  &__title {
     display: none;
-	}
+  }
 
-	&__tabs-wrap {
+  &__tabs-wrap {
     display: flex;
     width: 100%;
     margin: 0;
@@ -25,9 +25,9 @@
     @media (min-width: $screen-lg) {
 
     }
-	}
+  }
 
-	&__tabs {
+  &__tabs {
     display: flex;
     width: 100%;
     min-height: 50px;
@@ -48,15 +48,15 @@
       margin: 0 auto;
       padding-left: 100px;
     }
-	}
+  }
 
-	&__tab-item {
+  &__tab-item {
     display: flex;
     margin: 0;
     list-style-type: none;
-	}
+  }
 
-	&__tab-link {
+  &__tab-link {
     margin: 0;
     padding-bottom: 9px;
     text-decoration: none;
@@ -74,10 +74,8 @@
 
     @media (min-width: $screen-lg) {
       padding-left: 50px;
-
-
     }
-	}
+  }
 
   &__list-wrap {
     display: flex;

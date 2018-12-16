@@ -75,18 +75,15 @@
   margin: 0;
   padding: 0;
 
-    @media (min-width: $screen-xs) {
-      width: 70px;
-    }
+  @media (min-width: $screen-xs) {
+    width: 70px;
+  }
 
-    @media (min-width: $screen-sm) {
+  @media (min-width: $screen-sm) {
+  }
 
-    }
-
-    @media (min-width: $screen-lg) {
-
-    }
-
+  @media (min-width: $screen-lg) {
+  }
 
   &__list {
     display: flex;
@@ -97,7 +94,7 @@
     font-size: $font-size-xs;
 
     @media (min-width: $screen-xs) {
-    overflow-x: auto;
+      overflow-x: auto;
     }
   }
 

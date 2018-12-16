@@ -6,30 +6,27 @@
   padding-top: 160px;
   background-color: $bcg;
 
-
-
   &__wrap {
     position: relative;
     padding: 0;
     border: solid 8px $gray;
 
-  @media (min-width: $screen-xs) {
-    width: 320px;
-    margin: 0 12px;
+    @media (min-width: $screen-xs) {
+      width: 320px;
+      margin: 0 12px;
+    }
 
+    @media (min-width: $screen-sm) {
+      width: 768px;
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 1280px;
+    }
   }
 
-  @media (min-width: $screen-sm) {
-    width: 768px;
-  }
-
-  @media (min-width: $screen-lg) {
-    width: 1280px;
-  }
-  }
-
-   &__wrap:before{
-    content:'';
+  &__wrap:before {
+    content: '';
     position: absolute;
     top: -8px;
     left: 10%;
@@ -37,10 +34,10 @@
     height: 8px;
     background-color: $bcg;
     z-index: 100;
-   }
+  }
 
-   &__wrap:after{
-    content:'';
+  &__wrap:after {
+    content: '';
     position: absolute;
     bottom: -8px;
     right: 10%;
@@ -48,7 +45,7 @@
     height: 8px;
     background-color: $bcg;
     z-index: 100;
-   }
+  }
 
   &__cap {
     display: flex;
@@ -76,27 +73,27 @@
     display: flex;
     margin: 0 auto;
 
-  @media (min-width: $screen-xs) {
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding-bottom: 60px;
-  }
+    @media (min-width: $screen-xs) {
+      flex-direction: column;
+      flex-wrap: wrap;
+      padding-bottom: 60px;
+    }
 
-  @media (min-width: $screen-sm) {
-    flex-direction: row;
-    justify-content: space-between;
-    padding-left: 44px;
-    padding-bottom: 80px;
-  }
+    @media (min-width: $screen-sm) {
+      flex-direction: row;
+      justify-content: space-between;
+      padding-left: 44px;
+      padding-bottom: 80px;
+    }
 
-  @media (min-width: $screen-lg) {
-    width: 1280px;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    padding-bottom: 84px;
-    padding-right: 55px;
-  }
+    @media (min-width: $screen-lg) {
+      width: 1280px;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      padding-bottom: 84px;
+      padding-right: 55px;
+    }
   }
 
   &__sectionBox {
@@ -120,6 +117,7 @@
     }
   }
 }
+
 .delivery-box {
 
   &__icon {

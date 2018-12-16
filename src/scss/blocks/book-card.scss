@@ -9,21 +9,21 @@
     height: 490px;
     margin-left: 30px;
     margin-bottom: 50px;
-    }
+  }
 
   @media (min-width: $screen-sm) {
     width: 260px;
     height: 550px;
     margin-left: 90px;
     margin-bottom: 60px;
-    }
+  }
 
   @media (min-width: $screen-lg) {
     width: 260px;
     height: 550px;
     margin-left: 40px;
     margin-bottom: 78px;
-    }
+  }
 
   &__img-wrap {
     width: 260px;
@@ -38,9 +38,7 @@
 
     @media (min-width: $screen-lg) {
       height: 368px;
-
     }
-
   }
 
   &__img {
