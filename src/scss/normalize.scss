@@ -24,6 +24,21 @@ body {
   margin: 0;
 }
 
+// Сделаем viewport великим снова! (привет, IE10)
+// http://timkadlec.com/2012/10/ie10-snap-mode-and-responsive-design/
+@at-root {
+
+  @-ms-viewport {
+    width: device-width;
+  }
+}
+
+
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 /**
  * Render the `main` element consistently in IE.
  */
@@ -193,6 +208,7 @@ select { /* 1 */
  */
 
 button,
+html
 [type="button"],
 [type="reset"],
 [type="submit"] {
