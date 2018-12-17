@@ -49,6 +49,10 @@ requestManager.send(pageManager.prepareUrl(), function(response) {
   }
 );
 
+var pi = document.querySelector('.page__inner');
+pi.innerHTML = pageManager.renderPager(17,25);
+
+
 /*catalogManager.addTabClickListener(function(event){
     event.preventDefault();
 
@@ -60,10 +64,10 @@ requestManager.send(pageManager.prepareUrl(), function(response) {
 */
 /*swiper*/
 
-  var mySwiper = new Swiper ('.slider', {
+/*  var mySwiper = new Swiper ('.slider', {
     // Optional parameters
     direction: 'vertical',
-    loop: true,
+    loop: true,*/
 
     // If we need pagination
    /* pagination: {
@@ -71,14 +75,14 @@ requestManager.send(pageManager.prepareUrl(), function(response) {
     },*/
 
     // Navigation arrows
-    navigation: {
+/*    navigation: {
       nextEl: '.slider__button-next',
       prevEl: '.slider__button-prev',
-    },
+    },*/
 
     // And if we need scrollbar
    /* scrollbar: {
       el: '.swiper-scrollbar',
     },*/
-  })
+/*  })*/
 
