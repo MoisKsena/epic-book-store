@@ -58,4 +58,27 @@ requestManager.send(pageManager.prepareUrl(), function(response) {
 
   });
 */
+/*swiper*/
+
+  var mySwiper = new Swiper ('.slider', {
+    // Optional parameters
+    direction: 'vertical',
+    loop: true,
+
+    // If we need pagination
+   /* pagination: {
+      el: '.slider__pagination',
+    },*/
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.slider__button-next',
+      prevEl: '.slider__button-prev',
+    },
+
+    // And if we need scrollbar
+   /* scrollbar: {
+      el: '.swiper-scrollbar',
+    },*/
+  })
 

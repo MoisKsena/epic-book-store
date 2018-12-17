@@ -33,7 +33,7 @@
     width: 30%;
     height: 8px;
     background-color: $bcg;
-    z-index: 100;
+    z-index: 1;
   }
 
   &__wrap:after {
@@ -44,7 +44,7 @@
     width: 30%;
     height: 8px;
     background-color: $bcg;
-    z-index: 100;
+    z-index: 1;
   }
 
   &__cap {

@@ -1,11 +1,12 @@
 .slider {
   display: flex;
-  width: 100%;
+  position: relative;
   margin: 0 auto;
   padding: 0;
 
   @media (min-width: $screen-xs) {
-
+    width: 1155px;
+    height: 450px;
   }
 
   @media (min-width: $screen-sm) {
@@ -35,7 +36,7 @@
     }
   }
 
-  &__item {
+  &__slide {
     display: flex;
     margin: 0 auto;
     flex-direction: row;
@@ -200,16 +201,76 @@
     max-width: 300px;
 
     @media (min-width: $screen-xs) {
-
     }
 
     @media (min-width: $screen-sm) {
-
     }
 
     @media (min-width: $screen-lg) {
-
-
     }
+  }
+
+  &__button-prev {
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    top: 225px;
+    left: 0;
+    border-radius: 50%;
+    background-color: $pink-light;
+  }
+
+  &__button-prev:before {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 3px;
+    top: 14px;
+    left: 10px;
+    transform: rotate(-35deg);
+    background-color: $pink;
+  }
+
+  &__button-prev:after {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 3px;
+    bottom: 14px;
+    left: 10px;
+    transform: rotate(35deg);
+    background-color: $pink;
+  }
+
+  &__button-next {
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    top: 225px;
+    right: 0;
+    border-radius: 50%;
+    background-color: $pink-light;
+  }
+
+  &__button-next:before {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 3px;
+    top: 14px;
+    right: 10px;
+    transform: rotate(35deg);
+    background-color: $pink;
+  }
+
+  &__button-next:after {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 3px;
+    bottom: 14px;
+    right: 10px;
+    transform: rotate(-35deg);
+    background-color: $pink;
   }
 }
