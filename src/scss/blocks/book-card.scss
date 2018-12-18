@@ -1,76 +1,45 @@
 .book-card {
   display: flex;
+  width: 260px;
+  height: 550px;
   flex-direction: column;
   padding: 0;
+  justify-content: space-between;
 
 
   @media (min-width: $screen-xs) {
-    width: 220px;
-    height: 490px;
-    margin-left: 30px;
     margin-bottom: 50px;
   }
 
   @media (min-width: $screen-sm) {
-    width: 260px;
-    height: 550px;
     margin-left: 90px;
     margin-bottom: 60px;
   }
 
   @media (min-width: $screen-lg) {
-    width: 260px;
-    height: 550px;
     margin-left: 40px;
     margin-bottom: 78px;
   }
 
   &__img-wrap {
-    width: 260px;
-
-    @media (min-width: $screen-xs) {
-
-    }
-
-    @media (min-width: $screen-sm) {
-
-    }
-
-    @media (min-width: $screen-lg) {
-      height: 368px;
-    }
+    max-width: 260px;
+    padding-bottom: 30px;
   }
 
   &__img {
-
   }
 
   &__story {
     display: flex;
-    min-height: 150px;
     padding: 0;
     flex-direction: column;
-    align-content: space-between;
     align-items: flex-end;
     text-align: left;
-
-    @media (min-width: $screen-xs) {
-
-    }
-
-    @media (min-width: $screen-sm) {
-
-    }
-
-    @media (min-width: $screen-lg) {
-      height: 150px;
-      margin-top: 32px;
-    }
   }
 
   &__title {
     margin: 0;
-    padding-top: 34px;
+    padding: 0;
     font-weight: 700;
     font-size: $font-size-m;
     text-align: left;
@@ -82,7 +51,7 @@
 
   &__descr {
     margin: 0;
-    padding-top: 26px;
+    padding: 0;
     font-size: $font-size-s;
     font-weight: 400;
     font-style: italic;

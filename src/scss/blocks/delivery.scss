@@ -12,16 +12,15 @@
     border: solid 8px $gray;
 
     @media (min-width: $screen-xs) {
-      width: 320px;
       margin: 0 12px;
     }
 
     @media (min-width: $screen-sm) {
-      width: 768px;
+      margin: 0 40px;
     }
 
     @media (min-width: $screen-lg) {
-      width: 1280px;
+      margin: 0 32px;
     }
   }
 

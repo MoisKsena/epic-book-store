@@ -54,5 +54,13 @@
     color: $text-color;
     font-weight: 700;
   }
+
+  &__link:hover {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: $pink;
+    font-weight: 700;
+  }
 }
 

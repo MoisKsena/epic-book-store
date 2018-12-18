@@ -1,7 +1,8 @@
 @import 'variables.scss';
+@import './node_modules/normalize.css/normalize';
 @import 'fonts.scss';
 @import 'global.scss';
-@import '../node_modules/normalize.css/normalize.css';
+
 
 @import 'blocks/page-header.scss';
 @import 'blocks/main-nav.scss';
@@ -12,5 +13,4 @@
 @import 'blocks/page.scss';
 @import 'blocks/delivery.scss';
 @import 'blocks/newitems.scss';
-@import 'blocks/newitems-card.scss';
 @import 'blocks/footer.scss';
