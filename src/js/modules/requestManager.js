@@ -1,5 +1,5 @@
 const requestManager = {
-	send: function(data, onSuccess, onFail) {
+	send: function(data, onSuccess, onFail, successData) {
 		let xhr = new XMLHttpRequest;
 
 		xhr.open('GET', data);
@@ -10,7 +10,7 @@ const requestManager = {
 			if(xhr.readyState === 4 && xhr.status === 200) {
 
         const responseObj = JSON.parse(xhr.responseText);
-				onSuccess(xhr.responseText);
+				onSuccess(xhr.responseText, successData);
 			} else {
 				onFail(xhr);
 			}

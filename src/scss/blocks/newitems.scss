@@ -77,7 +77,7 @@
     }
 
     @media (min-width: $screen-sm) {
-
+      padding-left: 40px;
     }
 
     @media (min-width: $screen-lg) {
@@ -109,13 +109,13 @@
   }
 
   &__img-wrap {
-    max-width: 260px;
-    height: 370px;
+    margin: 0;
+    padding: 0;
   }
 
   &__img {
-    margin: 0;
-    padding: 0;
+    max-width: 260px;
+    height: auto;
   }
 
   &__title {
