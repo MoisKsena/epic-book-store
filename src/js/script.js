@@ -4,66 +4,51 @@ import tabManager from './modules/tabManager.js';
 import pageManager from './modules/pageManager.js';
 import requestManager from './modules/requestManager.js';
 import catalogManager from './modules/catalogManager.js';
+import Swiper from '../../node_modules/swiper/dist/js/swiper.min.js'
 
-function bookPage(response){
-  const request = JSON.parse(response);
 
-  const wrap = document.querySelector(bookCardTemplate.wrap);
-
-  if (wrap.children){
-    wrap.innerHTML = '';
-  }
-
-  if (document.querySelector(bookCardTemplate.wrap)) {
-    console.log(request.items);
-    addPage(request.items, bookCardTemplate);
-  }
-}
 
 tabManager.addTabClickListener(function(event) {
       event.preventDefault();
-      const url = pageManager.prepareUrl(event.target.dataset.type);
+      const url = pageManager.prepareUrl(event.target.dataset.type, 1);
       requestManager.send(url,
-        bookPage,
+        pageManager.bookPage,
         function(xhr){
           console.log(`wait download: ${xhr.readyState}`);
-        });
+        },
+        {page: 1, type: event.target.dataset.type || 'all'});
   });
 
 
-requestManager.send(pageManager.prepareUrl(),
-  bookPage,
+requestManager.send(pageManager.prepareUrl('all', 1),
+  pageManager.bookPage,
 
   function(xhr){
     console.log(`wait download: ${xhr.readyState}`);
-  }
+  },
+  {page: 1, type: 'all'}
 );
 
-var pi = document.querySelector('.page__inner');
-pi.innerHTML = pageManager.renderPager(17,25);
 
 
-/*swiper*/
-
-  /*var mySwiper = new Swiper ('.swiper-container', {
+var mySwiper = new Swiper ('.swiper-container', {
     // Optional parameters
     direction: 'vertical',
-    loop: true,*/
+    loop: true,
 
     // If we need pagination
-   /* pagination: {
-      el: '.slider__pagination',
-    },*/
+    pagination: {
+      el: '.swiper-pagination',
+    },
 
     // Navigation arrows
-    /*navigation: {
-      nextEl: '.slider__button-next',
-      prevEl: '.slider__button-prev',
-    },*/
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
     // And if we need scrollbar
-   /* scrollbar: {
+    scrollbar: {
       el: '.swiper-scrollbar',
-    },*/
-
-/*  });*/
-
+    },
+  })

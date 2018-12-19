@@ -36,9 +36,17 @@
     margin: 0;
     padding: 5px 10px;
     background-color: $pink-light;
-    color: $text-color;
+    color: $pink;
     border-radius: 60%;
     transition: all 0.3s;
+  }
+
+  &__link:active {
+    margin: 0;
+    padding: 5px 10px;
+    background-color: $pink-light;
+    color: $text-color;
+    border-radius: 60%;
   }
 
   &__separator {
