@@ -1,0 +1,36 @@
+.contacts {
+  display: flex;
+  height: 185px;
+  margin: 0 auto;
+  padding: 0;
+
+  &__inner {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+
+    @media (min-width: $screen-xs) {
+      padding: 0 30px;
+      align-items: center;
+    }
+
+    @media (min-width: $screen-sm) {
+      padding: 0 40px;
+    }
+
+    @media (min-width: $screen-lg) {
+      padding: 0 60px;
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+
+  &__title {
+  }
+
+  &__info {
+  }
+
+  &__info-list {
+  }
+}
