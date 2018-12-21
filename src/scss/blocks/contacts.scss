@@ -1,36 +1,94 @@
 .contacts {
   display: flex;
-  height: 185px;
+  min-height: 185px;
   margin: 0 auto;
   padding: 0;
+  background-color: $bcg;
 
   &__inner {
     display: flex;
-    width: 100%;
     margin: 0 auto;
+    flex-direction: column;
+    justify-content: flex-end;
 
     @media (min-width: $screen-xs) {
+      width: 320px;
       padding: 0 30px;
-      align-items: center;
     }
 
     @media (min-width: $screen-sm) {
+      width: 768px;
       padding: 0 40px;
     }
 
     @media (min-width: $screen-lg) {
+      width: 1280px;
       padding: 0 60px;
-      flex-direction: row;
-      align-items: center;
     }
   }
 
   &__title {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-start;
+
+    @media (min-width: $screen-xs) {
+
+    }
+
+    @media (min-width: $screen-sm) {
+
+    }
+
+    @media (min-width: $screen-lg) {
+      font-weight: 700;
+      font-size: $font-size-xxl;
+    }
   }
 
   &__info {
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+    margin: 0;
+    padding: 0;
+
+    @media (min-width: $screen-xs) {
+
+    }
+
+    @media (min-width: $screen-sm) {
+
+    }
+
+    @media (min-width: $screen-lg) {
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      padding-top: 55px;
+    }
   }
 
   &__info-list {
+    margin: 0;
+
+    @media (min-width: $screen-xs) {
+
+    }
+
+    @media (min-width: $screen-sm) {
+
+    }
+
+    @media (min-width: $screen-lg) {
+
+    }
+  }
+
+  &__info-list:before {
+    color: $link-color;
+    content: "•";
+    padding-right: 15px;
   }
 }
