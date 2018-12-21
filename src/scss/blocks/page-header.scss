@@ -10,13 +10,13 @@
     justify-content: space-between;
 
     @media (min-width: $screen-xs) {
-      width: 100%;
+      width: 320px;
       padding: 0 30px;
       align-items: center;
     }
 
     @media (min-width: $screen-sm) {
-      width: 840px;
+      width: 768px;
       padding: 0 40px;
     }
 

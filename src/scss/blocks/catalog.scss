@@ -92,19 +92,17 @@
 
   &__list-wrap {
     display: flex;
+    width: 100%;
     margin: 0 auto;
     flex-direction: column;
 
     @media (min-width: $screen-xs) {
-      width: 320px;
     }
 
     @media (min-width: $screen-sm) {
-      width: 768px;
     }
 
     @media (min-width: $screen-lg) {
-      width: 1280px;
     }
   }
 

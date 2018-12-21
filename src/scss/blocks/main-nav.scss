@@ -4,7 +4,7 @@
   padding: 0;
 
   @media (min-width: $screen-xs) {
-      order: 3;
+    order: 3;
   }
 
   @media (min-width: $screen-sm) {
@@ -47,11 +47,11 @@
     }
 
     span {
-    display: inline-block;
-    margin-bottom: 4px;
-    background-color: #000;
-    width: 100%;
-    height: 3px;
+      display: inline-block;
+      margin-bottom: 4px;
+      background-color: #000;
+      width: 100%;
+      height: 3px;
     }
   }
 
@@ -91,7 +91,7 @@
     z-index: 1;
   }
 
-  &__burger-list{
+  &__burger-list {
     margin: 0;
     padding: 0;
   }
