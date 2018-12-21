@@ -52,3 +52,12 @@ var mySwiper = new Swiper ('.swiper-container', {
       el: '.swiper-scrollbar',
     },
   })
+
+let burger = document.querySelector(".main-nav__burger");
+let menu = document.querySelector(".main-nav__burger-menu");
+
+burger.addEventListener('click', () => {
+
+  burger.classList.toggle('active');
+  menu.classList.toggle('active');
+}, false);

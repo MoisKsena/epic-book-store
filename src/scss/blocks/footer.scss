@@ -130,6 +130,14 @@
     @media (min-width: $screen-xs) {
       overflow-x: auto;
     }
+
+    @media (min-width: $screen-sm) {
+      overflow-x: inherit;
+    }
+
+    @media (min-width: $screen-lg) {
+      overflow-x: inherit;
+    }
   }
 
   &__item {
