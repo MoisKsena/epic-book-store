@@ -5,96 +5,146 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
   <title>Документ</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="./node_modules/swiper/dist/css/swiper.min.css">
   <script>
     document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
   </script>
+  <script src="js/svg4everybody.min.js"></script>
+  <script>svg4everybody();</script>
 </head>
 <body>
 
-	<header class="page-header">
-		<div class="page-header__inner">
 
-			<a href="" class="page-header__logo">
-				<img src="img/BOOK STORE.png" alt="book store">
-			</a>
-			<p class="page-header__worktime">с 9:00 до 19:00</p>
+  <header class="page-header">
+    <div class="page-header__inner">
 
-			<nav class="main-nav">
-				<button class="main-nav__toggle">Главное меню</button>
-				<ul class="main-nav__list">
-					<li class="main-nav__item">
-						<a href="" class="main-nav__link">книги</a>
-					</li>
-					<li class="main-nav__item">
-						<a href="" class="main-nav__link">рекомендации</a>
-					</li>
-					<li class="main-nav__item">
-						<a href="" class="main-nav__link">контакты</a>
-					</li>
-				</ul>
-			</nav>
+      <a href="" class="page-header__logo">
+        <img src="img/BOOK STORE.png" alt="book store">
+      </a>
+      <p class="page-header__worktime">с 9:00 до 19:00</p>
 
-			<div class="page-header__icon">
-				<a href="#" class="page-header__btn">
-					<img src="img/icon_bascket.png" alt="">
-				</a>
+      <nav class="main-nav">
+        <button class="main-nav__burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="main-nav__burger-menu">
+          <ul class="main-nav__burger-list">
+            <li class="main-nav__burger-item">
+              <a href="/books_inner.html" class="main-nav__burger-link">книги</a>
+            </li>
+            <li class="main-nav__burger-item">
+              <a href="" class="main-nav__burger-link">рекомендации</a>
+            </li>
+            <li class="main-nav__burger-item">
+              <a href="/contacts.html" class="main-nav__burger-link">контакты</a>
+            </li>
+        </ul>
+        </div>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="/books_inner.html" class="main-nav__link">книги</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="" class="main-nav__link">рекомендации</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="/contacts.html" class="main-nav__link">контакты</a>
+          </li>
+        </ul>
+      </nav>
 
-				<button class="page-header__btn">
-					<a href="#" class="">svg</a>
-				</button>
-			</div>
-		</div>
-	</header>
+      <div class="page-header__icon">
+        <a href="#" class="page-header__btn">
+          <img src="img/icon_bascket.png" alt="">
+        </a>
 
-	<main>
-	<div class="promo">
-		<div class="promo__inner">
-			<div class="slider">
-				<div class="slider__inner">
-					<article class="slider__item">
-						<div class="slider__item-text">
-							<h2 class="slider__item-title">Название книги</h2>
-  						<p class="slider__item-descr">Новое поступление книги «Симпсоны и&nbsp;их математические секреты»</p>
-              <div class="slider__item-border">
-  							<p class="slider__item-sign">Для поклонников сериала&nbsp; «Симпсоны» и&nbsp;для всех, кому интересна&nbsp;математика.</p>
-  							<a href="#" class="slider__item-link">Хочу узнать о книге больше</a>
-						  </div>
+        <button class="page-header__phone">
+          <a href="#" class="">svg</a>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+  <div class="promo">
+    <div class="promo__inner">
+      <!-- Slider main container -->
+      <div class="slider">
+          <!-- Additional required wrapper -->
+          <div class="slider__inner">
+              <!-- Slides -->
+              <div class="slider__slide">
+                <div class="slider__item-text">
+                    <h2 class="slider__item-title">Название книги</h2>
+                    <p class="slider__item-descr">Новое поступление книги «Симпсоны и&nbsp;их математические секреты»</p>
+                  <div class="slider__item-border">
+                    <p class="slider__item-sign">Для поклонников сериала&nbsp; «Симпсоны» и&nbsp;для всех, кому интересна&nbsp;математика.</p>
+                    <a href="#" class="slider__item-link">Хочу узнать о книге больше</a>
+                  </div>
+                </div>
+                <div class="slider__item-pic">
+                  <img src="img/book-simpsony-i-ih-matematicheskie-sekrety.jpg" alt="" class="slider__item-img" alt="" class="slider__item-img">
+                </div>
+              </div>
+              <div class="slider__slide">Slide 2</div>
+              <div class="slider__slide">Slide 3</div>
+          </div>
+          <!-- If we need pagination -->
+         <!--  <div class="slider__pagination"></div> -->
+
+          <!-- If we need navigation buttons -->
+          <div class="slider__button-prev"></div>
+          <div class="slider__button-next"></div>
+
+      </div>
+    <!--   <div class="slider">
+      <div class="slider__inner">
+        <article class="slider__item">
+          <div class="slider__item-text">
+            <h2 class="slider__item-title">Название книги</h2>
+            <p class="slider__item-descr">Новое поступление книги «Симпсоны и&nbsp;их математические секреты»</p>
+            <div class="slider__item-border">
+              <p class="slider__item-sign">Для поклонников сериала&nbsp; «Симпсоны» и&nbsp;для всех, кому интересна&nbsp;математика.</p>
+              <a href="#" class="slider__item-link">Хочу узнать о книге больше</a>
             </div>
-            <div class="slider__item-pic">
-              <img src="img/book-simpsony-i-ih-matematicheskie-sekrety.jpg" alt="" class="slider__item-img" alt="" class="slider__item-img">
-            </div>
-					</article>
-				</div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-			</div>
-		</div>
-	</div>
+          </div>
+          <div class="slider__item-pic">
+            <img src="img/book-simpsony-i-ih-matematicheskie-sekrety.jpg" alt="" class="slider__item-img" alt="" class="slider__item-img">
+          </div>
+        </article>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div> -->
+    </div>
+  </div>
 
-	<section class="catalog">
-		<h1 class="catalog__title">Каталог</h1>
-		<div class="catalog__tabs-wrap">
-			<ul class="catalog__tabs j-tabs">
-				<li class="catalog__tab-item">
-					<a href="#" data-type="all" class="catalog__tab-link"><span>Все</span></a>
-				</li>
-				<li class="catalog__tab-item">
-					<a href="#" data-type="marketing" class="catalog__tab-link">Маркетинг</a>
-				</li>
-				<li class="catalog__tab-item">
-					<a href="#" data-type="science" class="catalog__tab-link">Научпоп</a>
-				</li>
-				<li class="catalog__tab-item">
-					<a href="#" data-type="business" class="catalog__tab-link">Бизнес</a>
-				</li>
-				<li class="catalog__tab-item">
-					<a href="#" data-type="creativity" class="catalog__tab-link">Творчество</a>
-				</li>
-			</ul>
-		</div>
-		<div class="catalog__list-wrap">
-			<div class="catalog__list js-catalog__list">
-				<!-- <article class="book-card">
+  <section class="catalog">
+    <h1 class="catalog__title">Каталог</h1>
+    <div class="catalog__tabs-wrap">
+      <ul class="catalog__tabs j-tabs">
+        <li class="catalog__tab-item">
+          <a href="#" data-type="all" class="catalog__tab-link"><span>Все</span></a>
+        </li>
+        <li class="catalog__tab-item">
+          <a href="#" data-type="marketing" class="catalog__tab-link">Маркетинг</a>
+        </li>
+        <li class="catalog__tab-item">
+          <a href="#" data-type="science" class="catalog__tab-link">Научпоп</a>
+        </li>
+        <li class="catalog__tab-item">
+          <a href="#" data-type="business" class="catalog__tab-link">Бизнес</a>
+        </li>
+        <li class="catalog__tab-item">
+          <a href="#" data-type="creativity" class="catalog__tab-link">Творчество</a>
+        </li>
+      </ul>
+    </div>
+    <div class="catalog__list-wrap">
+      <div class="catalog__list js-catalog__list">
+        <!-- <article class="book-card">
           <a href="" class="book-card__img-wrap"><img src="img/book-lateralnaya-logika.jpg" alt="" class="book-card__img"></a>
           <div class="book-card__story">
             <h2 class="book-card__title"><a href="" class="book-card__link">Латеральная логика</a></h2>
@@ -103,104 +153,107 @@
           </div>
         </article> -->
       </div>
-				<ul class="page">
-					<li class="page__list"><span>1</span></li>
-					<li class="page__list"><a href="#" class="page__link">2</a></li>
-					<li class="page__list"><a href="#" class="page__link">3</a></li>
-					<li class="page__list"><a href="#" class="page__link">4</a></li>
-					<li class="page__list"><a href="#" class="page__link">5</a></li>
-					<li class="page__separator">...</li>
-					<li class="page__list"><button lass="page__link">10</button></li>
-				</ul>
+      <div class="page">
+        <ul class="page__inner">
+ <!--          <li class="page__list j-current"><a href="#" class="page__link">1</a></li>
+ <li class="page__list j-current"><a href="#" class="page__link">2</a></li>
+ <li class="page__list"><a href="#" class="page__link">3</a></li>
+ <li class="page__list j-current"><a href="#" class="page__link">4</a></li>
+ <li class="page__list j-current"><a href="#" class="page__link">5</a></li>
+ <li class="page__separator">...</li>
+ <li class="page__list j-current"><a href="#" class="page__link">10</a></li> -->
+        </ul>
+      </div>
+    </div>
+  </section>
 
-		</div>
-	</section>
+  <section class="delivery">
+    <div class="delivery__wrap">
+      <div class="delivery__cap">
+        <h2 class="delivery__title">Доставим в любое место</h2>
+        <p class="delivery__sign">// ну почти в любое</p>
+      </div>
+      <div class="delivery__section">
+        <div class="delivery__sectionBox">
+          <!-- <img class="delivery-box__icon delivery-box__icon--books" src="img/icon_book.svg" alt=""> -->
+          <svg width="50" height="40">
+            <use xlink:href="img/sprite.svg#icon_book"></use>
+          </svg>
+          <p class="delivery-box__desc">Покупаете книги на сайте в любимом формате — бумажные, электронные или аудио.</p>
+        </div>
+        <div class="delivery__sectionBox">
+          <img class="delivery-box__icon delivery-box__icon--present" src="img/icon_box.svg" alt="">
+          <p class="delivery-box__desc">Мы подарим вам «Набор читателя» и добавим в посылку.</p>
+        </div>
+        <div class="delivery__sectionBox">
+          <img class="delivery-box__icon delivery-box__icon--orders" src="img/icon_delivery.svg" alt="">
+          <p class="delivery-box__desc">Бесплатно доставляем заказы от  3&nbsp;000  по всей России.</p>
+        </div>
+        <div class="delivery__sectionBox">
+          <img class="delivery-box__icon delivery-box__icon--cities" src="img/icon_map.svg" alt="">
+          <p class="delivery-box__desc">Доставка в более чем 300 городов России, по Москве и Санкт-&nbsp;Петербургу &mdash; бесплатно.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-	<section class="delivery">
-		<div class="delivery__wrap">
-			<div class="delivery__cap">
-				<h2 class="delivery__title">Доставим в любое место</h2>
-				<p class="delivery__sign">// ну почти в любое</p>
-			</div>
-			<div class="delivery__section">
-				<div class="delivery__sectionBox">
-					<img class="delivery-box__icon delivery-box__icon--books" src="img/icon_book.svg" alt="">
-					<p class="delivery-box__desc">Покупаете книги на сайте в любимом формате — бумажные, электронные или аудио.</p>
-				</div>
-				<div class="delivery__sectionBox">
-					<img class="delivery-box__icon delivery-box__icon--present" src="img/icon_box.svg" alt="">
-					<p class="delivery-box__desc">Мы подарим вам «Набор читателя» и добавим в посылку.</p>
-				</div>
-				<div class="delivery__sectionBox">
-					<img class="delivery-box__icon delivery-box__icon--orders" src="img/icon_delivery.svg" alt="">
-					<p class="delivery-box__desc">Бесплатно доставляем заказы от  3&nbsp;000  по всей России.</p>
-				</div>
-				<div class="delivery__sectionBox">
-					<img class="delivery-box__icon delivery-box__icon--cities" src="img/icon_map.svg" alt="">
-					<p class="delivery-box__desc">Доставка в более чем 300 городов России, по Москве и Санкт-&nbsp;Петербургу &mdash; бесплатно.</p>
-				</div>
-			</div>
-		</div>
-	</section>
+  <section class="newitems">
+    <div class="newitems__cap">
+      <h2 class="newitems__title">Наши новинки</h2>
+      <a href="#" class="newitems__link">Все новинки</a>
+    </div>
+    <div class="newitems__list-wrap">
+      <div class="newitems__list">
+        <article class="newitems-card">
+          <a href="" class="newitems-card__img-wrap"><img src="img/book-lateralnaya-logika.jpg" alt="" class="newitems-card__img"></a>
+          <h2 class="newitems-card__title"><a href="#" class="newitems-card__link">Латеральная логика</a></h2>
+          <p class="newitems-card__descr">Головоломный путь к нестандартному мышлению</p>
+        </article>
+        <article class="newitems-card">
+          <a href="" class="newitems-card__img-wrap"><img src="img/book-putevoditel-po-lzhi.jpg" alt="" class="newitems-card__img"></a>
+          <h2 class="newitems-card__title"><a href="#" class="newitems-card__link">Путеводитель по лжи</a></h2>
+          <p class="newitems-card__descr">Критическое мышление в эпоху постправды</p>
+        </article>
+        <article class="newitems-card">
+          <a href="" class="newitems-card__img-wrap"><img src="img/book-dao-fiziki.jpg" alt="" class="newitems-card__img"></a>
+          <h2 class="newitems-card__title"><a href="#" class="newitems-card__link">Дао физики</a></h2>
+          <p class="newitems-card__descr">Исследование параллелей между современной физикой и восточной философией</p>
+        </article>
+        <article class="newitems-card">
+          <a href="" class="newitems-card__img-wrap"><img src="img/book-ne-ochevidno.jpg" alt="" class="newitems-card__img"></a>
+          <h2 class="newitems-card__title"><a href="#" class="newitems-card__link">Не очевидно</a></h2>
+          <p class="newitems-card__descr">Как выявлять тренды раньше других</p>
+        </article>
+      </div>
+    </div>
+  </section>
+  </main>
 
-	<section class="newitems">
-		<div class="newitems__cap">
-			<h2 class="newitems__title">Наши новинки</h2>
-			<a href="#" class="newitems__link">Все новинки</a>
-		</div>
-		<div class="newitems__list-wrap">
-			<div class="newitems__list">
-				<article class="newitems-card">
-					<a href="" class="newitems-card__img-wrap"><img src="img/book-lateralnaya-logika.jpg" alt="" class="newitems-card__img"></a>
-					<h2 class="newitems-card__title"><a href="#" class="newitems-card__link">Латеральная логика</a></h2>
-					<p class="newitems-card__descr">Головоломный путь к нестандартному мышлению</p>
-				</article>
-				<article class="newitems-card">
-					<a href="" class="newitems-card__img-wrap"><img src="img/book-putevoditel-po-lzhi.jpg" alt="" class="newitems-card__img"></a>
-					<h2 class="newitems-card__title"><a href="#" class="newitems-card__link">Путеводитель по лжи</a></h2>
-					<p class="newitems-card__descr">Критическое мышление в эпоху постправды</p>
-				</article>
-				<article class="newitems-card">
-					<a href="" class="newitems-card__img-wrap"><img src="img/book-dao-fiziki.jpg" alt="" class="newitems-card__img"></a>
-					<h2 class="newitems-card__title"><a href="#" class="newitems-card__link">Дао физики</a></h2>
-					<p class="newitems-card__descr">Исследование параллелей между современной физикой и восточной философией</p>
-				</article>
-				<article class="newitems-card">
-					<a href="" class="newitems-card__img-wrap"><img src="img/book-ne-ochevidno.jpg" alt="" class="newitems-card__img"></a>
-					<h2 class="newitems-card__title"><a href="#" class="newitems-card__link">Не очевидно</a></h2>
-					<p class="newitems-card__descr">Как выявлять тренды раньше других</p>
-				</article>
-			</div>
-		</div>
-	</section>
-	</main>
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__wraper-mobil">
+        <a href="" class="footer__logo"><img src="img/BOOK STORE.png" alt="book store"></a>
+        <p class="footer__worktime">с 9:00 до 19:00</p>
+      </div>
+      <nav class="footer-nav">
+        <ul class="footer-nav__list">
+          <li class="footer-nav__item">
+            <a href="/books_inner.html" class="footer-nav__link">Книги</a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="" class="footer-nav__link">Рекомендации</a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="/contacts.html" class="footer-nav__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
 
-	<footer class="footer">
-		<div class="footer__inner">
+    </div>
+  </footer>
 
-			<a href="" class="footer__logo">
-        <img src="img/BOOK STORE.png" alt="book store">
-      </a>
-
-			<p class="footer__worktime">с 9:00 до 19:00</p>
-
-			<nav class="footer-nav">
-				<ul class="footer-nav__list">
-					<li class="footer-nav__item">
-						<a href="" class="footer-nav__link">Книги</a>
-					</li>
-					<li class="footer-nav__item">
-						<a href="" class="footer-nav__link">Рекомендации</a>
-					</li>
-					<li class="footer-nav__item">
-						<a href="" class="footer-nav__link">Контакты</a>
-					</li>
-				</ul>
-			</nav>
-
-		</div>
-	</footer>
   <script type="module" src="./js/script.js"></script>
+  <script src="./node_modules/swiper/dist/js/swiper.min.js"></script>
 
 </body>
 </html>
