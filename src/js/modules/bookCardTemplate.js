@@ -6,8 +6,6 @@ const bookCardTemplate = {
 		return `<div class="book-card__inner">
               <a href="#" onclick="return false;" class="book-card__img-wrap">
                 <picture>
-                  <source media="(min-width: 320px)" srcset="img/booksAll/${book.uri}.png">
-                  <source media="(min-width: 768px)" srcset="img/booksAll/${book.uri}_2x.png">
                   <img src="img//booksAll/${book.uri}.png" alt="lateralnaya-logika" class="book-card__img">
                 </picture>
               </a>
