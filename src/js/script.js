@@ -4,7 +4,7 @@ import tabManager from './modules/tabManager.js';
 import pageManager from './modules/pageManager.js';
 import requestManager from './modules/requestManager.js';
 import catalogManager from './modules/catalogManager.js';
-import Swiper from '../../node_modules/swiper/dist/js/swiper.min.js'
+import Swiper from '../../node_modules/swiper/dist/js/swiper.min.js';
 
 
 

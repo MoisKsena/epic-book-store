@@ -1,8 +1,4 @@
 
-
-
-
-
 function createElement(book, template) {
 	const nodeElement = document.createElement(template.tag);
 	nodeElement.classList.add(template.tagClass);

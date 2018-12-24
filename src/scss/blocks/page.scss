@@ -5,19 +5,22 @@
 
   &__inner {
     display: flex;
-    margin: 0;
     flex-direction: row;
     list-style: none;
 
     @media (min-width: $screen-xs) {
-
+      margin: 0 auto;
+      padding: 0;
     }
 
     @media (min-width: $screen-sm) {
+      margin: 0;
+      padding-left: 90px;
     }
 
     @media (min-width: $screen-lg) {
-      padding-left: 36px;
+      margin: 0;
+      padding-left: 60px;
     }
   }
 

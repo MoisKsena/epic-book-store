@@ -113,18 +113,18 @@
     flex-wrap: wrap;
 
     @media (min-width: $screen-xs) {
-      width: 320px;
+      width: 100%;
       padding-top: 40px;
       padding-bottom: 60px;
     }
 
     @media (min-width: $screen-sm) {
-      width: 768px;
+      width: 610px;
       padding-top: 50px;
     }
 
     @media (min-width: $screen-lg) {
-      width: 1280px;
+      width: 1160px;
       padding-top: 52px;
     }
   }

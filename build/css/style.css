@@ -1341,6 +1341,9 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
     margin: 0;
     font-weight: 700; }
     @media (min-width: 320px) {
@@ -1543,49 +1546,67 @@ img {
         flex-wrap: wrap; }
     @media (min-width: 320px) {
       .catalog__list {
-        width: 320px;
+        width: 100%;
         padding-top: 40px;
         padding-bottom: 60px; } }
     @media (min-width: 768px) {
       .catalog__list {
-        width: 768px;
+        width: 610px;
         padding-top: 50px; } }
     @media (min-width: 1280px) {
       .catalog__list {
-        width: 1280px;
+        width: 1160px;
         padding-top: 52px; } }
 
 .book-card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 260px;
-  height: 550px;
-  -webkit-box-orient: vertical;
+  width: 100%;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 0;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0;
+  padding: 0; }
   @media (min-width: 320px) {
     .book-card {
-      margin-bottom: 50px; } }
+      padding-left: 50px; } }
   @media (min-width: 768px) {
     .book-card {
-      margin-left: 90px;
-      margin-bottom: 60px; } }
+      width: 50%;
+      padding-right: 90px; } }
   @media (min-width: 1280px) {
     .book-card {
-      margin-left: 40px;
-      margin-bottom: 78px; } }
-  .book-card__img-wrap {
-    max-width: 260px;
+      width: 25%;
+      padding-right: 40px; } }
+  .book-card__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    @media (min-width: 320px) {
+      .book-card__inner {
+        max-width: 220px;
+        padding-bottom: 47px; } }
+    @media (min-width: 768px) {
+      .book-card__inner {
+        padding-bottom: 56px; } }
+    @media (min-width: 1280px) {
+      .book-card__inner {
+        padding-bottom: 78px; } }
+  .book-card__img:hover {
+    -webkit-box-shadow: 0px 0px 50px -1px #d7569d;
+            box-shadow: 0px 0px 50px -1px #d7569d; }
+  .book-card__img {
+    height: auto;
     padding: 0; }
-  .book-card__img-wrap:hover {
-    -webkit-box-shadow: 50px -1px #d7569d;
-            box-shadow: 50px -1px #d7569d; }
   .book-card__story {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1598,13 +1619,15 @@ img {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
-    text-align: left; }
+    text-align: left;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
   .book-card__title {
     margin-bottom: 30px;
     padding: 0;
     font-weight: 700;
-    font-size: 24px;
-    text-align: left; }
+    font-size: 24px; }
   .book-card__link {
     color: #1f1f1f; }
   .book-card__descr {
@@ -1612,8 +1635,7 @@ img {
     padding: 0;
     font-size: 16px;
     font-weight: 400;
-    font-style: italic;
-    text-align: left; }
+    font-style: italic; }
   .book-card__price {
     margin: 0;
     padding-top: 18px;
@@ -1630,15 +1652,23 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin: 0;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
     list-style: none; }
+    @media (min-width: 320px) {
+      .page__inner {
+        margin: 0 auto;
+        padding: 0; } }
+    @media (min-width: 768px) {
+      .page__inner {
+        margin: 0;
+        padding-left: 90px; } }
     @media (min-width: 1280px) {
       .page__inner {
-        padding-left: 36px; } }
+        margin: 0;
+        padding-left: 60px; } }
   .page__list {
     margin: 0;
     padding-right: 18px;

@@ -5,10 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
   <title>Документ</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="../node_modules/swiper/dist/css/swiper.min.css">
+  <link rel="stylesheet" href="./node_modules/swiper/dist/css/swiper.min.css">
   <script>
     document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
   </script>
+  <script src="js/svg4everybody.min.js"></script>
+  <script>svg4everybody();</script>
 </head>
 <body>
 
@@ -143,12 +145,20 @@
     <div class="catalog__list-wrap">
       <div class="catalog__list js-catalog__list">
         <!-- <article class="book-card">
-          <a href="" class="book-card__img-wrap"><img src="img/book-lateralnaya-logika.jpg" alt="" class="book-card__img"></a>
-          <div class="book-card__story">
-            <h2 class="book-card__title"><a href="" class="book-card__link">Латеральная логика</a></h2>
-            <p class="book-card__descr">Головоломный путь к нестандартному мышлению</p>
-            <div class="book-card__price">500 &#8381;</div>
-          </div>
+                <div class="book-card__inner">
+                  <a href="" class="book-card__img-wrap">
+                    <picture>
+                      <source media="(min-width: 320px)" srcset="img/booksAll/book-lateralnaya-logika.png">
+                      <source media="(min-width: 768px)" srcset="img/booksAll/book-lateralnaya-logika_2x.png">
+                      <img src="img/book-lateralnaya-logika.png" alt="lateralnaya-logika" class="book-card__img">
+                    </picture>
+                  </a>
+                  <div class="book-card__story">
+                    <h2 class="book-card__title"><a href="" class="book-card__link">Латеральная логика</a></h2>
+                    <p class="book-card__descr">Головоломный путь к нестандартному мышлению</p>
+                    <span class="book-card__price">500 &#8381;</span>
+                  </div>
+                </div>
         </article> -->
       </div>
       <div class="page">
@@ -173,7 +183,10 @@
       </div>
       <div class="delivery__section">
         <div class="delivery__sectionBox">
-          <img class="delivery-box__icon delivery-box__icon--books" src="img/icon_book.svg" alt="">
+          <!-- <img class="delivery-box__icon delivery-box__icon--books" src="img/icon_book.svg" alt=""> -->
+          <svg width="50" height="40">
+            <use xlink:href="img/sprite.svg#icon_book"></use>
+          </svg>
           <p class="delivery-box__desc">Покупаете книги на сайте в любимом формате — бумажные, электронные или аудио.</p>
         </div>
         <div class="delivery__sectionBox">
@@ -247,8 +260,8 @@
     </div>
   </footer>
 
-  <script src="./node_modules/swiper/dist/js/swiper.min.js"></script>
   <script type="module" src="./js/script.js"></script>
+  <script src="./node_modules/swiper/dist/js/swiper.min.js"></script>
 
 </body>
 </html>
