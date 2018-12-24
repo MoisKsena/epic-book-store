@@ -6,17 +6,15 @@
   padding: 0;
 
      @media (min-width: $screen-xs) {
-      padding-left: 50px;
+
     }
 
     @media (min-width: $screen-sm) {
       width: 50%;
-      padding-right: 90px;
     }
 
     @media (min-width: $screen-lg) {
       width: 25%;
-      padding-right: 40px;
     }
 
   &__inner {
@@ -47,7 +45,7 @@
   }
 
   &__img {
-
+    width: 261px;
     height: auto;
     padding: 0;
 

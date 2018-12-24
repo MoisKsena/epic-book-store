@@ -5,16 +5,16 @@
   padding: 0;
 
   @media (min-width: $screen-xs) {
-    width: 1155px;
+    width: 340px;
     height: 450px;
   }
 
   @media (min-width: $screen-sm) {
-
+    width: 760px;
   }
 
   @media (min-width: $screen-lg) {
-
+    width: 1155px;
   }
 
   &__inner {
@@ -117,12 +117,12 @@
     @media (min-width: $screen-xs) {
       margin: 0 auto;
       padding: 0;
-      width: 335px;
+      width: 320px;
       height: 275px;
     }
 
     @media (min-width: $screen-sm) {
-      width: 560px;
+      width: 556px;
       height: 310px;
     }
 
@@ -215,10 +215,23 @@
     position: absolute;
     width: 42px;
     height: 42px;
-    top: 225px;
-    left: 0;
     border-radius: 50%;
     background-color: $pink-light;
+
+    @media (min-width: $screen-xs) {
+      top: 410px;
+      left: 110px;
+    }
+
+    @media (min-width: $screen-sm) {
+      top: 225px;
+      left: 40px;
+    }
+
+    @media (min-width: $screen-lg) {
+      top: 225px;
+      left: 0;
+    }
   }
 
   &__button-prev:before {
@@ -247,10 +260,23 @@
     position: absolute;
     width: 42px;
     height: 42px;
-    top: 225px;
-    right: 0;
     border-radius: 50%;
     background-color: $pink-light;
+
+    @media (min-width: $screen-xs) {
+      top: 410px;
+      right: 110px;
+    }
+
+    @media (min-width: $screen-sm) {
+      top: 225px;
+      right: 40px;
+    }
+
+    @media (min-width: $screen-lg) {
+      top: 225px;
+      right: 0;
+    }
   }
 
   &__button-next:before {
