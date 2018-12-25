@@ -15,7 +15,7 @@
 
     @media (min-width: $screen-sm) {
       margin: 0;
-      padding-left: 90px;
+      padding-left: 30px;
     }
 
     @media (min-width: $screen-lg) {
@@ -25,24 +25,39 @@
   }
 
   &__list {
-    margin: 0;
-    padding-right: 18px;
+    margin-right: 22px;
+    padding: 5px 10px;
+    border-radius: 60%;
     font-weight: 700;
     font-size: $font-size-s;
+
+
+
+    &:hover {
+    background-color: $pink-light;
+    color: $pink;
+    transition: all 0.3s;
+    }
+
+    &:active {
+      color: $pink;
+      background-color: transparent;
+
+      &:active a {
+      color: $gray;
+      background-color: transparent;
+      }
+    }
   }
+
+
 
   &__link {
     color: $text-color;
+    background-color: transparent;
+
   }
 
-  &__link:hover {
-    margin: 0;
-    padding: 5px 10px;
-    background-color: $pink-light;
-    color: $text-color;
-    border-radius: 60%;
-    transition: all 0.3s;
-  }
 
   &__separator {
     margin: 0;
@@ -50,10 +65,7 @@
   }
 
   .j-current {
-    margin: 0;
-    padding: 5px 10px;
     background-color: $pink-light;
     color: $pink;
-    border-radius: 60%;
   }
 }

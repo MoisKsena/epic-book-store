@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
   <title>Документ</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="./node_modules/swiper/dist/css/swiper.min.css">
   <script>
     document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
   </script>
@@ -131,7 +130,7 @@
     <div class="catalog__tabs-wrap">
       <ul class="catalog__tabs j-tabs">
         <li class="catalog__tab-item">
-          <a href="#" data-type="all" class="catalog__tab-link"><span>Все</span></a>
+          <a href="#" data-type="all" class="catalog__tab-link">Все</a>
         </li>
         <li class="catalog__tab-item">
           <a href="#" data-type="marketing" class="catalog__tab-link">Маркетинг</a>
@@ -150,7 +149,6 @@
     <div class="catalog__list-wrap">
       <div class="catalog__list js-catalog__list">
         <!-- <article class="book-card">
-                <div class="book-card__inner">
                   <a href="" class="book-card__img-wrap">
                     <picture>
                       <img src="img/book-lateralnaya-logika.png" alt="lateralnaya-logika" class="book-card__img">
@@ -161,12 +159,11 @@
                     <p class="book-card__descr">Головоломный путь к нестандартному мышлению</p>
                     <span class="book-card__price">500 &#8381;</span>
                   </div>
-                </div>
         </article> -->
       </div>
       <div class="page">
         <ul class="page__inner">
- <!--          <li class="page__list j-current"><a href="#" class="page__link">1</a></li>
+ <!--          <li class="page__list active j-current"><a href="#" class="page__link">1</a></li>
  <li class="page__list j-current"><a href="#" class="page__link">2</a></li>
  <li class="page__list"><a href="#" class="page__link">3</a></li>
  <li class="page__list j-current"><a href="#" class="page__link">4</a></li>
@@ -185,33 +182,29 @@
         <p class="delivery__sign">// ну почти в любое</p>
       </div>
       <div class="delivery__section">
-        <div class="delivery__sectionBox">
-          <!-- <img class="delivery-box__icon delivery-box__icon--books" src="img/icon_book.svg" alt=""> -->
+        <div class="delivery__sectionbox">
           <svg width="50" height="40">
             <use xlink:href="img/sprite.svg#icon_book"></use>
           </svg>
-          <p class="delivery-box__desc">Покупаете книги на сайте в любимом формате — бумажные, электронные или аудио.</p>
+          <p class="delivery__box-desc">Покупаете книги на сайте в любимом формате — бумажные, электронные или аудио.</p>
         </div>
-        <div class="delivery__sectionBox">
-          <!-- <img class="delivery-box__icon delivery-box__icon--present" src="img/icon_box.svg" alt=""> -->
+        <div class="delivery__sectionbox">
           <svg width="58" height="42">
             <use xlink:href="img/sprite.svg#icon_box"></use>
           </svg>
-          <p class="delivery-box__desc">Мы подарим вам «Набор читателя» и добавим в посылку.</p>
+          <p class="delivery__box-desc">Мы подарим вам «Набор читателя» и добавим в посылку.</p>
         </div>
-        <div class="delivery__sectionBox">
-          <!-- <img class="delivery-box__icon delivery-box__icon--orders" src="img/icon_delivery.svg" alt=""> -->
+        <div class="delivery__sectionbox">
           <svg width="67" height="42">
             <use xlink:href="img/sprite.svg#icon_delivery"></use>
           </svg>
-          <p class="delivery-box__desc">Бесплатно доставляем заказы от  3&nbsp;000  по всей России.</p>
+          <p class="delivery__box-desc">Бесплатно доставляем заказы от  3&nbsp;000  по всей России.</p>
         </div>
-        <div class="delivery__sectionBox">
-          <!-- <img class="delivery-box__icon delivery-box__icon--cities" src="img/icon_map.svg" alt=""> -->
+        <div class="delivery__sectionbox">
           <svg width="52" height="42">
             <use xlink:href="img/sprite.svg#icon_map"></use>
           </svg>
-          <p class="delivery-box__desc">Доставка в более чем 300 городов России, по Москве и Санкт-&nbsp;Петербургу &mdash; бесплатно.</p>
+          <p class="delivery__box-desc">Доставка в более чем 300 городов России, по Москве и Санкт-&nbsp;Петербургу &mdash; бесплатно.</p>
         </div>
       </div>
     </div>

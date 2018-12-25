@@ -22,14 +22,9 @@ a {
   text-decoration: none;
   list-style-type: none;
   color: $link-color;
-
-  &:hover {
-    color: $link-color;
-  }
 }
 
 img {
-  max-width: 100%;
   height: auto;
 }
 
