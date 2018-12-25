@@ -66,25 +66,155 @@
   &__title {
     margin: 0;
     padding-top: 70px;
-
-
+    font-weight: 700;
+    font-size: $font-size-l;
   }
 
   &__sing {
+    margin: 0;
+    font-weight: 500;
+    font-size: $font-size-s;
 
-    /* @media (min-width: $screen-xs) {
-      padding-left: 20px;
+    @media (min-width: $screen-xs) {
+      padding-top: 27px;
+      padding-bottom: 42px;
     }
 
     @media (min-width: $screen-sm) {
-      padding-left: 28px;
+
     }
 
     @media (min-width: $screen-lg) {
-      padding-left: 28px;
-    } */
+      padding-top: 27px;
+      padding-bottom: 44px;
+    }
   }
 
   &__form {
+    display: flex;
+    flex-direction: column;
+
+    padding: 0;
+    font-weight: 500;
+    font-size: $font-size-s;
+
+    @media (min-width: $screen-xs) {
+
+    }
+
+    @media (min-width: $screen-sm) {
+
+    }
+
+    @media (min-width: $screen-lg) {
+      justify-content: space-between;
+      margin: 0 auto;
+
+    }
+  }
+
+  &__form-direction {
+    margin: 0;
+    padding: 0;
+
+    @media (min-width: $screen-xs) {
+      margin: 0;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+
+    @media (min-width: $screen-sm) {
+
+    }
+
+    @media (min-width: $screen-lg) {
+      flex-direction: row;
+      flex-wrap: nowrap;
+    }
+  }
+
+  &__form-view {
+    height: 50px;
+    padding: 0;
+    border: none;
+    border-bottom: 4px solid $gray;
+    background-color: transparent;
+    color: $gray;
+
+    @media (min-width: $screen-xs) {
+      width: 90%;
+      margin-bottom: 44px;
+    }
+
+    @media (min-width: $screen-sm) {
+      width: 50%;
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 30%;
+      margin-right: 40px;
+    }
+  }
+
+  &__form-button {
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    background-color: $text-color;
+    border: none;
+    font-weight: 700;
+    font-size: $font-size-s;
+    color: $gray;
+
+    @media (min-width: $screen-xs) {
+      width: 90%;
+      order: 2;
+    }
+
+    @media (min-width: $screen-sm) {
+      width: 50%;
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 30%;
+    }
+  }
+
+  &__checkbox {
+    display: flex;
+    padding: 0;
+    margin: 0;
+
+    @media (min-width: $screen-xs) {
+      order: 1;
+    }
+
+    @media (min-width: $screen-sm) {
+
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 500px;
+      margin-bottom: 75px;
+    }
+  }
+
+  &__check {
+    margin-right: 10px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+
+    @media (min-width: $screen-xs) {
+
+    }
+
+    @media (min-width: $screen-sm) {
+
+    }
+
+    @media (min-width: $screen-lg) {
+
+    }
   }
 }
