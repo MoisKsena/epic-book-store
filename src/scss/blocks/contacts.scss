@@ -7,22 +7,22 @@
 
   &__inner {
     display: flex;
+    width: 100%;
     margin: 0 auto;
     flex-direction: column;
-    justify-content: flex-end;
 
     @media (min-width: $screen-xs) {
-      width: 320px;
+
       padding: 0 30px;
     }
 
     @media (min-width: $screen-sm) {
-      width: 768px;
+
       padding: 0 40px;
     }
 
     @media (min-width: $screen-lg) {
-      width: 1280px;
+
       padding: 0 60px;
     }
   }
@@ -30,11 +30,10 @@
   &__title {
     width: 100%;
     margin: 0;
-    padding: 0;
     justify-content: flex-start;
 
     @media (min-width: $screen-xs) {
-
+      padding-top: 35px;
     }
 
     @media (min-width: $screen-sm) {
@@ -50,23 +49,26 @@
   &__info {
     display: flex;
     width: 100%;
-    align-items: flex-end;
     margin: 0;
-    padding: 0;
 
     @media (min-width: $screen-xs) {
-
+      flex-direction: column;
+      flex-wrap: wrap;
+      padding-top: 44px;
+      padding-left: 0;
     }
 
     @media (min-width: $screen-sm) {
-
+      padding-left: 0;
+      flex-direction: row;
+      flex-wrap: wrap;
     }
 
     @media (min-width: $screen-lg) {
       flex-direction: row;
       flex-wrap: nowrap;
-      justify-content: space-between;
       padding-top: 55px;
+      padding-left: 0;
     }
   }
 
@@ -74,15 +76,17 @@
     margin: 0;
 
     @media (min-width: $screen-xs) {
-
+      padding-bottom: 27px;
     }
 
     @media (min-width: $screen-sm) {
-
+      padding-bottom: 27px;
+      padding-right: 70px;
     }
 
     @media (min-width: $screen-lg) {
-
+      padding-bottom: 0;
+      padding-right: 100px;
     }
   }
 
