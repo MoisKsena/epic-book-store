@@ -2187,7 +2187,6 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 100%;
     margin: 0 auto;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2198,12 +2197,15 @@ img {
             justify-content: flex-end; }
     @media (min-width: 320px) {
       .contacts__inner {
+        width: 320px;
         padding: 0 30px; } }
     @media (min-width: 768px) {
       .contacts__inner {
+        width: 768px;
         padding: 0 40px; } }
     @media (min-width: 1280px) {
       .contacts__inner {
+        width: 1280px;
         padding: 0 60px; } }
   .contacts__title {
     width: 100%;
@@ -2244,5 +2246,7 @@ img {
     color: #1a1ff7;
     content: "•";
     padding-right: 15px; }
+
+/* @import 'blocks/map.scss'; */
 
 /*# sourceMappingURL=style.css.map */
