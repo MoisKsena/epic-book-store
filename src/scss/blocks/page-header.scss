@@ -10,19 +10,17 @@
     justify-content: space-between;
 
     @media (min-width: $screen-xs) {
-      width: 320px;
-      padding: 0 30px;
+      width: 300px;
+
       align-items: center;
     }
 
     @media (min-width: $screen-sm) {
-      width: 768px;
-      padding: 0 40px;
+      width: 680px;
     }
 
     @media (min-width: $screen-lg) {
-      width: 1280px;
-      padding: 0 60px;
+      width: 1160px;
       flex-direction: row;
       align-items: center;
     }
@@ -82,7 +80,7 @@
     @media (min-width: $screen-xs) {
       display: flex;
       order: 2;
-      padding-left: 40px;
+      padding-left: 114px;
     }
 
     @media (min-width: $screen-sm) {
@@ -98,14 +96,14 @@
 
   &__btn {
     width: 100%;
-    margin-left: 24px;
+    margin: 0;
     padding: 0;
     border: none;
     background-color: transparent;
   }
 
   &__phone {
-    margin-left: 24px;
+    margin-left: 20px;
     padding: 0;
     border: none;
     background-color: transparent;

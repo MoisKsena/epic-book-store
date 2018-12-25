@@ -8,22 +8,20 @@
   &__inner {
     display: flex;
     width: 100%;
-    margin: 0 auto;
     flex-direction: column;
+    margin: 0 auto;
+    padding: 0;
 
     @media (min-width: $screen-xs) {
-
-      padding: 0 30px;
+      width: 300px;
     }
 
     @media (min-width: $screen-sm) {
-
-      padding: 0 40px;
+      width: 680px;
     }
 
     @media (min-width: $screen-lg) {
-
-      padding: 0 60px;
+      width: 1160px;
     }
   }
 
