@@ -22,22 +22,20 @@
   &__inner {
     display: flex;
     margin: 0 auto;
+    padding: 0;
     justify-content: space-between;
 
     @media (min-width: $screen-xs) {
-      padding: 20px 30px;
-      width: 100%;
+      width: 300px;
     }
 
     @media (min-width: $screen-sm) {
-      width: 760px;
-      padding: 0 40px;
+      width: 680px;
       align-items: flex-end;
     }
 
     @media (min-width: $screen-lg) {
-      width: 1280px;
-      padding: 0;
+      width: 1160px;
     }
   }
 

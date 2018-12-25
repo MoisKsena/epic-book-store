@@ -19,24 +19,25 @@
   &__wrap {
     position: relative;
     padding: 0;
+    margin: 0 auto;
     border: solid 8px $gray;
 
 
     @media (min-width: $screen-xs) {
+      width: 340px;
       min-height: 580px;
-      margin: 0 12px;
       padding-left: 20px;
     }
 
     @media (min-width: $screen-sm) {
+      width: 680px;
       min-height: 430px;
-      margin: 0 40px;
       padding-left: 28px;
     }
 
     @media (min-width: $screen-lg) {
+      width: 1220px;
       min-height: 344px;
-      margin: 0 32px;
       padding-left: 28px;
     }
   }
@@ -184,6 +185,9 @@
     display: flex;
     padding: 0;
     margin: 0;
+    font-weight: 500;
+    font-size: $font-size-xs;
+    line-height: 1.5;
 
     @media (min-width: $screen-xs) {
       order: 1;
