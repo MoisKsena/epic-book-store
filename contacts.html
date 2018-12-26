@@ -54,11 +54,15 @@
 
       <div class="page-header__icon">
         <a href="#" class="page-header__btn">
-          <img src="img/icon_bascket.png" alt="">
+          <svg width="20" height="21">
+            <use xlink:href="img/sprite.svg#icon_cart"></use>
+          </svg>
         </a>
 
         <button class="page-header__phone">
-          <a href="#" class="">svg</a>
+            <svg width="16" height="17">
+              <use xlink:href="img/sprite.svg#icon_phone"></use>
+            </svg>
         </button>
       </div>
     </div>
@@ -75,24 +79,50 @@
       </ul>
     </div>
   </section>
-  <section class="map__wrapper">
-    <div class="map__inner">
 
+  <section class="map">
+    <div class="map__wrapper">
+      <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aafaf8db71a14d5d1eb11943a95abe21d036241a234cc3999a6769320a7d4599e&amp;source=constructor" frameborder="0"></iframe>
+    </div>
+  </section>
+
+  <section class="questions">
+    <div class="questions__wrap">
+
+        <h2 class="questions__title">Есть вопросы?</h2>
+        <p class="questions__sing">Напишите нам на почту. Отвечаем в течении дня</p>
+
+        <div class="questions__form">
+          <form class="questions__form-direction" method="post">
+            <input class="questions__form-view" type="text" placeholder="Ваша почта">
+            <input class="questions__form-view" type="text" placeholder="Сообщение">
+            <button class="questions__form-button" type="submit">Отправить</button>
+            <p class="questions__checkbox">
+              <input class="questions__check" id="check" type="checkbox">
+            <label for="check">Я согласен(-на) с <a href="#">политикой конфиденциальности</a> и&nbsp;<a href="#">правилами обработки данных</a></label>
+            </p>
+          </form>
+        </div>
 
     </div>
   </section>
-  <section class="questions__wrapper">
-    <div class="questions__inner">
-      <div class="">
 
+  <section class="addinfo">
+      <!-- <source srcset="img/contacts-bcg320.png" media="(min-width: 320px)">
+      <source srcset="img/contacts-bcg768.png" media="(min-width: 768px)">
+      <source srcset="img/contacts-bcg.png" media="(min-width: 1280px)" class="addinfo__bcg"> -->
+      <img class="addinfo__bcg" src="img/contacts-bcg.png" alt="background">
+
+      <div class="addinfo__text">
+        <p class="addinfo__svg">
+          <svg width="100" height="14">
+            <use xlink:href="img/sprite.svg#shape"></use>
+          </svg>
+        </p>
+        <p class="addinfo__title">Мы открыли для вас уютную библиотеку</p>
+        <p class="addinfo__desc">Приходите к нам по адресу Никитская&nbsp;10,&nbsp;каждый день с 12:00 до&nbsp;18:00</p>
       </div>
-    </div>
-  </section>
-  <section class="addInfo__wrapper">
-    <div class="addInfo__inner">
-      <p></p>
-      <p></p>
-    </div>
+
   </section>
   </main>
 
@@ -115,7 +145,6 @@
           </li>
         </ul>
       </nav>
-
     </div>
   </footer>
 
