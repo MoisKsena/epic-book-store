@@ -1,0 +1,73 @@
+.addinfo {
+  display: flex;
+  position: relative;
+  height: 310px;
+
+  @media (min-width: $screen-xs) {
+    background: url(img/contacts-bcg320.png);
+  }
+
+  @media (min-width: $screen-sm) {
+
+  }
+
+  @media (min-width: $screen-lg) {
+
+  }
+
+  &__bcg {
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+    left: 0;
+    top: 0;
+    height: 310px;
+  }
+
+  &__text {
+    margin: 0 auto;
+    padding-top: 70px;
+    text-align: center;
+    z-index: 1;
+  }
+
+  &__svg {
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-weight: 700;
+    color: #ffffff;
+
+    @media (min-width: $screen-xs) {
+      font-size: $font-size-m;
+    }
+
+    @media (min-width: $screen-sm) {
+      font-size: 36px;
+    }
+
+    @media (min-width: $screen-lg) {
+      font-size: 36px;
+    }
+  }
+
+  &__desc {
+    font-weight: 400;
+    font-size: $font-size-s;
+    color: #ffffff;
+
+    @media (min-width: $screen-xs) {
+      padding-right: 10px;
+    }
+
+    @media (min-width: $screen-sm) {
+      padding-right: 0;
+    }
+
+    @media (min-width: $screen-lg) {
+      padding-right: 0;
+    }
+  }
+}

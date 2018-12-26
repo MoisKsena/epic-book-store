@@ -1,6 +1,6 @@
 @import 'variables.scss';
 @import './node_modules/normalize.css/normalize';
-@import './node_modules/swiper/dist/css/swiper.min';
+@import './node_modules/swiper/dist/css/swiper';
 @import 'fonts.scss';
 @import 'global.scss';
 
@@ -18,3 +18,4 @@
 @import 'blocks/contacts.scss';
 @import 'blocks/map.scss';
 @import 'blocks/questions.scss';
+@import 'blocks/addinfo.scss';
