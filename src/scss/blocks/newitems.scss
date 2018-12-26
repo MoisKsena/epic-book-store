@@ -15,11 +15,20 @@
       padding-left: 30px;
     }
 
-    @media (min-width: $screen-lg) {
-      width: 1280px;
+    @media (min-width: $screen-sm) {
+      width: 688px;
       flex-direction: row;
       justify-content: space-between;
-      padding: 114px 36px 0 36px;
+      padding-top: 114px;
+      padding-left: 0;
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 1200px;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-top: 114px;
+      padding-left: 0;
     }
   }
 
