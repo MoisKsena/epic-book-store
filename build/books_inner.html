@@ -10,54 +10,79 @@
   </script>
 </head>
 <body>
+  <header class="page-header">
+    <div class="page-header__inner">
 
-    <header class="page-header">
-        <div class="page-header__inner">
+      <a href="" class="page-header__logo">
+        <img src="img/BOOK STORE.png" alt="book store">
+      </a>
+      <p class="page-header__worktime">с 9:00 до 19:00</p>
 
-            <a href="" class="page-header__logo">
-                <img src="img/BOOK STORE.png" alt="book store">
-            </a>
-            <p class="page-header__worktime">с 9:00 до 19:00</p>
-
-            <nav class="main-nav">
-                <button class="main-nav__toggle">Главное меню</button>
-                <ul class="main-nav__list">
-                    <li class="main-nav__item">
-                        <a href="" class="main-nav__link">книги</a>
-                    </li>
-                    <li class="main-nav__item">
-                        <a href="" class="main-nav__link">рекомендации</a>
-                    </li>
-                    <li class="main-nav__item">
-                        <a href="" class="main-nav__link">контакты</a>
-                    </li>
-                </ul>
-            </nav>
-
-            <div class="page-header__icon">
-                <a href="#" class="page-header__btn">
-                    <img src="img/icon_bascket.png" alt="">
-                </a>
-
-                <button class="page-header__btn">
-                    <a href="#" class="">svg</a>
-                </button>
-            </div>
+      <nav class="main-nav">
+        <button class="main-nav__burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="main-nav__burger-menu">
+          <ul class="main-nav__burger-list">
+            <li class="main-nav__burger-item">
+              <a href="books_inner.html" class="main-nav__burger-link">книги</a>
+            </li>
+            <li class="main-nav__burger-item">
+              <a href="" class="main-nav__burger-link">рекомендации</a>
+            </li>
+            <li class="main-nav__burger-item">
+              <a href="contacts.html" class="main-nav__burger-link">контакты</a>
+            </li>
+        </ul>
         </div>
-    </header>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="books_inner.html" class="main-nav__link">книги</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="" class="main-nav__link">рекомендации</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="contacts.html" class="main-nav__link">контакты</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="page-header__icon">
+        <a href="#" class="page-header__btn">
+          <svg width="20" height="21">
+            <use xlink:href="img/sprite.svg#icon_cart"></use>
+          </svg>
+        </a>
+
+        <button class="page-header__phone">
+            <svg width="16" height="17">
+              <use xlink:href="img/sprite.svg#icon_phone"></use>
+            </svg>
+        </button>
+      </div>
+
+    </div>
+  </header>
 
     <main>
-      <section class="inner">
-        <div class="inner__wrap">
-          <div class="inner__aside"></div>
-          <article class="inner-bookCard">
-            <img class="inner-bookCard__img" src="" alt="">
-            <div class="inner-bookCard__title"></div>
-            <div class="inner-bookCard__saleCard">
+      <section class="bookinner">
+        <div class="bookinner__wrap">
+          <div class="bookinner__preview">
+
+          </div>
+          <article class="bookinfo">
+            <img class="bookinfo__img" src="" alt="">
+            <div class="bookinfo__title"></div>
+            <div class="bookinfo__salecard">
 
             </div>
-            <div class="inner-bookCard__disc">
-              <p></p>
+            <div class="bookinfo__disc">
+              <h2 class="bookinfo__title">Короткое описание</h2>
+              <p>В отличие от обычных покупателей суперпотребители очень заинтересованы в ваших товарах, а возможно, даже слегка помешаны на них.</p>
+              <p>Они знают о кроссовках все и имеют десятки пар. Они спортивные фанаты с копиями футболок дюбимой команды, а стены их гаражей украшены подписанной символикой.</p>
               <a href="#">Показать полностью</a>
             </div>
           </article>
@@ -107,13 +132,13 @@
             <nav class="footer-nav">
                 <ul class="footer-nav__list">
                     <li class="footer-nav__item">
-                        <a href="" class="footer-nav__link">Книги</a>
+                        <a href="books_inner.html" class="footer-nav__link">Книги</a>
                     </li>
                     <li class="footer-nav__item">
                         <a href="" class="footer-nav__link">Рекомендации</a>
                     </li>
                     <li class="footer-nav__item">
-                        <a href="" class="footer-nav__link">Контакты</a>
+                        <a href="contacts.html" class="footer-nav__link">Контакты</a>
                     </li>
                 </ul>
             </nav>

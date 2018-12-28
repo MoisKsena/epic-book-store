@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
   <title>Документ</title>
+  <link rel="stylesheet" href="./node_modules/swiper/dist/css/swiper.min.css">
   <link rel="stylesheet" href="css/style.css">
   <script>
     document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
@@ -30,25 +31,25 @@
         <div class="main-nav__burger-menu">
           <ul class="main-nav__burger-list">
             <li class="main-nav__burger-item">
-              <a href="/books_inner.html" class="main-nav__burger-link">книги</a>
+              <a href="books_inner.html" class="main-nav__burger-link">книги</a>
             </li>
             <li class="main-nav__burger-item">
               <a href="" class="main-nav__burger-link">рекомендации</a>
             </li>
             <li class="main-nav__burger-item">
-              <a href="/contacts.html" class="main-nav__burger-link">контакты</a>
+              <a href="contacts.html" class="main-nav__burger-link">контакты</a>
             </li>
         </ul>
         </div>
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a href="/books_inner.html" class="main-nav__link">книги</a>
+            <a href="books_inner.html" class="main-nav__link">книги</a>
           </li>
           <li class="main-nav__item">
             <a href="" class="main-nav__link">рекомендации</a>
           </li>
           <li class="main-nav__item">
-            <a href="/contacts.html" class="main-nav__link">контакты</a>
+            <a href="contacts.html" class="main-nav__link">контакты</a>
           </li>
         </ul>
       </nav>
@@ -74,11 +75,11 @@
   <div class="promo">
     <div class="promo__inner">
       <!-- Slider main container -->
-      <div class="slider">
+      <div class="slider swiper-container">
           <!-- Additional required wrapper -->
-          <div class="slider__inner">
+          <div class="slider__inner swiper-wrapper">
               <!-- Slides -->
-              <div class="slider__slide">
+              <div class="slider__slide swiper-slide">
                 <div class="slider__item-text">
                     <h2 class="slider__item-title">Название книги</h2>
                     <p class="slider__item-descr">Новое поступление книги «Симпсоны и&nbsp;их математические секреты»</p>
@@ -91,8 +92,32 @@
                   <img src="img/book-simpsony-i-ih-matematicheskie-sekrety.jpg" alt="" class="slider__item-img" alt="" class="slider__item-img">
                 </div>
               </div>
-              <!-- <div class="slider__slide">Slide 2</div>
-              <div class="slider__slide">Slide 3</div> -->
+              <div class="slider__slide swiper-slide">
+                <div class="slider__item-text">
+                    <h2 class="slider__item-title">Название книги</h2>
+                    <p class="slider__item-descr">Новое поступление книги «45 татуировок  менеджера»</p>
+                  <div class="slider__item-border">
+                    <p class="slider__item-sign">Книга про правила российского руководителя</p>
+                    <a href="#" class="slider__item-link">Хочу узнать о книге больше</a>
+                  </div>
+                </div>
+                <div class="slider__item-pic">
+                  <img src="img/45-tatuirovok-prodavana.png" alt="" class="slider__item-img" alt="" class="slider__item-img">
+                </div>
+              </div>
+              <div class="slider__slide swiper-slide">
+                <div class="slider__item-text">
+                    <h2 class="slider__item-title">Название книги</h2>
+                    <p class="slider__item-descr">Узнайте как обучить персонал с новой книгой  «Пятая дисциплина»</p>
+                  <div class="slider__item-border">
+                    <p class="slider__item-sign">Искусство и практика обучающейся организации</p>
+                    <a href="#" class="slider__item-link">Хочу узнать о книге больше</a>
+                  </div>
+                </div>
+                <div class="slider__item-pic">
+                  <img src="img/pyataya-distsiplina.png" alt="" class="slider__item-img" alt="" class="slider__item-img">
+                </div>
+              </div>
           </div>
           <!-- If we need pagination -->
          <!--  <div class="slider__pagination"></div> -->
@@ -252,21 +277,22 @@
       <nav class="footer-nav">
         <ul class="footer-nav__list">
           <li class="footer-nav__item">
-            <a href="/books_inner.html" class="footer-nav__link">Книги</a>
+            <a href="books_inner.html" class="footer-nav__link">Книги</a>
           </li>
           <li class="footer-nav__item">
             <a href="" class="footer-nav__link">Рекомендации</a>
           </li>
           <li class="footer-nav__item">
-            <a href="/contacts.html" class="footer-nav__link">Контакты</a>
+            <a href="contacts.html" class="footer-nav__link">Контакты</a>
           </li>
         </ul>
       </nav>
     </div>
   </footer>
 
-  <script type="module" src="./js/script.js"></script>
   <script src="./node_modules/swiper/dist/js/swiper.min.js"></script>
+  <script type="module" src="./js/script.js"></script>
+
 
 </body>
 </html>

@@ -33,7 +33,7 @@ requestManager.send(pageManager.prepareUrl('all', 1),
 
 var mySwiper = new Swiper ('.swiper-container', {
     // Optional parameters
-    direction: 'vertical',
+    direction: 'horizontal',
     loop: true,
 
     // If we need pagination
@@ -48,9 +48,9 @@ var mySwiper = new Swiper ('.swiper-container', {
     },
 
     // And if we need scrollbar
-    scrollbar: {
+   /* scrollbar: {
       el: '.swiper-scrollbar',
-    },
+    },*/
   })
 
 let burger = document.querySelector(".main-nav__burger");
