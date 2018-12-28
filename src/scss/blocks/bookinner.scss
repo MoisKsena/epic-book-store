@@ -1,0 +1,32 @@
+.bookinner {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  background-color: $bcg;
+  padding: 0;
+  margin: 0;
+
+  &__wrap {
+  }
+
+  &__preview {
+  }
+}
+
+.bookinfo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  &__img {
+  }
+
+  &__title {
+  }
+
+  &__salecard {
+  }
+
+  &__disc {
+    grid-column: 1 / 3;
+
+  }
+}
