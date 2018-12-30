@@ -10,7 +10,7 @@
   }
 
   @media (min-width: $screen-sm) {
-    width: 50%;
+    width: 43%;
   }
 
   @media (min-width: $screen-lg) {
@@ -57,6 +57,7 @@
   &__story {
     display: flex;
     min-height: 147px;
+    max-width: 260px;
     padding: 0;
     flex-direction: column;
     text-align: left;

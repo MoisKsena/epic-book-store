@@ -3,6 +3,7 @@
   position: relative;
   margin: 0 auto;
   padding: 0;
+  z-index: 0;
 
   @media (min-width: $screen-xs) {
     width: 340px;
@@ -216,6 +217,7 @@
     height: 42px;
     border-radius: 50%;
     background-color: $pink-light;
+    z-index: 1;
 
     @media (min-width: $screen-xs) {
       top: 410px;
@@ -261,6 +263,7 @@
     height: 42px;
     border-radius: 50%;
     background-color: $pink-light;
+    z-index: 1;
 
     @media (min-width: $screen-xs) {
       top: 410px;
