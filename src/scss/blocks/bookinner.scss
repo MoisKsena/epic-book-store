@@ -5,24 +5,33 @@
   padding: 0;
   margin: 0;
 
-  &__wrap {
-  }
-
   &__preview {
+    margin: 0;
+    padding-top: 40px;
   }
 }
 
 .bookinfo {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  margin: 0;
+  padding-top: 40px;
 
   &__img {
+    width: 320px;
+    height: auto;
+  }
+
+  &__salecard {
   }
 
   &__title {
   }
 
-  &__salecard {
+  &__title-name {
+  }
+
+  &__title-headline {
   }
 
   &__disc {
