@@ -24,7 +24,7 @@
     }
 
     @media (min-width: $screen-lg) {
-      width: 1200px;
+      width: 1160px;
       flex-direction: row;
       justify-content: space-between;
       padding-top: 114px;
@@ -87,10 +87,10 @@
     }
 
     @media (min-width: $screen-lg) {
-      width: 1280px;
+      width: 1160px;
       padding-top: 50px;
       padding-bottom: 82px;
-      padding-left: 36px;
+      padding-left: 0;
       justify-content: space-between;
     }
   }
@@ -132,15 +132,6 @@
   &__title {
     font-weight: 700;
     font-size: $font-size-m;
-
-    @media (min-width: $screen-xs) {
-    }
-
-    @media (min-width: $screen-sm) {
-    }
-
-    @media (min-width: $screen-lg) {
-    }
   }
 
   &__link {

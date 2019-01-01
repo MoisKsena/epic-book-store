@@ -1,28 +1,50 @@
 .bookinner {
+  display: flex;
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 222px 320px 1fr;
+  grid-template-areas:
+      "aside  img descr"
+      "aside  sign sign";
   background-color: $bcg;
-  padding: 0;
-  margin: 0;
+  padding: 0 60px;
+  margin: 0 auto;
 
   &__preview {
+    display: flex;
+    width: 158px;
+    grid-area: aside;
+    flex-direction: column;
     margin: 0;
     padding-top: 40px;
+    padding-left: 60px;
+    border: solid 8px $gray;
+  }
+
+  &__preview-img {
+    padding: 0;
+    margin: 0 auto;
   }
 }
 
 .bookinfo {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  width: 936px;
+  flex-direction: row;
+  flex-wrap: wrap;
   margin: 0;
   padding-top: 40px;
 
   &__img {
+    grid-area: img;
     width: 320px;
     height: auto;
+    padding: 0;
+    margin: 0;
   }
 
   &__salecard {
+    grid-area: descr;
+    height: 456px;
   }
 
   &__title {
@@ -35,7 +57,8 @@
   }
 
   &__disc {
-    grid-column: 1 / 3;
+    grid-area: sign;
+
 
   }
 }

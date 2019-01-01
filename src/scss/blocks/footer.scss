@@ -35,16 +35,13 @@
     }
 
     @media (min-width: $screen-lg) {
-      width: 1280px;
+      width: 1160px;
     }
   }
 
   &__wraper-mobil {
     margin: 0;
     padding: 0;
-
-    @media (min-width: $screen-xs) {
-    }
 
     @media (min-width: $screen-sm) {
       display: flex;
@@ -64,15 +61,6 @@
 
     @media (min-width: $screen-xs) {
       width: 125px;
-      padding-left: 0;
-    }
-
-    @media (min-width: $screen-sm) {
-      padding-left: 0;
-    }
-
-    @media (min-width: $screen-lg) {
-      padding-left: 30px;
     }
   }
 
@@ -83,16 +71,7 @@
     color: $gray;
 
     @media (min-width: $screen-xs) {
-      padding-left: 0;
       padding-top: 8px;
-    }
-
-    @media (min-width: $screen-sm) {
-      padding-left: 0;
-    }
-
-    @media (min-width: $screen-lg) {
-      padding-left: 30px;
     }
   }
 }
@@ -130,11 +109,11 @@
     }
 
     @media (min-width: $screen-sm) {
-      overflow-x: inherit;
+      overflow-x: auto;
     }
 
     @media (min-width: $screen-lg) {
-      overflow-x: inherit;
+      overflow-x: auto;
     }
   }
 
