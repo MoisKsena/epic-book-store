@@ -8,8 +8,10 @@
   &__wrap {
     display: grid;
     grid-template-columns: 1fr 2fr;
+    grid-template-rows: 482px;
     grid-template-areas:
-      "preview  bookinfo";
+      "preview  bookinfo"
+      "preview  discr";
 
     @media (min-width: $screen-xs) {
 
@@ -28,8 +30,8 @@
 
   &__preview {
     display: flex;
-    width: 158px;
     height: 482px;
+    width: 158px;
     grid-area: preview;
     flex-direction: column;
     margin: 0;
@@ -47,18 +49,18 @@
   display: grid;
   grid-area: bookinfo;
   width: 936px;
+  height: 482px;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
-    "img  salecard"
-    "discr discr";
+    "img  salecard";
   flex-direction: row;
   flex-wrap: wrap;
   margin: 0;
+  padding: 0;
 
   &__imgwrap {
     grid-area: img;
     width: 320px;
-    height: 455px;
     padding: 0;
     margin: 0;
   }
@@ -69,7 +71,6 @@
 
   &__salecard {
     width: 616px;
-    height: 455px;
     padding-left: 56px;
     margin: 0;
   }
@@ -141,7 +142,7 @@
   &__discr {
     grid-area: discr;
     margin: 0;
-    padding: 0;
+    padding-top: 38px;
   }
 
   &__text {
