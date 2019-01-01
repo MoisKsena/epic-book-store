@@ -1,6 +1,5 @@
 .bookinner {
   display: flex;
-  height: 990px;
   padding: 0;
   margin: 0;
   background-color: $bcg;
@@ -143,6 +142,7 @@
     grid-area: discr;
     margin: 0;
     padding-top: 38px;
+    padding-bottom: 96px;
   }
 
   &__text {
