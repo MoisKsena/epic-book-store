@@ -303,3 +303,16 @@
     background-color: $pink;
   }
 }
+
+.swiper-container {
+  width: 100%;
+}
+.swiper-wrapper {
+  width: 1160px;
+  margin: 0;
+}
+.swiper-slide {
+  width: 960px;
+  height: auto;
+  margin: 0 auto;
+}
