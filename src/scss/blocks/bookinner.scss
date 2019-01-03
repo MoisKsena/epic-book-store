@@ -6,72 +6,141 @@
 
   &__wrap {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 482px;
-    grid-template-areas:
-      "preview  bookinfo"
-      "preview  discr";
+    position: relative;
+    padding-top: 40px;
+    margin: 0 auto;
 
     @media (min-width: $screen-xs) {
 
     }
 
     @media (min-width: $screen-sm) {
-
+      width: 688px;
+      grid-template-columns: 1fr 2fr;
+      grid-template-areas:
+        "img  bookinfo"
+        "preview bookinfo"
+        "discr discr";
     }
 
     @media (min-width: $screen-lg) {
       width: 1160px;
-      padding-top: 40px;
-      margin: 0 auto;
+      grid-template-columns: 1fr 1fr 2fr;
+      grid-template-rows: 482px;
+      grid-template-areas:
+        "preview img  bookinfo"
+        "preview  discr discr";
     }
   }
 
   &__preview {
-    display: flex;
-    height: 482px;
-    width: 158px;
     grid-area: preview;
-    flex-direction: column;
-    margin: 0;
-    padding-left: 60px;
     border: solid 8px $gray;
+
+    @media (min-width: $screen-xs) {
+      display: none;
+    }
+
+    @media (min-width: $screen-sm) {
+      display: flex;
+      height: 120px;
+      width: 260px;
+      margin-top: 22px;
+    }
+
+    @media (min-width: $screen-lg) {
+      display: flex;
+      height: 482px;
+      width: 158px;
+      flex-direction: column;
+      padding-left: 60px;
+      margin-top: 0;
+    }
   }
 
   &__preview-img {
     padding: 0;
+    margin: auto;
+
+    @media (min-width: $screen-xs) {
+
+    }
+
+    @media (min-width: $screen-sm) {
+      width: 78px;
+      height: auto;
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 120px;
+      height: auto;
+    }
+  }
+
+  &__imgwrap {
+    grid-area: img;
+    padding: 0;
     margin: 0;
+
+    @media (min-width: $screen-xs) {
+
+    }
+
+    @media (min-width: $screen-sm) {
+      width: 260px;
+
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 320px;
+      margin-left: 64px;
+    }
+  }
+
+  &__img {
+    width: 100%;
   }
 }
 
 .bookinfo {
   display: grid;
   grid-area: bookinfo;
-  width: 936px;
-  height: 482px;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas:
-    "img  salecard";
   flex-direction: row;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
 
-  &__imgwrap {
-    grid-area: img;
-    width: 320px;
-    padding: 0;
-    margin: 0;
+
+  @media (min-width: $screen-xs) {
+
   }
 
-  &__img {
-    width: 100%;
+  @media (min-width: $screen-sm) {
+    margin-left: 40px;
+  }
+
+  @media (min-width: $screen-lg) {
+    width: 936px;
+    height: 482px;
+
   }
 
   &__salecard {
-    width: 616px;
-    padding-left: 56px;
     margin: 0;
+
+    @media (min-width: $screen-xs) {
+
+    }
+
+    @media (min-width: $screen-sm) {
+      width: 374px;
+
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 616px;
+      padding-left: 56px;
+    }
   }
 
   &__title {
@@ -81,18 +150,22 @@
 
   &__title-name {
     margin: 0;
-    padding: 0;
+    font-weight: 700;
+    font-size: $font-size-xs;
   }
 
   &__title-headline {
     margin-top: 12px;
     padding: 0;
+    font-weight: 700;
+    font-size: 36px;
   }
 
   &__title-sign {
     padding: 0;
-
     margin-bottom: 50px;
+    font-weight: 500;
+    font-size: $font-size-s;
   }
 
   &__cardinfo {
@@ -105,10 +178,15 @@
 
   &__cardinfo-label {
     margin: 0;
+    font-weight: 500;
+    font-size: $font-size-xs;
+    color: $gray;
   }
 
   &__cardinfo-name {
     margin-left: 28px;
+    font-weight: 500;
+    font-size: $font-size-xs;
   }
 
   &__basket {
@@ -119,13 +197,28 @@
   }
 
   &__basket-button{
-    width: 258px;
     height: 50px;
     padding: 0;
-    margin-right: 24px;
+
     border: none;
     background-color: #000;
+    font-weight: 700;
+    font-size: $font-size-xs;
     color: #fff;
+
+    @media (min-width: $screen-xs) {
+
+    }
+
+    @media (min-width: $screen-sm) {
+      width: 200px;
+      margin-right: 42px;
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 258px;
+      margin-right: 20px;
+    }
   }
 
   &__basket-num {
@@ -138,11 +231,33 @@
     text-align: center;
   }
 
+  &__likesign {
+    margin-top: 30px;
+    padding: 0;
+    font-weight: 400;
+    font-style: italic;
+    font-size: $font-size-xs;
+  }
+
   &__discr {
     grid-area: discr;
     margin: 0;
-    padding-top: 38px;
-    padding-bottom: 96px;
+
+
+
+    @media (min-width: $screen-xs) {
+
+    }
+
+    @media (min-width: $screen-sm) {
+      padding-top: 62px;
+    }
+
+    @media (min-width: $screen-lg) {
+      margin-left: 64px;
+      padding-bottom: 96px;
+      padding-top: 38px;
+    }
   }
 
   &__text {
@@ -150,8 +265,4 @@
   }
 }
 
-.book-card {
-  &__price {
-  }
-}
 
