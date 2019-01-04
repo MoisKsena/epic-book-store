@@ -120,9 +120,13 @@
   }
 
   @media (min-width: $screen-lg) {
-    width: 936px;
-    height: 482px;
-
+    /* width: 936px;
+    height: 482px; */
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: 482px;
+    grid-template-areas:
+      "img  bookinfo"
+      "discr discr";
   }
 
   &__salecard {
