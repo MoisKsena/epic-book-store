@@ -154,9 +154,8 @@
   grid-area: bookinfo;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 0;
   padding: 0;
-
+  width: 455px;
 
   @media (min-width: $screen-xs) {
     margin-left: 0;
@@ -167,11 +166,7 @@
   }
 
   @media (min-width: $screen-lg) {
-    grid-template-columns: 1fr 1fr 2fr;
-    grid-template-areas:
-      "img  bookinfo"
-      "discr discr";
-      margin-left: 0;
+    margin-left: 0;
   }
 
   &__salecard {
@@ -294,8 +289,6 @@
   &__discr {
     grid-area: discr;
     margin: 0;
-
-
 
     @media (min-width: $screen-xs) {
 
