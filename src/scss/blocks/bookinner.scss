@@ -1,5 +1,6 @@
 .bookinner {
   display: flex;
+  width: 100%;
   padding: 0;
   margin: 0;
   background-color: $bcg;
@@ -95,7 +96,6 @@
 
     @media (min-width: $screen-sm) {
       width: 260px;
-
     }
 
     @media (min-width: $screen-lg) {
@@ -155,7 +155,6 @@
   flex-direction: row;
   flex-wrap: wrap;
   padding: 0;
-  width: 455px;
 
   @media (min-width: $screen-xs) {
     margin-left: 0;
@@ -170,10 +169,10 @@
   }
 
   &__salecard {
-    margin: 0;
 
     @media (min-width: $screen-xs) {
       margin-top: 36px;
+      width: 300px;
     }
 
     @media (min-width: $screen-sm) {
