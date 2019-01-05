@@ -211,9 +211,8 @@
 
   &__basket {
     display: flex;
-    align-items: center;
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
 
     @media (min-width: $screen-xs) {
       flex-direction: column;
@@ -221,10 +220,12 @@
 
     @media (min-width: $screen-sm) {
       flex-direction: row;
+      align-items: center;
     }
 
     @media (min-width: $screen-lg) {
       flex-direction: row;
+      align-items: center;
     }
   }
 
