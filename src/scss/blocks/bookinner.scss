@@ -11,13 +11,20 @@
     margin: 0 auto;
 
     @media (min-width: $screen-xs) {
-
+      width: 300px;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "title"
+        "img"
+        "bookinfo"
+        "discr";
     }
 
     @media (min-width: $screen-sm) {
       width: 688px;
       grid-template-columns: 1fr 2fr;
       grid-template-areas:
+        "img  title"
         "img  bookinfo"
         "preview bookinfo"
         "discr discr";
@@ -26,8 +33,8 @@
     @media (min-width: $screen-lg) {
       width: 1160px;
       grid-template-columns: 1fr 1fr 2fr;
-      grid-template-rows: 482px;
       grid-template-areas:
+        "preview img  title"
         "preview img  bookinfo"
         "preview  discr discr";
     }
@@ -83,7 +90,7 @@
     margin: 0;
 
     @media (min-width: $screen-xs) {
-
+      width: 300px;
     }
 
     @media (min-width: $screen-sm) {
@@ -100,56 +107,26 @@
   &__img {
     width: 100%;
   }
-}
 
-.bookinfo {
-  display: grid;
-  grid-area: bookinfo;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
-
-
-  @media (min-width: $screen-xs) {
-
-  }
-
-  @media (min-width: $screen-sm) {
+  &__title {
+    grid-area: title;
     margin-left: 40px;
-  }
-
-  @media (min-width: $screen-lg) {
-    /* width: 936px;
-    height: 482px; */
-    grid-template-columns: 1fr 1fr 2fr;
-    grid-template-rows: 482px;
-    grid-template-areas:
-      "img  bookinfo"
-      "discr discr";
-  }
-
-  &__salecard {
-    margin: 0;
+    padding: 0;
 
     @media (min-width: $screen-xs) {
-
+      width: 300px;
+      margin-left: 0;
     }
 
     @media (min-width: $screen-sm) {
-      width: 374px;
-
+      width: 100%;
+      margin-left: 40px;
     }
 
     @media (min-width: $screen-lg) {
-      width: 616px;
-      padding-left: 56px;
+      width: 100%;
+      margin-left: 40px;
     }
-  }
-
-  &__title {
-    margin: 0;
-    padding: 0;
   }
 
   &__title-name {
@@ -170,6 +147,50 @@
     margin-bottom: 50px;
     font-weight: 500;
     font-size: $font-size-s;
+  }
+}
+
+.bookinfo {
+  grid-area: bookinfo;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+
+
+  @media (min-width: $screen-xs) {
+    margin-left: 0;
+  }
+
+  @media (min-width: $screen-sm) {
+    margin-left: 40px;
+  }
+
+  @media (min-width: $screen-lg) {
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-areas:
+      "img  bookinfo"
+      "discr discr";
+      margin-left: 0;
+  }
+
+  &__salecard {
+    margin: 0;
+
+    @media (min-width: $screen-xs) {
+      margin-top: 36px;
+    }
+
+    @media (min-width: $screen-sm) {
+      width: 374px;
+      margin-top: 0;
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 616px;
+      padding-left: 56px;
+      margin-top: 0;
+    }
   }
 
   &__cardinfo {
@@ -198,12 +219,23 @@
     align-items: center;
     padding: 0;
     margin: 0;
+
+    @media (min-width: $screen-xs) {
+      flex-direction: column;
+    }
+
+    @media (min-width: $screen-sm) {
+      flex-direction: row;
+    }
+
+    @media (min-width: $screen-lg) {
+      flex-direction: row;
+    }
   }
 
   &__basket-button{
     height: 50px;
     padding: 0;
-
     border: none;
     background-color: #000;
     font-weight: 700;
@@ -211,17 +243,21 @@
     color: #fff;
 
     @media (min-width: $screen-xs) {
-
+      width: 300px;
+      margin-right: 0;
+      order: 2;
     }
 
     @media (min-width: $screen-sm) {
       width: 200px;
       margin-right: 42px;
+      order: 0;
     }
 
     @media (min-width: $screen-lg) {
       width: 258px;
       margin-right: 20px;
+      order: 0;
     }
   }
 
@@ -233,6 +269,18 @@
     border: none;
     background-color: $gray;
     text-align: center;
+
+    @media (min-width: $screen-xs) {
+      margin-bottom: 20px;
+    }
+
+    @media (min-width: $screen-sm) {
+      margin-bottom: 0;
+    }
+
+    @media (min-width: $screen-lg) {
+      margin-bottom: 0;
+    }
   }
 
   &__likesign {
@@ -265,7 +313,18 @@
   }
 
   &__text {
-    width: 660px;
+
+    @media (min-width: $screen-xs) {
+      width: 300px;
+    }
+
+    @media (min-width: $screen-sm) {
+      width: 660px;
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 660px;
+    }
   }
 }
 
