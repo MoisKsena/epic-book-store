@@ -2590,6 +2590,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   padding: 0;
   margin: 0;
   background-color: #f5f5f5; }
@@ -2762,8 +2763,7 @@ img {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 0;
-  width: 455px; }
+  padding: 0; }
   @media (min-width: 320px) {
     .bookinfo {
       margin-left: 0; } }
@@ -2773,20 +2773,19 @@ img {
   @media (min-width: 1280px) {
     .bookinfo {
       margin-left: 0; } }
-  .bookinfo__salecard {
-    margin: 0; }
-    @media (min-width: 320px) {
-      .bookinfo__salecard {
-        margin-top: 36px; } }
-    @media (min-width: 768px) {
-      .bookinfo__salecard {
-        width: 374px;
-        margin-top: 0; } }
-    @media (min-width: 1280px) {
-      .bookinfo__salecard {
-        width: 616px;
-        padding-left: 56px;
-        margin-top: 0; } }
+  @media (min-width: 320px) {
+    .bookinfo__salecard {
+      margin-top: 36px;
+      width: 300px; } }
+  @media (min-width: 768px) {
+    .bookinfo__salecard {
+      width: 374px;
+      margin-top: 0; } }
+  @media (min-width: 1280px) {
+    .bookinfo__salecard {
+      width: 616px;
+      padding-left: 56px;
+      margin-top: 0; } }
   .bookinfo__cardinfo {
     display: -webkit-box;
     display: -ms-flexbox;
