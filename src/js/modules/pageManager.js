@@ -4,10 +4,8 @@ import requestManager from './requestManager.js';
 
 const pageManager = {
   pagerListSelector: '.page__inner',
-  bookPage: function(response, requestData){
-    const request = JSON.parse(response);
-
-    const totalPages = Math.ceil (request.count / pageManager.getPageSize());
+  bookPage: function(books, requestData){
+    const totalPages = Math.ceil (books.count / pageManager.getPageSize());
 
     const wrap = document.querySelector(bookCardTemplate.wrap);
 
@@ -16,13 +14,13 @@ const pageManager = {
     }
 
     if (document.querySelector(bookCardTemplate.wrap)) {
-      console.log(request.items);
+      console.log(books.items);
 
       var pi = document.querySelector(pageManager.pagerListSelector);
       pi.innerHTML = pageManager.renderPager(requestData.page, totalPages, requestData.type);
       pageManager.addPageClickListener();
 
-      addPage(request.items, bookCardTemplate);
+      addPage(books.items, bookCardTemplate);
     }
   },
 

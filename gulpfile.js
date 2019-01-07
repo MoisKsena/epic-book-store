@@ -85,6 +85,7 @@ function copyVendorsJs() {
   return src([
     'node_modules/picturefill/dist/picturefill.min.js',
     'node_modules/svg4everybody/dist/svg4everybody.min.js',
+    'node_modules/jquery/dist/jquery.min.js'
     ])
     .pipe(dest(`${dir.build}js/`));
 }
