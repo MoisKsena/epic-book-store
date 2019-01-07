@@ -30,27 +30,43 @@ requestManager.send(pageManager.prepareUrl('all', 1),
 }
 
 
-var mySwiper = new Swiper ('.swiper-container', {
+var mySwiper = new Swiper ('.slider', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
+    wrapperClass:'slider__inner',
+    slideClass: 'slider__slide',
+    effect: 'slide',
 
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
+    /*breakpoints: {
+    // when window width is <= 320px
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 10
     },
+    // when window width is <= 480px
+    768: {
+      slidesPerView: 1,
+      spaceBetween: 20
+    },
+    // when window width is <= 640px
+    1280: {
+      slidesPerView: 1,
+      spaceBetween: 1000
+    }
+  }*/
+
+
 
     // Navigation arrows
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.slider__button-next',
+      prevEl: '.slider__button-prev',
     },
 
-    // And if we need scrollbar
-   /* scrollbar: {
-      el: '.swiper-scrollbar',
-    },*/
   })
+
+
 
 let burger = document.querySelector(".main-nav__burger");
 let menu = document.querySelector(".main-nav__burger-menu");
