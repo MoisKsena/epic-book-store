@@ -1,9 +1,9 @@
 .promo {
-  display: flex;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0;
-  background-color: $bcg;
+display: block;
+width: 100%;
+margin: 0 auto;
+padding: 0;
+background-color: $bcg;
 
   @media (min-width: $screen-xs) {
       height: 490px;
@@ -17,21 +17,21 @@
       height: 600px;
     }
 
-  &__inner {
-    display: flex;
-    margin: 0 auto;
+&__inner {
+  display: block;
+  margin: 0 auto;
 
-    @media (min-width: $screen-xs) {
-      width: 360px;
-    }
-
-    @media (min-width: $screen-sm) {
-      width: 768px;
-    }
-
-    @media (min-width: $screen-lg) {
-      width: 1280px;
-      padding: 0 60px;
-    }
+  @media (min-width: $screen-xs) {
+    width: 360px;
   }
+
+  @media (min-width: $screen-sm) {
+    width: 768px;
+  }
+
+  @media (min-width: $screen-lg) {
+    width: 1280px;
+    padding: 0 60px;
+  }
+}
 }

@@ -3,18 +3,6 @@
   position: relative;
   height: 310px;
 
-  @media (min-width: $screen-xs) {
-    background: url(img/contacts-bcg320.png);
-  }
-
-  @media (min-width: $screen-sm) {
-
-  }
-
-  @media (min-width: $screen-lg) {
-
-  }
-
   &__bcg {
     position: absolute;
     width: 100%;
