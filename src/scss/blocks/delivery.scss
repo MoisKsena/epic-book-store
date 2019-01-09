@@ -109,21 +109,23 @@
 
   &__sectionbox {
     display: flex;
-    width: 260px;
     margin: 0 auto;
     flex-direction: column;
     align-items: center;
     align-content: flex-start;
 
     @media (min-width: $screen-xs) {
+      width: 260px;
       padding-bottom: 60px;
     }
 
     @media (min-width: $screen-sm) {
+      width: 300px;
       padding-bottom: 55px;
     }
 
     @media (min-width: $screen-lg) {
+      width: 260px;
       padding-bottom: 0;
     }
   }
@@ -132,6 +134,17 @@
     font-size: $font-size-xs;
     font-weight: 500;
     text-align: center;
+
+    @media (min-width: $screen-xs) {
+    }
+
+    @media (min-width: $screen-sm) {
+      width: 260px;
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 260px;
+    }
   }
 }
 
