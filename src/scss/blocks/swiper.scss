@@ -157,7 +157,7 @@
   height: auto;
 }
 
-.swiper-buttonnext {
+.swiper-btnnext {
   position: absolute;
   width: 45px;
   height: 45px;
@@ -204,12 +204,12 @@
   }
  */
 
-.swiper-buttonnext:hover {
+.swiper-btnnext:hover {
   background-color: $pink;
 }
 
 
-.swiper-buttonprev {
+.swiper-btnprev {
   position: absolute;
   width: 45px;
   height: 45px;
@@ -254,7 +254,7 @@
     background-color: $pink;
   } */
 
-.swiper-buttonprev:hover {
+.swiper-btnprev:hover {
   background-color: $pink;
 }
 

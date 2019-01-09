@@ -33,8 +33,8 @@ requestManager.send(pageManager.prepareUrl('all', 1),
 
 var swiper = new Swiper('.swiper-container', {
       navigation: {
-        nextEl: '.swiper-buttonnext',
-        prevEl: '.swiper-buttonprev',
+        nextEl: '.swiper-btnnext',
+        prevEl: '.swiper-btnprev',
       },
     });
 
