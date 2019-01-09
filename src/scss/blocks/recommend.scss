@@ -10,7 +10,7 @@
   }
 
   @media (min-width: $screen-sm) {
-    height: 855px;
+    height: 1020px;
   }
 
   @media (min-width: $screen-lg) {
@@ -26,6 +26,8 @@
     }
 
     @media (min-width: $screen-sm) {
+      padding-top: 20px;
+      padding-bottom: 20px;
       width: 680px;
     }
 
