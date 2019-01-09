@@ -1091,7 +1091,8 @@ img {
     .main-nav {
       -webkit-box-ordinal-group: 4;
           -ms-flex-order: 3;
-              order: 3; } }
+              order: 3;
+      z-index: 2; } }
   @media (min-width: 768px) {
     .main-nav {
       display: -webkit-box;
@@ -1275,6 +1276,9 @@ img {
         width: 1280px;
         padding: 0 60px; } }
 
+.swiper-container {
+  padding-bottom: 70px; }
+
 .swiper-slide {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1419,23 +1423,102 @@ img {
   width: 300px;
   height: auto; }
 
-.swiper-button-next {
+.swiper-btnnext {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #f4d4e4;
+  z-index: 1; }
+  @media (min-width: 320px) {
+    .swiper-btnnext {
+      bottom: 0;
+      right: 110px; } }
+  @media (min-width: 768px) {
+    .swiper-btnnext {
+      top: 50%;
+      right: 40px; } }
+  @media (min-width: 1280px) {
+    .swiper-btnnext {
+      top: 50%;
+      right: 0; } }
+
+/* .swiper-buttonnext:before {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 3px;
+    top: 16px;
+    left: 10px;
+    transform: rotate(-35deg);
+    background-color: $pink;
+  }
+
+.swiper-buttonnext:after {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 3px;
+    bottom: 16px;
+    left: 10px;
+    transform: rotate(35deg);
+    background-color: $pink;
+  }
+ */
+.swiper-btnnext:hover {
+  background-color: #d7569c; }
+
+.swiper-btnprev {
+  position: absolute;
   width: 45px;
   height: 45px;
   border-radius: 50%;
   background-color: #f4d4e4; }
+  @media (min-width: 320px) {
+    .swiper-btnprev {
+      bottom: 0;
+      left: 110px; } }
+  @media (min-width: 768px) {
+    .swiper-btnprev {
+      top: 50%;
+      left: 40px; } }
+  @media (min-width: 1280px) {
+    .swiper-btnprev {
+      top: 50%;
+      left: 0; } }
 
-.swiper-button-next:hover {
+/* .swiper-buttonprev:before {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 3px;
+    top: 16px;
+    left: 14px;
+    transform: rotate(35deg);
+    background-color: $pink;
+  }
+
+.swiper-buttonprev:after {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 3px;
+    bottom: 16px;
+    left: 14px;
+    transform: rotate(-35deg);
+    background-color: $pink;
+  } */
+.swiper-btnprev:hover {
   background-color: #d7569c; }
 
-.swiper-button-prev {
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  background-color: #f4d4e4; }
-
-.swiper-button-prev:hover {
-  background-color: #d7569c; }
+.svg-buttonnext {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0; }
 
 .catalog {
   width: 100%;
