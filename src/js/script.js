@@ -30,45 +30,11 @@ requestManager.send(pageManager.prepareUrl('all', 1),
 }
 
 
-/*var mySwiper = new Swiper ('.slider', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
-    wrapperClass:'slider__inner',
-    slideClass: 'slider__slide',
-    effect: 'slide',
 
-
-    breakpoints: {
-    // when window width is <= 320px
-    320: {
-      slidesPerView: 1,
-      spaceBetween: 10
-    },
-    // when window width is <= 768px
-    768: {
-      slidesPerView: 1,
-      spaceBetween: 20
-    },
-    // when window width is <= 1280px
-    1280: {
-      slidesPerView: 1,
-      spaceBetween: 1000
-    }
-  },
-
-
-    // Navigation arrows
-    navigation: {
-      nextEl: '.slider__button-next',
-      prevEl: '.slider__button-prev',
-    },
-
-  })*/
 var swiper = new Swiper('.swiper-container', {
       navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.swiper-buttonnext',
+        prevEl: '.swiper-buttonprev',
       },
     });
 

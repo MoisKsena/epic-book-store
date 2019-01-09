@@ -5,6 +5,7 @@
 
   @media (min-width: $screen-xs) {
     order: 3;
+    z-index: 2;
   }
 
   @media (min-width: $screen-sm) {

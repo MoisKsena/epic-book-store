@@ -1,8 +1,11 @@
 .swiper-container {
+  padding-bottom: 70px;
+}
+
+.swiper-wrapper {
 
 }
-.swiper-wrapper {
-}
+
 .swiper-slide {
   display: flex;
   margin: auto;
@@ -154,24 +157,113 @@
   height: auto;
 }
 
-.swiper-button-next {
+.swiper-buttonnext {
+  position: absolute;
   width: 45px;
   height: 45px;
   border-radius: 50%;
   background-color: $pink-light;
+  z-index: 1;
+
+  @media (min-width: $screen-xs) {
+    bottom: 0;
+    right: 110px;
+  }
+
+  @media (min-width: $screen-sm) {
+    top: 50%;
+    right: 40px;
+  }
+
+  @media (min-width: $screen-lg) {
+    top: 50%;
+    right: 0;
+  }
 }
 
-.swiper-button-next:hover {
+/* .swiper-buttonnext:before {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 3px;
+    top: 16px;
+    left: 10px;
+    transform: rotate(-35deg);
+    background-color: $pink;
+  }
+
+.swiper-buttonnext:after {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 3px;
+    bottom: 16px;
+    left: 10px;
+    transform: rotate(35deg);
+    background-color: $pink;
+  }
+ */
+
+.swiper-buttonnext:hover {
   background-color: $pink;
 }
 
-.swiper-button-prev {
+
+.swiper-buttonprev {
+  position: absolute;
   width: 45px;
   height: 45px;
   border-radius: 50%;
   background-color: $pink-light;
+
+   @media (min-width: $screen-xs) {
+    bottom: 0;
+    left: 110px;
+  }
+
+  @media (min-width: $screen-sm) {
+    top: 50%;
+    left: 40px;
+  }
+
+  @media (min-width: $screen-lg) {
+    top: 50%;
+    left: 0;
+  }
 }
 
-.swiper-button-prev:hover {
+/* .swiper-buttonprev:before {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 3px;
+    top: 16px;
+    left: 14px;
+    transform: rotate(35deg);
+    background-color: $pink;
+  }
+
+.swiper-buttonprev:after {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 3px;
+    bottom: 16px;
+    left: 14px;
+    transform: rotate(-35deg);
+    background-color: $pink;
+  } */
+
+.swiper-buttonprev:hover {
   background-color: $pink;
+}
+
+.svg-buttonnext {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }
