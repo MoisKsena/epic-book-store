@@ -35,6 +35,14 @@
             <li class="main-nav__burger-item">
               <a href="contacts.html" class="main-nav__burger-link">контакты</a>
             </li>
+            <li class="main-nav__burger-item">
+              <a href="#" class="main-nav__burger-linktel">
+                <svg width="16" height="17" class="main-nav__burger-linksvg">
+                  <use xlink:href="img/sprite.svg#icon_phone"></use>
+                </svg>
+                8 800 500-80-20
+              </a>
+            </li>
         </ul>
         </div>
         <ul class="main-nav__list">
@@ -84,19 +92,19 @@
               <p class="recommend__sign-white">Проголосуй за лучшую книгу этой осени</p>
             </div>
             <div class="recommend__photogallery">
-              <h3 class="recommend__whitesign">Наши подборки ваших лучших фотографий у нас</h3>
+              <h3 class="recommend__whitesign">Наши подборки&nbsp;&nbsp; ваших лучших фотографий у нас</h3>
             </div>
             <div class="recommend__opinion">
               <h4 class="recommend__headline">Нам важно ваше мнение!</h4>
               <p class="recommend__sign">Ставьте пальцы вверх , мы  хотим&nbsp;знать ваше мнение</p>
-              <button class="bookinfo__basket-button" type="submit">Проголовать</button>
+              <button class="recommend__btn bookinfo__basket-button" type="submit">Проголовать</button>
             </div>
             <div class="recommend__childrenbook">
-              <h4 class="recommend__headline">Книги для детей</h4>
-              <p class="recommend__sign-white">У нас появился новый раздел, в котором мы подбираем книги для юных читателей</p>
+              <h4 class="recommend__headline"><span class="recommend__headline-white">Книги для детей</span></h4>
+              <p class="recommend__sign-white">У нас появился новый раздел,&nbsp; в котором мы подбираем&nbsp; книги для юных читателей</p>
             </div>
             <div class="recommend__oldbooks">
-              <h3>У вас еть старые книги?</h3>
+              <h3 class="recommend__whitesign">У вас еть старые книги?</h3>
               <p class="recommend__sign-white">Приносите их нам и обменяйте на новые.</p>
             </div>
           </div>
@@ -126,30 +134,27 @@
     </main>
 
     <footer class="footer">
-        <div class="footer__inner">
-
-            <a href="../index.html" class="footer__logo">
-                 <img src="img/BOOK STORE.png" alt="book store">
-            </a>
-
-            <p class="footer__worktime">с 9:00 до 19:00</p>
-
-            <nav class="footer-nav">
-                <ul class="footer-nav__list">
-                    <li class="footer-nav__item">
-                        <a href="books_inner.html" class="footer-nav__link">Книги</a>
-                    </li>
-                    <li class="footer-nav__item">
-                        <a href="recommend.html" class="footer-nav__link">Рекомендации</a>
-                    </li>
-                    <li class="footer-nav__item">
-                        <a href="contacts.html" class="footer-nav__link">Контакты</a>
-                    </li>
-                </ul>
-            </nav>
-
+      <div class="footer__inner">
+        <div class="footer__wraper-mobil">
+          <a href="index.html" class="footer__logo"><img src="img/BOOK STORE.png" alt="book store"></a>
+          <p class="footer__worktime">с 9:00 до 19:00</p>
         </div>
+        <nav class="footer-nav">
+          <ul class="footer-nav__list">
+            <li class="footer-nav__item">
+              <a href="books_inner.html" class="footer-nav__link">Книги</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="recommend.html" class="footer-nav__link">Рекомендации</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="contacts.html" class="footer-nav__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </footer>
+
     <script type="module" src="./js/script.js"></script>
 </body>
 </html>
