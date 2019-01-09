@@ -215,6 +215,7 @@
   height: 45px;
   border-radius: 50%;
   background-color: $pink-light;
+  z-index: 1;
 
    @media (min-width: $screen-xs) {
     bottom: 0;

@@ -8,7 +8,7 @@
 
   &__title {
     margin: 0 auto;
-
+    padding: 0;
     @media (min-width: $screen-xs) {
 
     }
@@ -19,16 +19,17 @@
 
     @media (min-width: $screen-lg) {
       width: 1160px;
-      padding-top: 70px;
-      padding-bottom: 50px;
-      font-weight: 00;
+      font-weight: 700;
       font-size: $font-size-xxl;
     }
   }
 
   &__mainblock {
     display: grid;
+    height: 720px;
     padding: 0;
+    margin: 0 auto;
+    margin-bottom: 136px;
 
 
     @media (min-width: $screen-xs) {
@@ -39,7 +40,7 @@
     }
 
     @media (min-width: $screen-sm) {
-      width: 688px;
+      width: 680px;
       grid-template-columns: 2fr 1fr;
       grid-template-areas:
         "artblock  aside";
@@ -47,51 +48,178 @@
 
     @media (min-width: $screen-lg) {
       display: grid;
-      width: 1160px;
-      margin: 0 auto;
+      width: 1180px;
       grid-template-columns: 2fr 1fr;
       grid-template-areas:
         "artblock  aside";
+      grid-column-gap: 30px;
     }
   }
 
   &__artblock {
     grid-area: artblock;
     display: grid;
+    grid-gap: 10px;
 
     @media (min-width: $screen-xs) {
-
-      grid-template-columns: 1fr;
+      grid-template-columns: 1fr 1fr;
       grid-template-areas:
-        "artblock";
+        "voting voting"
+        "newarticle opinion"
+        "photogall children"
+        "oldbooks oldbooks";
     }
 
     @media (min-width: $screen-sm) {
-
-      grid-template-columns: 2fr 1fr;
+      grid-template-columns: 1fr 1fr;
       grid-template-areas:
-        "artblock  aside";
+        "voting voting"
+        "newarticle photogall"
+        "opinion children"
+        "oldbooks oldbooks";
     }
 
     @media (min-width: $screen-lg) {
-      width: 900px;
-      grid-template-columns: 2fr 1fr;
+      width: 890px;
+      grid-template-columns: 1fr 1fr 1fr;
       grid-template-areas:
-        "artblock  aside";
+        "newarticle voting voting"
+        "photogall voting voting"
+        "photogall opinion children"
+        "oldbooks oldbooks oldbooks";
+
     }
   }
 
   &__newarticle {
+    grid-area: newarticle;
+    margin: 0;
+    padding-left: 26px;
+    background-color: #fff;
+    box-shadow: 0px 0px 33px 0px rgba(232,232,232,1);
+    border-radius: 6px;
+
+    @media (min-width: $screen-xs) {
+    }
+
+    @media (min-width: $screen-sm) {
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 300px;
+      height: 170px;
+    }
   }
+
+  &__headline {
+    font-weight: 700;
+    font-size: $font-size-s;
+    line-height: 1.5;
+  }
+
+  &__sign {
+    font-weight: 400;
+    font-size: $font-size-s;
+    line-height: 1.5;
+  }
+
   &__voting {
+    grid-area: voting;
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/voting.png);
+
+    @media (min-width: $screen-xs) {
+    }
+
+    @media (min-width: $screen-sm) {
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 580px;
+      height: 350px;
+      text-align: center;
+    }
   }
+
+  &__whitesign {
+    font-weight: 500;
+    font-size: $font-size-m;
+    line-height: 1.5;
+    color: #fff;
+  }
+
+  &__sign-white {
+    font-weight: 500;
+    font-size: $font-size-s;
+    color: #fff;
+  }
+
   &__photogallery {
+    grid-area: photogall;
+
+    @media (min-width: $screen-xs) {
+    }
+
+    @media (min-width: $screen-sm) {
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 300px;
+      height: 360px;
+    }
   }
+
   &__opinion {
+    grid-area: opinion;
+    margin: 0;
+    padding-left: 10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 33px 0px rgba(232,232,232,1);
+    border-radius: 6px;
+
+    @media (min-width: $screen-xs) {
+    }
+
+    @media (min-width: $screen-sm) {
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 285px;
+      height: 180px;
+    }
   }
+
   &__childrenbook {
+    grid-area: children;
+
+    @media (min-width: $screen-xs) {
+    }
+
+    @media (min-width: $screen-sm) {
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 285px;
+      height: 180px;
+    }
   }
+
   &__oldbooks {
+    grid-area: oldbooks;
+    height: 170px;
+
+    @media (min-width: $screen-xs) {
+      width: 300px;
+    }
+
+    @media (min-width: $screen-sm) {
+      width: 680px;
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 890px;
+    }
   }
 }
 
@@ -99,5 +227,16 @@
   grid-area: aside;
   width: 260px;
   padding: 0;
-  margin: 0;
+
+  @media (min-width: $screen-xs) {
+    display: none;
+  }
+
+  @media (min-width: $screen-sm) {
+    display: none;
+  }
+
+  @media (min-width: $screen-lg) {
+    display: grid;
+  }
 }
