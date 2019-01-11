@@ -54,28 +54,32 @@
       height: 120px;
       width: 260px;
       margin-top: 22px;
-    }
+      align-items: center;
+      justify-content: space-between;
+    }0
 
     @media (min-width: $screen-lg) {
       display: flex;
       height: 482px;
       width: 158px;
       flex-direction: column;
-      padding-left: 60px;
-      margin-top: 0;
+      margin: 0;
+      padding: 16px 0;
+      align-items: center;
+      justify-content: space-between;
     }
   }
 
   &__preview-img {
     padding: 0;
-    margin: auto;
+    margin: 0 auto;
 
     @media (min-width: $screen-xs) {
 
     }
 
     @media (min-width: $screen-sm) {
-      width: 78px;
+      width: 76px;
       height: auto;
     }
 
