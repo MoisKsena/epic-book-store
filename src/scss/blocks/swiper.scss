@@ -181,33 +181,39 @@
   }
 }
 
-/* .swiper-buttonnext:before {
-    position: absolute;
-    content: '';
-    width: 20px;
-    height: 3px;
-    top: 16px;
-    left: 10px;
-    transform: rotate(-35deg);
-    background-color: $pink;
-  }
+.swiper-btnnext:before {
+  position: absolute;
+  content: '';
+  width: 20px;
+  height: 3px;
+  top: 16px;
+  left: 14px;
+  transform: rotate(35deg);
+  background-color: $pink;
+}
 
-.swiper-buttonnext:after {
-    position: absolute;
-    content: '';
-    width: 20px;
-    height: 3px;
-    bottom: 16px;
-    left: 10px;
-    transform: rotate(35deg);
-    background-color: $pink;
-  }
- */
+.swiper-btnnext:hover::before {
+  background-color: #fff;
+}
+
+.swiper-btnnext:after {
+  position: absolute;
+  content: '';
+  width: 20px;
+  height: 3px;
+  bottom: 16px;
+  left: 14px;
+  transform: rotate(-35deg);
+  background-color: $pink;
+}
+
+.swiper-btnnext:hover::after {
+  background-color: #fff;
+}
 
 .swiper-btnnext:hover {
   background-color: $pink;
 }
-
 
 .swiper-btnprev {
   position: absolute;
@@ -233,38 +239,36 @@
   }
 }
 
-/* .swiper-buttonprev:before {
-    position: absolute;
-    content: '';
-    width: 20px;
-    height: 3px;
-    top: 16px;
-    left: 14px;
-    transform: rotate(35deg);
-    background-color: $pink;
-  }
-
-.swiper-buttonprev:after {
-    position: absolute;
-    content: '';
-    width: 20px;
-    height: 3px;
-    bottom: 16px;
-    left: 14px;
-    transform: rotate(-35deg);
-    background-color: $pink;
-  } */
-
-.swiper-btnprev:hover {
+.swiper-btnprev:before {
+  position: absolute;
+  content: '';
+  width: 20px;
+  height: 3px;
+  top: 16px;
+  left: 10px;
+  transform: rotate(-35deg);
   background-color: $pink;
 }
 
-.svg-buttonnext {
+.swiper-btnprev:hover::before {
+  background-color: #fff;
+}
+
+.swiper-btnprev:after {
   position: absolute;
+  content: '';
   width: 20px;
-  height: 20px;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
+  height: 3px;
+  bottom: 16px;
+  left: 10px;
+  transform: rotate(35deg);
+  background-color: $pink;
+}
+
+.swiper-btnprev:hover::after {
+  background-color: #fff;
+}
+
+.swiper-btnprev:hover {
+  background-color: $pink;
 }
