@@ -55,7 +55,7 @@
       width: 760px;
       grid-template-columns: 2fr 1fr;
       grid-template-areas:
-        "artblock  pages";
+        "artblock  aside";
     }
 
     @media (min-width: $screen-lg) {
@@ -64,7 +64,7 @@
       height: 720px;
       grid-template-columns: 2fr 1fr;
       grid-template-areas:
-        "artblock  pages";
+        "artblock  aside";
       grid-column-gap: 30px;
     }
   }
@@ -301,23 +301,22 @@
       padding-top: 60px;
     }
   }
-
-  &__peges {
-    grid-area: pages;
-    width: 260px;
-    padding: 0;
-
-    @media (min-width: $screen-xs) {
-      display: none;
-    }
-
-    @media (min-width: $screen-sm) {
-      display: none;
-    }
-
-    @media (min-width: $screen-lg) {
-      display: grid;
-    }
-  }
 }
 
+.aside {
+  grid-area: aside;
+  width: 260px;
+  padding: 0;
+
+  @media (min-width: $screen-xs) {
+    display: none;
+  }
+
+  @media (min-width: $screen-sm) {
+    display: none;
+  }
+
+  @media (min-width: $screen-lg) {
+    display: grid;
+  }
+}
