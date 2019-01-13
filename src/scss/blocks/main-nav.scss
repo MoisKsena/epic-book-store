@@ -78,7 +78,6 @@
     }
   }
 
-
   &__burger-list {
     margin: 0;
     padding: 0;
@@ -106,6 +105,8 @@
     position: absolute;
     left: 26px;
     fill: $link-color;
+    cursor: pointer;
+    outline: 0;
   }
 
   &__list {

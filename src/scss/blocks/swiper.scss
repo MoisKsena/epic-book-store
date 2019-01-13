@@ -164,6 +164,8 @@
   border-radius: 50%;
   background-color: $pink-light;
   z-index: 1;
+  cursor: pointer;
+  outline: 0;
 
   @media (min-width: $screen-xs) {
     bottom: 0;
@@ -222,8 +224,10 @@
   border-radius: 50%;
   background-color: $pink-light;
   z-index: 1;
+  cursor: pointer;
+  outline: 0;
 
-   @media (min-width: $screen-xs) {
+  @media (min-width: $screen-xs) {
     bottom: 0;
     left: 110px;
   }
@@ -271,4 +275,8 @@
 
 .swiper-btnprev:hover {
   background-color: $pink;
+}
+
+.swiper-button-disabled {
+  background-color: $gray;
 }

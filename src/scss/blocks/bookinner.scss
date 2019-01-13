@@ -310,18 +310,39 @@
   }
 
   &__text {
+    line-height: 1.5;
 
     @media (min-width: $screen-xs) {
       width: 300px;
+      margin-bottom: 30px;
     }
 
     @media (min-width: $screen-sm) {
       width: 660px;
+      margin-bottom: 40px;
     }
 
     @media (min-width: $screen-lg) {
       width: 660px;
+      margin-bottom: 40px;
     }
+  }
+
+  &__sociallikes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 0;
+    margin-top: 50px;
+  }
+  &__item {
+  }
+  &__link {
+  }
+  &__numberlink {
+    font-weight: 700;
+    font-size: $font-size-s;
+    color: $text-color;
   }
 }
 
