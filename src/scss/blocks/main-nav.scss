@@ -47,7 +47,7 @@
       display: none;
     }
 
-    span {
+    span.line {
       display: inline-block;
       margin-bottom: 4px;
       background-color: #000;
@@ -56,69 +56,21 @@
     }
   }
 
-  &__burger.active {
-
-    span {
-      background-color: transpant;
-      border: none;
-    }
-  }
-
-  &__burger-close {
-    @media (min-width: $screen-xs) {
-      display: flex;
-      position: absolute;
-      width: 18px;
-      height: 18px;
-      background: none;
-      z-index: 1;
-    }
-
-    @media (min-width: $screen-sm) {
-      display: none;
-    }
-
-    @media (min-width: $screen-lg) {
-      display: none;
-    }
-  }
-
-  .close:before, .close:after {
-    position: absolute;
-    content: ' ';
-    right: 6px;
-    top: -3px;
-    height: 25px;
-    width: 3px;
-    background-color: black;
-  }
-
-  .close:before {
-      transform: rotate(45deg);
-  }
-
-  .close:after {
-      transform: rotate(-45deg);
-  }
-
   &__burger-menu {
     display: inline-block;
+    height: 140px;
+    width: 196px;
     position: absolute;
-    top: 60px;
-    right: 15px;
+    top: 50px;
+    right: 12px;
+    padding: 18px 28px 20px 50px;
+    background-color: $pink-light;
+    line-height: 1.5;
+    opacity: 0.9;
+    z-index: 1;
 
     @media (min-width: $screen-sm) {
-      position: absolute;
-      height: 140px;
-      padding: 18px 28px 20px 35px;
-      top: 50px;
-      left: 154px;
-      transform: translate(0, 0);
-      transition: all 0.3s;
-      line-height: 1.5;
-      background-color: $pink-light;
-      opacity: 0.9;
-      z-index: 1;
+      display: none;
     }
 
     @media (min-width: $screen-lg) {
@@ -210,3 +162,20 @@
   color: $pink;
 }
 
+.close:before, .close:after {
+    position: absolute;
+    content: ' ';
+    right: 8px;
+    top: -14px;
+    height: 24px;
+    width: 3px;
+    background-color: black;
+  }
+
+  .close:before {
+      transform: rotate(45deg);
+  }
+
+  .close:after {
+      transform: rotate(-45deg);
+  }

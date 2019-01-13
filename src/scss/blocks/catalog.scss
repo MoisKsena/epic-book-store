@@ -59,20 +59,6 @@
     list-style-type: none;
   }
 
-  /* &__tab-item:first-child::after {
-     display: block;
-     content: '';
-     position: absolute;
-     width: 65%;
-     height: 3px;
-     right: 0;
-     bottom: 0;
-     background-color: $pink;
-     color: $link-color;
-     transition: all 0.5s;
-  } */
-
-
   &__tab-link {
     margin: 0;
     padding-bottom: 9px;
