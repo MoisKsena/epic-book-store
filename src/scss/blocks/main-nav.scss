@@ -64,6 +64,43 @@
     }
   }
 
+  &__burger-close {
+    @media (min-width: $screen-xs) {
+      display: none;
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      background: none;
+      z-index: 1;
+    }
+
+    @media (min-width: $screen-sm) {
+      display: none;
+    }
+
+    @media (min-width: $screen-lg) {
+      display: none;
+    }
+  }
+
+  .close:before, .close:after {
+    position: absolute;
+    content: ' ';
+    right: 6px;
+    top: -3px;
+    height: 25px;
+    width: 3px;
+    background-color: black;
+  }
+
+  .close:before {
+      transform: rotate(45deg);
+  }
+
+  .close:after {
+      transform: rotate(-45deg);
+  }
+
   &__burger-menu {
     display: inline-block;
     position: absolute;
