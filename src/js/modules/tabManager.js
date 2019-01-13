@@ -4,18 +4,14 @@ const tabManager = {
   {
     return document.querySelectorAll(tabManager.wrap);
   },
-  getChildren: function(selector)
-  {
-    var div_list = document.querySelector(selector); // returns NodeList
-    return Array.prototype.slice.call(div_list.children);
-  },
 	addTabClickListener: function(listener) {
-		let tabsArray = tabManager.getChildren(tabManager.wrap);
-		tabsArray.forEach(function(tab) {
-			const link = tab.firstElementChild;
-			link.addEventListener('click', listener);
-		});
 
+    $(tabManager.wrap).on('click', '.catalog__tab-link', function(evt)
+    {
+      $('.catalog__tab-link', tabManager.wrap).removeClass('j-active');
+      $(this).addClass('j-active');
+      listener(evt);
+    });
 	}
 };
 

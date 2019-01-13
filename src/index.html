@@ -23,15 +23,15 @@
       <p class="page-header__worktime">с 9:00 до 19:00</p>
 
       <nav class="main-nav">
-        <button class="main-nav__burger">
+        <button class="main-nav__burger j-show">
           <span></span>
           <span></span>
           <span></span>
         </button>
-        <div class="main-nav__burger-close">
+        <div class="main-nav__burger j-close" style="display: none;">
            <span class="close"></span>
         </div>
-        <div class="main-nav__burger-menu">
+        <div class="main-nav__burger-menu" style="display: none;">
           <ul class="main-nav__burger-list">
             <li class="main-nav__burger-item">
               <a href="books_inner.html" class="main-nav__burger-link">книги</a>
@@ -144,7 +144,7 @@
     <div class="catalog__tabs-wrap">
       <ul class="catalog__tabs j-tabs">
         <li class="catalog__tab-item">
-          <a href="#" data-type="all" class="catalog__tab-link"><span>Все</span></a>
+          <a href="#" data-type="all" class="catalog__tab-link j-active"><span>Все</span></a>
         </li>
         <li class="catalog__tab-item">
           <a href="#" data-type="marketing" class="catalog__tab-link">Маркетинг</a>

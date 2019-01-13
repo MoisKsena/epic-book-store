@@ -104,10 +104,21 @@
   &__burger-menu {
     display: inline-block;
     position: absolute;
-    top: -300px;
+    top: 60px;
+    right: 15px;
 
     @media (min-width: $screen-sm) {
-      display: none;
+      position: absolute;
+      height: 140px;
+      padding: 18px 28px 20px 35px;
+      top: 50px;
+      left: 154px;
+      transform: translate(0, 0);
+      transition: all 0.3s;
+      line-height: 1.5;
+      background-color: $pink-light;
+      opacity: 0.9;
+      z-index: 1;
     }
 
     @media (min-width: $screen-lg) {
@@ -115,19 +126,6 @@
     }
   }
 
-  &__burger-menu.active {
-    position: absolute;
-    height: 140px;
-    padding: 18px 28px 20px 35px;
-    top: 50px;
-    left: 154px;
-    transform: translate(0, 0);
-    transition: all 0.3s;
-    line-height: 1.5;
-    background-color: $pink-light;
-    opacity: 0.9;
-    z-index: 1;
-  }
 
   &__burger-list {
     margin: 0;

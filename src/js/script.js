@@ -41,12 +41,19 @@ var swiper = new Swiper('.swiper-container', {
     });
 
 
-let burger = document.querySelector(".main-nav__burger");
+$('.main-nav__burger').click(function()
+  {
+    $('.main-nav__burger').toggle();
+    $('.main-nav__burger-menu').toggle();
+  });
+
+
+/*let burger = document.querySelector(".main-nav__burger");
 let menu = document.querySelector(".main-nav__burger-menu");
 
 burger.addEventListener('click', () => {
 
   burger.classList.toggle('active');
   menu.classList.toggle('active');
-}, false);
+}, false);*/
 

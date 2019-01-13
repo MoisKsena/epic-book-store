@@ -59,7 +59,7 @@
     list-style-type: none;
   }
 
-  &__tab-item:first-child::after {
+  /* &__tab-item:first-child::after {
      display: block;
      content: '';
      position: absolute;
@@ -70,7 +70,7 @@
      background-color: $pink;
      color: $link-color;
      transition: all 0.5s;
-  }
+  } */
 
 
   &__tab-link {
@@ -99,7 +99,7 @@
     transition: all 0.5s;
   }
 
-  &__tab-link:focus::after {
+  .j-active::after {
      display: block;
      content: '';
      position: absolute;
