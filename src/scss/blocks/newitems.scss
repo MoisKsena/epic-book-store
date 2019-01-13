@@ -75,10 +75,13 @@
 
     @media (min-width: $screen-xs) {
       flex-wrap: nowrap;
-      overflow-x: auto;
       padding-top: 38px;
       padding-bottom: 82px;
       padding-left: 30px;
+    }
+
+    @media (max-width: $screen-lg) {
+      overflow-x: auto;
     }
 
     @media (min-width: $screen-sm) {
@@ -126,6 +129,7 @@
   &__img {
     max-width: 260px;
     height: auto;
+    display: block;
   }
 
   &__title {

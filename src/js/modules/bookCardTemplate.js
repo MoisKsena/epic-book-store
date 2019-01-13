@@ -4,7 +4,7 @@ const bookCardTemplate = {
 	tagClass: 'book-card',
 	setContent: function(book) {
 		return `<div class="book-card__inner">
-              <a href="#" onclick="return false;" class="book-card__img-wrap">
+              <a href="books_inner.html" onclick="return false;" class="book-card__img-wrap">
                 <picture>
                   <img src="img//booksAll/${book.uri}.png" alt="lateralnaya-logika" class="book-card__img">
                 </picture>

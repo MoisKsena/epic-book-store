@@ -85,6 +85,11 @@
     transition: all 0.5s;
   }
 
+  .j-active {
+    color: $link-color;
+    transition: all 0.5s;
+  }
+
   .j-active::after {
      display: block;
      content: '';

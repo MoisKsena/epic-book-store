@@ -63,7 +63,7 @@
     position: absolute;
     top: 50px;
     right: 12px;
-    padding: 18px 28px 20px 50px;
+    padding: 18px 20px 20px 50px;
     background-color: $pink-light;
     line-height: 1.5;
     opacity: 0.9;
@@ -103,7 +103,9 @@
   }
 
   &__burger-linksvg {
-    color: $link-color;
+    position: absolute;
+    left: 26px;
+    fill: $link-color;
   }
 
   &__list {

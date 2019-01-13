@@ -72,6 +72,9 @@
     @media (min-width: $screen-xs) {
       padding-top: 8px;
     }
+    @media (min-width: $screen-sm) {
+      padding-top: 0;
+    }
   }
 }
 
