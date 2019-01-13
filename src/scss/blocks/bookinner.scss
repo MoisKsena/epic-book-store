@@ -336,13 +336,38 @@
     margin-top: 50px;
   }
   &__item {
+    align-items: baseline;
+    padding-right: 28px;
   }
-  &__link {
+
+  &__link:hover {
+
+    span{
+    color: $pink;
+    }
+
+    svg {
+      fill: $pink;
+    }
   }
+
   &__numberlink {
+    margin: 0;
     font-weight: 700;
     font-size: $font-size-s;
     color: $text-color;
+    padding-left: 8px;
+  }
+
+  &__link:focus {
+
+    span{
+    color: $link-color;
+    }
+
+    svg {
+      fill: $link-color;
+    }
   }
 }
 
