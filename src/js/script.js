@@ -6,6 +6,8 @@ import requestManager from './modules/requestManager.js';
 import catalogManager from './modules/catalogManager.js';
 import Swiper from '../../node_modules/swiper/dist/js/swiper.min.js';
 
+
+
 if(tabManager.hasTabs()){
 tabManager.addTabClickListener(function(event) {
       event.preventDefault();
@@ -47,3 +49,4 @@ burger.addEventListener('click', () => {
   burger.classList.toggle('active');
   menu.classList.toggle('active');
 }, false);
+

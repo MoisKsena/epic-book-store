@@ -1,8 +1,15 @@
 const catalogManager = {
 	wrap: '.js-catalog__list',
+  getElements: function(selector)
+  {
+    var div_list = document.querySelectorAll(selector); // returns NodeList
+    return Array.prototype.slice.call(div_list);
+  },
 	addTabClickListener: function(listener) {
-		let tabsWrap = document.querySelector(catalogManager.wrap);
-		let tabsArray = Array.from(tabsWrap.children);
+		alert('catalog');
+
+    let tabsArray = catalogManager.getElements(catalogManager.wrap);
+
 		tabsArray.forEach(function(tab) {
 			const link = tab.firstElementChild;
 			link.addEventListener('click', listener);
