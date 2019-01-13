@@ -2,7 +2,7 @@ const tabManager = {
 	wrap: '.j-tabs',
   hasTabs: function()
   {
-    return document.querySelectorAll(tabManager.wrap);
+    return $(tabManager.wrap).length > 0;
   },
 	addTabClickListener: function(listener) {
 

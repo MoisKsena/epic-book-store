@@ -10,6 +10,7 @@
   </script>
 </head>
 <body>
+
   <header class="page-header">
     <div class="page-header__inner">
 
@@ -20,9 +21,9 @@
 
       <nav class="main-nav">
         <button class="main-nav__burger j-show">
-          <span></span>
-          <span></span>
-          <span></span>
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
         </button>
         <div class="main-nav__burger j-close" style="display: none;">
            <span class="close"></span>
@@ -48,17 +49,17 @@
             </li>
         </ul>
         </div>
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a href="books_inner.html" class="main-nav__link linkactive">книги</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="recommend.html" class="main-nav__link">рекомендации</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="contacts.html" class="main-nav__link">контакты</a>
-            </li>
-          </ul>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="books_inner.html" class="main-nav__link">книги</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="recommend.html" class="main-nav__link">рекомендации</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="contacts.html" class="main-nav__link">контакты</a>
+          </li>
+        </ul>
       </nav>
 
       <div class="page-header__icon">
@@ -78,133 +79,134 @@
     </div>
   </header>
 
-    <main>
-      <section class="bookinner">
-        <div class="bookinner__wrap">
+  <main>
+    <section class="bookinner">
+      <div class="bookinner__wrap">
 
-          <div class="bookinner__preview">
-            <picture>
-              <img class="bookinner__preview-img" src="img/screen1.png" alt="screen1">
-            </picture>
-            <picture>
-              <img class="bookinner__preview-img" src="img/screen2.png" alt="screen2">
-            </picture>
-            <picture>
-              <img class="bookinner__preview-img" src="img/screen3.png" alt="screen3">
-            </picture>
+        <div class="bookinner__preview">
+          <picture>
+            <img class="bookinner__preview-img" src="img/screen1.png" alt="screen1">
+          </picture>
+          <picture>
+            <img class="bookinner__preview-img" src="img/screen2.png" alt="screen2">
+          </picture>
+          <picture>
+            <img class="bookinner__preview-img" src="img/screen3.png" alt="screen3">
+          </picture>
+        </div>
+
+        <div class="bookinner__imgwrap">
+          <img class="bookinner__img" src="img/book-superpotrebiteli.jpg" alt="book-superpotrebiteli">
+        </div>
+
+          <div class="bookinner__title">
+            <p class="bookinner__title-name">Эдди Юн</p>
+            <h1 class="bookinner__title-headline">Супер&shy;потребители</h1>
+            <p class="bookinner__title-sign">Кто это и почему они так важны для вашего бизнеса</p>
           </div>
 
-          <div class="bookinner__imgwrap">
-            <img class="bookinner__img" src="img/book-superpotrebiteli.jpg" alt="book-superpotrebiteli">
-          </div>
-
-            <div class="bookinner__title">
-              <p class="bookinner__title-name">Эдди Юн</p>
-              <h1 class="bookinner__title-headline">Супер&shy;потребители</h1>
-              <p class="bookinner__title-sign">Кто это и почему они так важны для вашего бизнеса</p>
-            </div>
-
-            <div class="bookinfo">
-              <div class="bookinfo__salecard">
-                <div class="bookinfo__cardinfo">
-                  <div class="bookinfo__cardinfo-label">
-                    <p><label for="name">Арктикул</label></p>
-                    <p><label for="name">В наличии</label></p>
-                    <p><label for="name">Издательство</label></p>
-                    <p><label for="name">Цена</label></p>
-                  </div>
-                  <div class="bookinfo__cardinfo-name">
-                    <p><span>1090763</span></p>
-                    <p><span>5 шт.</span></p>
-                    <p><span>Издал</span></p>
-                    <p><span class="book-card__price">800 &#8381;</span></p>
-                  </div>
+          <div class="bookinfo">
+            <div class="bookinfo__salecard">
+              <div class="bookinfo__cardinfo">
+                <div class="bookinfo__cardinfo-label">
+                  <p><label for="name">Арктикул</label></p>
+                  <p><label for="name">В наличии</label></p>
+                  <p><label for="name">Издательство</label></p>
+                  <p><label for="name">Цена</label></p>
                 </div>
-                <form class="bookinfo__basket">
-                  <button class="bookinfo__basket-button" type="submit">Добавить в корзину</button>
-                  <label><input class="bookinfo__basket-num" type="number"  value="1"> шт.</label>
-                </form>
-                <p class="bookinfo__likesign">20 людям понравилась эта книга</p>
+                <div class="bookinfo__cardinfo-name">
+                  <p><span>1090763</span></p>
+                  <p><span>5 шт.</span></p>
+                  <p><span>Издал</span></p>
+                  <p><span class="book-card__price">800 &#8381;</span></p>
+                </div>
               </div>
+              <form class="bookinfo__basket">
+                <button class="bookinfo__basket-button" type="submit">Добавить в корзину</button>
+                <label><input class="bookinfo__basket-num" type="number"  value="1"> шт.</label>
+              </form>
+              <p class="bookinfo__likesign">20 людям понравилась эта книга</p>
             </div>
-
-          <div class="bookinfo__discr">
-            <h2 class="bookinfo__title">Короткое описание</h2>
-            <p class="bookinfo__text">В отличие от обычных покупателей суперпотребители очень заинтересованы в ваших товарах, а возможно, даже слегка помешаны на них.</p>
-            <p class="bookinfo__text">Они знают о кроссовках все и имеют десятки пар. Они спортивные фанаты с копиями футболок дюбимой команды, а стены их гаражей украшены подписанной символикой.</p>
-            <a href="#">Показать полностью</a>
           </div>
 
+        <div class="bookinfo__discr">
+          <h2 class="bookinfo__title">Короткое описание</h2>
+          <p class="bookinfo__text">В отличие от обычных покупателей суперпотребители очень заинтересованы в ваших товарах, а возможно, даже слегка помешаны на них.</p>
+          <p class="bookinfo__text">Они знают о кроссовках все и имеют десятки пар. Они спортивные фанаты с копиями футболок дюбимой команды, а стены их гаражей украшены подписанной символикой.</p>
+          <a href="#">Показать полностью</a>
         </div>
-      </section>
-      <section class="newitems">
-        <div class="newitems__cap">
-          <h2 class="newitems__title">Книги по тематике</h2>
-          <a href="#" class="newitems__link">Больше книг по теме</a>
-        </div>
-        <div class="newitems__list-wrap">
-          <div class="newitems__list">
-            <article class="newitems-card">
-              <a href="" class="newitems-card__img-wrap"><img src="img/book-lateralnaya-logika.jpg" alt="" class="newitems-card__img"></a>
-              <h2 class="newitems-card__title"><a href="#" class="newitems-card__link">Латеральная логика</a></h2>
-              <p class="newitems-card__descr">Головоломный путь к нестандартному мышлению</p>
-            </article>
-            <article class="newitems-card">
-              <a href="" class="newitems-card__img-wrap"><img src="img/book-putevoditel-po-lzhi.jpg" alt="" class="newitems-card__img"></a>
-              <h2 class="newitems-card__title"><a href="#" class="newitems-card__link">Путеводитель по лжи</a></h2>
-              <p class="newitems-card__descr">Критическое мышление в эпоху постправды</p>
-            </article>
-            <article class="newitems-card">
-              <a href="" class="newitems-card__img-wrap"><img src="img/book-dao-fiziki.jpg" alt="" class="newitems-card__img"></a>
-              <h2 class="newitems-card__title"><a href="#" class="newitems-card__link">Дао физики</a></h2>
-              <p class="newitems-card__descr">Исследование параллелей между современной физикой и восточной философией</p>
-            </article>
-            <article class="newitems-card">
-              <a href="" class="newitems-card__img-wrap"><img src="img/book-ne-ochevidno.jpg" alt="" class="newitems-card__img"></a>
-              <h2 class="newitems-card__title"><a href="#" class="newitems-card__link">Не очевидно</a></h2>
-              <p class="newitems-card__descr">Как выявлять тренды раньше других</p>
-            </article>
-          </div>
-        </div>
-      </section>
-      <section class="addinfo">
-        <img class="addinfo__bcg" src="img/contacts-bcg.png" alt="background">
 
-        <div class="addinfo__text">
-          <p class="addinfo__svg">
-            <svg width="100" height="14">
-              <use xlink:href="img/sprite.svg#shape"></use>
-            </svg>
-          </p>
-          <p class="addinfo__title">Мы открыли для вас уютную библиотеку</p>
-          <p class="addinfo__desc">Приходите к нам по адресу Никитская&nbsp;10,&nbsp;каждый день с 12:00 до&nbsp;18:00</p>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-    <div class="footer__inner">
-      <div class="footer__wraper-mobil">
-        <a href="index.html" class="footer__logo"><img src="img/BOOK STORE.png" alt="book store"></a>
-        <p class="footer__worktime">с 9:00 до 19:00</p>
       </div>
-      <nav class="footer-nav">
-        <ul class="footer-nav__list">
-          <li class="footer-nav__item">
-            <a href="books_inner.html" class="footer-nav__link">Книги</a>
-          </li>
-          <li class="footer-nav__item">
-            <a href="recommend.html" class="footer-nav__link">Рекомендации</a>
-          </li>
-          <li class="footer-nav__item">
-            <a href="contacts.html" class="footer-nav__link">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </footer>
+    </section>
+    <section class="newitems">
+      <div class="newitems__cap">
+        <h2 class="newitems__title">Книги по тематике</h2>
+        <a href="#" class="newitems__link">Больше книг по теме</a>
+      </div>
+      <div class="newitems__list-wrap">
+        <div class="newitems__list">
+          <article class="newitems-card">
+            <a href="" class="newitems-card__img-wrap"><img src="img/book-lateralnaya-logika.jpg" alt="" class="newitems-card__img"></a>
+            <h2 class="newitems-card__title"><a href="#" class="newitems-card__link">Латеральная логика</a></h2>
+            <p class="newitems-card__descr">Головоломный путь к нестандартному мышлению</p>
+          </article>
+          <article class="newitems-card">
+            <a href="" class="newitems-card__img-wrap"><img src="img/book-putevoditel-po-lzhi.jpg" alt="" class="newitems-card__img"></a>
+            <h2 class="newitems-card__title"><a href="#" class="newitems-card__link">Путеводитель по лжи</a></h2>
+            <p class="newitems-card__descr">Критическое мышление в эпоху постправды</p>
+          </article>
+          <article class="newitems-card">
+            <a href="" class="newitems-card__img-wrap"><img src="img/book-dao-fiziki.jpg" alt="" class="newitems-card__img"></a>
+            <h2 class="newitems-card__title"><a href="#" class="newitems-card__link">Дао физики</a></h2>
+            <p class="newitems-card__descr">Исследование параллелей между современной физикой и восточной философией</p>
+          </article>
+          <article class="newitems-card">
+            <a href="" class="newitems-card__img-wrap"><img src="img/book-ne-ochevidno.jpg" alt="" class="newitems-card__img"></a>
+            <h2 class="newitems-card__title"><a href="#" class="newitems-card__link">Не очевидно</a></h2>
+            <p class="newitems-card__descr">Как выявлять тренды раньше других</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="addinfo">
+      <img class="addinfo__bcg" src="img/contacts-bcg.png" alt="background">
 
-  <script type="module" src="./js/jquery.min.js"></script>
-  <script type="module" src="./js/script.js"></script>
+      <div class="addinfo__text">
+        <p class="addinfo__svg">
+          <svg width="100" height="14">
+            <use xlink:href="img/sprite.svg#shape"></use>
+          </svg>
+        </p>
+        <p class="addinfo__title">Мы открыли для вас уютную библиотеку</p>
+        <p class="addinfo__desc">Приходите к нам по адресу Никитская&nbsp;10,&nbsp;каждый день с 12:00 до&nbsp;18:00</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__wraper-mobil">
+      <a href="index.html" class="footer__logo"><img src="img/BOOK STORE.png" alt="book store"></a>
+      <p class="footer__worktime">с 9:00 до 19:00</p>
+    </div>
+    <nav class="footer-nav">
+      <ul class="footer-nav__list">
+        <li class="footer-nav__item">
+          <a href="books_inner.html" class="footer-nav__link">Книги</a>
+        </li>
+        <li class="footer-nav__item">
+          <a href="recommend.html" class="footer-nav__link">Рекомендации</a>
+        </li>
+        <li class="footer-nav__item">
+          <a href="contacts.html" class="footer-nav__link">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/script.js"></script>
+
 </body>
 </html>
