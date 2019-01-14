@@ -142,6 +142,7 @@
     border-bottom: 4px solid $gray;
     background-color: transparent;
     color: $gray;
+    outline: 0;
 
     @media (min-width: $screen-xs) {
       width: 90%;
@@ -204,9 +205,6 @@
     align-items: baseline;
   }
 
-  &__check {
-  }
-
   &__checksign {
     padding: 0;
     margin: 0;
@@ -230,12 +228,10 @@
     }
   }
 
-  input[type="checkbox"] {
-  display: none;
-  }
+input[type="checkbox"] {
+display: none;
+}
 
-
-/* формируем внешний вид чекбокса в псевдоэлементе before */
 label:before {
   display: inline-block;
   content: " ";
@@ -250,14 +246,22 @@ label:before {
   vertical-align: middle;
 }
 
-/* вариации внешнего вида в зав-ти от статуса checkbox */
-/* checked */
 input:checked + label:before {
   content: 'V';
   color: $pink;
 }
-/* disabled */
+
 input:disabled + label:before {
   color: red;
+}
+
+input:required {
+  border-color: $pink-light;
+  color: $text-color;
+}
+
+input:focus:required{
+  border-color: $pink;
+  color: $text-color;
 }
 }
