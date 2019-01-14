@@ -51,7 +51,7 @@
         </div>
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a href="books_inner.html" class="main-nav__link">книги</a>
+            <a href="books_inner.html" class="main-nav__link linkactive">книги</a>
           </li>
           <li class="main-nav__item">
             <a href="recommend.html" class="main-nav__link">рекомендации</a>
@@ -123,9 +123,13 @@
               </div>
               <form class="bookinfo__basket">
                 <button class="bookinfo__basket-button" type="submit">Добавить в корзину</button>
-                <label><input class="bookinfo__basket-num" type="number"  value="1"> шт.</label>
+                <label><input class="bookinfo__basket-num" type="text" value="1" required> шт.</label>
               </form>
-              <p class="bookinfo__likesign">20 людям понравилась эта книга</p>
+
+              <p class="bookinfo__likesign">
+                <svg width="16" height="12">
+                  <use xlink:href="img/sprite.svg#like"></use>
+                </svg>&nbsp;&nbsp;20 людям понравилась эта книга</p>
             </div>
           </div>
 
@@ -133,7 +137,45 @@
           <h2 class="bookinfo__title">Короткое описание</h2>
           <p class="bookinfo__text">В отличие от обычных покупателей суперпотребители очень заинтересованы в ваших товарах, а возможно, даже слегка помешаны на них.</p>
           <p class="bookinfo__text">Они знают о кроссовках все и имеют десятки пар. Они спортивные фанаты с копиями футболок дюбимой команды, а стены их гаражей украшены подписанной символикой.</p>
-          <a href="#">Показать полностью</a>
+          <a href="index.html" class="newitems__link">Показать полностью&nbsp;
+            <svg width="12" height="12">
+              <use xlink:href="img/sprite.svg#down-arrow"></use>
+            </svg>
+          </a>
+          <ul class="bookinfo__sociallikes">
+            <li class="bookinfo__item">
+              <a href="#" class="bookinfo__link">
+                <svg width="20" height="20">
+                  <use xlink:href="img/sprite.svg#icon_facebook"></use>
+                </svg>
+                <span class="bookinfo__numberlink">15</span>
+              </a>
+            </li>
+            <li class="bookinfo__item">
+              <a href="#" class="bookinfo__link">
+                <svg width="20" height="20">
+                  <use xlink:href="img/sprite.svg#icon_vkontakte"></use>
+                </svg>
+                <span class="bookinfo__numberlink">4</span>
+              </a>
+            </li>
+            <li class="bookinfo__item">
+              <a href="#" class="bookinfo__link">
+                <svg width="20" height="20">
+                  <use xlink:href="img/sprite.svg#icon_thumbs_up"></use>
+                </svg>
+                <span class="bookinfo__numberlink">150</span>
+              </a>
+            </li>
+            <li class="bookinfo__item">
+              <a href="#" class="bookinfo__link">
+                <svg width="20" height="20">
+                  <use xlink:href="img/sprite.svg#icon_facebook"></use>
+                </svg>
+                <span class="bookinfo__numberlink">0</span>
+              </a>
+            </li>
+          </ul>
         </div>
 
       </div>
@@ -141,7 +183,7 @@
     <section class="newitems">
       <div class="newitems__cap">
         <h2 class="newitems__title">Книги по тематике</h2>
-        <a href="#" class="newitems__link">Больше книг по теме</a>
+        <a href="books_inner.html" class="newitems__link">Больше книг по теме</a>
       </div>
       <div class="newitems__list-wrap">
         <div class="newitems__list">
