@@ -1558,9 +1558,11 @@ img {
   background-color: #e8e8e8; }
 
 .swiper-button-disabled:before {
+  background-color: #e8e8e8;
   background-color: white; }
 
 .swiper-button-disabled:after {
+  background-color: #e8e8e8;
   background-color: white; }
 
 .catalog {
@@ -2511,7 +2513,8 @@ img {
     border: none;
     border-bottom: 4px solid #e8e8e8;
     background-color: transparent;
-    color: #e8e8e8; }
+    color: #e8e8e8;
+    outline: 0; }
     @media (min-width: 320px) {
       .questions__form-view {
         width: 90%;
@@ -2557,27 +2560,58 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline; }
+  .questions__checksign {
     padding: 0;
     margin: 0;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.5; }
     @media (min-width: 320px) {
-      .questions__checkbox {
+      .questions__checksign {
         padding-bottom: 180px; } }
     @media (min-width: 768px) {
-      .questions__checkbox {
+      .questions__checksign {
+        width: 400px;
         padding-bottom: 156px; } }
     @media (min-width: 1280px) {
-      .questions__checkbox {
-        width: 500px;
+      .questions__checksign {
+        width: 400px;
         padding-bottom: 0;
         margin-bottom: 75px; } }
-  .questions__check {
-    margin-right: 10px;
-    padding: 0;
-    background-color: transparent;
-    border: none; }
+  .questions input[type="checkbox"] {
+    display: none; }
+  .questions label:before {
+    display: inline-block;
+    content: " ";
+    color: #000;
+    margin-right: 15px;
+    position: relative;
+    text-align: center;
+    text-indent: 0px;
+    width: 18px;
+    height: 18px;
+    border: 5px solid #e8e8e8;
+    vertical-align: middle; }
+  .questions input:checked + label:before {
+    content: 'V';
+    color: #d7569c; }
+  .questions input:disabled + label:before {
+    color: red; }
+  .questions input:required {
+    border-color: #f4d4e4;
+    color: #1f1f1f; }
+  .questions input:focus:required {
+    border-color: #d7569c;
+    color: #1f1f1f; }
 
 .addinfo {
   display: -webkit-box;
@@ -2925,7 +2959,8 @@ img {
     padding: 0;
     border: none;
     background-color: #e8e8e8;
-    text-align: center; }
+    text-align: center;
+    outline: 0; }
     @media (min-width: 320px) {
       .bookinfo__basket-num {
         margin-bottom: 20px; } }
