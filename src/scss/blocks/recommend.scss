@@ -42,40 +42,10 @@
     display: grid;
     padding: 0;
     margin: 0 auto;
-    margin-bottom: 136px;
-
 
     @media (min-width: $screen-xs) {
       grid-template-columns: 1fr;
-      grid-template-areas:
-        "artblock";
-    }
-
-    @media (min-width: $screen-sm) {
-      width: 760px;
-      grid-template-columns: 2fr 1fr;
-      grid-template-areas:
-        "artblock  aside";
-    }
-
-    @media (min-width: $screen-lg) {
-      display: grid;
-      width: 1180px;
-      height: 720px;
-      grid-template-columns: 2fr 1fr;
-      grid-template-areas:
-        "artblock  aside";
-      grid-column-gap: 30px;
-    }
-  }
-
-  &__artblock {
-    grid-area: artblock;
-    display: grid;
-    grid-gap: 10px;
-
-    @media (min-width: $screen-xs) {
-      grid-template-columns: 1fr;
+      grid-gap: 10px;
       grid-template-areas:
         "voting"
         "newarticle"
@@ -86,23 +56,26 @@
     }
 
     @media (min-width: $screen-sm) {
-      grid-template-columns: 1fr 1fr 1fr;
+      width: 760px;
+      height: 720px;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
       grid-template-areas:
-        "newarticle voting voting"
-        "photogall voting voting"
-        "photogall opinion children"
-        "oldbooks oldbooks oldbooks";
+        "newarticle voting voting aside"
+        "photogall voting voting aside"
+        "photogall opinion children aside"
+        "oldbooks oldbooks oldbooks aside";
     }
 
     @media (min-width: $screen-lg) {
-      width: 890px;
-      grid-template-columns: 1fr 1fr 1fr;
+      width: 1180px;
+      height: 720px;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 170px 170px 180px 170px;
       grid-template-areas:
-        "newarticle voting voting"
-        "photogall voting voting"
-        "photogall opinion children"
-        "oldbooks oldbooks oldbooks";
-
+        "newarticle voting voting aside"
+        "photogall voting voting aside"
+        "photogall opinion children aside"
+        "oldbooks oldbooks oldbooks aside";
     }
   }
 
@@ -155,6 +128,7 @@
     margin: 0;
     padding-top: 36px;
     background-image: url(../img/voting.png);
+    background-size: cover;
     border-radius: 6px;
     text-align: center;
 
@@ -194,6 +168,7 @@
     margin: 0;
     padding-top: 126px;
     background-image: url(../img/photogall.png);
+    background-size: cover;
     border-radius: 6px;
     text-align: center;
 
@@ -286,6 +261,7 @@
     height: 170px;
     border-radius: 6px;
     background-image: url(../img/oldbooks.png);
+    background-size: cover;
     text-align: center;
 
     @media (min-width: $screen-xs) {
@@ -301,12 +277,63 @@
       padding-top: 60px;
     }
   }
+
+  &__aside {
+    grid-area: aside;
+    width: 260px;
+    padding: 0;
+    margin-left: 20px;
+
+    @media (min-width: $screen-xs) {
+      display: none;
+    }
+
+    @media (min-width: $screen-sm) {
+      display: none;
+    }
+
+    @media (min-width: $screen-lg) {
+      display: block;
+      height: 720px;
+    }
+  }
+
+  &__asideheadline {
+    margin: 0;
+    padding-top: 34px;
+  }
+
+  &__asidesign {
+    margin: 0;
+    padding-top: 18px;
+    padding-bottom: 38px;
+    line-height: 1.5;
+  }
+
+  &__asidelink {
+  }
+
+  &__asideimg {
+    width: 260px;
+    height: auto;
+  }
+
+  &__asidetitle a {
+    color: $text-color;
+  }
+
+  &__asidedescr {
+    line-height: 1.5;
+    font-style: italic;
+  }
+
 }
 
-.aside {
+/* .aside {
   grid-area: aside;
   width: 260px;
   padding: 0;
+  margin-left: 20px;
 
   @media (min-width: $screen-xs) {
     display: none;
@@ -317,6 +344,20 @@
   }
 
   @media (min-width: $screen-lg) {
-    display: grid;
+    display: flex;
+    height: 720px;
+    flex-direction: column;
   }
-}
+
+  .newitems-card__img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding-top: 38px;
+    padding-bottom: 30px;
+  }
+
+  .newitems-card__img:hover {
+    box-shadow: 0px 0px 50px -1px rgba(215,86,157,1);
+  } */
+
