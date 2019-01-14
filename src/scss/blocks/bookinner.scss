@@ -24,7 +24,6 @@
     @media (min-width: $screen-sm) {
       width: 688px;
       grid-template-columns: 1fr 2fr;
-
       grid-template-areas:
         "img  title"
         "img  bookinfo"

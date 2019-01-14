@@ -256,6 +256,7 @@
 
 .swiper-btnprev:hover::before {
   background-color: #fff;
+  outline: 0;
 }
 
 .swiper-btnprev:after {
@@ -275,8 +276,17 @@
 
 .swiper-btnprev:hover {
   background-color: $pink;
+  outline: 0;
 }
 
-.swiper-button-disabled {
+.swiper-button-disabled:focus {
   background-color: $gray;
+}
+
+.swiper-button-disabled:before {
+  background-color: white;
+}
+
+.swiper-button-disabled:after {
+  background-color: white;
 }

@@ -48,12 +48,3 @@ $('.main-nav__burger').click(function()
   });
 
 
-/*let burger = document.querySelector(".main-nav__burger");
-let menu = document.querySelector(".main-nav__burger-menu");
-
-burger.addEventListener('click', () => {
-
-  burger.classList.toggle('active');
-  menu.classList.toggle('active');
-}, false);*/
-
