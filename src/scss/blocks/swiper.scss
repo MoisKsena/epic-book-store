@@ -284,9 +284,11 @@
 }
 
 .swiper-button-disabled:before {
+  background-color: $gray;
   background-color: white;
 }
 
 .swiper-button-disabled:after {
+  background-color: $gray;
   background-color: white;
 }
