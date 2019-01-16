@@ -264,4 +264,14 @@ input:focus:required{
   border-color: $pink;
   color: $text-color;
 }
+
+input:optional {
+  border-color: $pink-light;
+  color: $text-color;
+}
+
+input:focus:optional{
+  border-color: $pink;
+  color: $text-color;
+}
 }

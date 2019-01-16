@@ -24,8 +24,18 @@ a {
   color: $link-color;
 }
 
+a:visited {
+  background-color: $pink;
+}
+
 img {
   height: auto;
 }
+
+button:hover {
+  outline: 0;
+  background-color: $pink-light;
+}
+
 
 
