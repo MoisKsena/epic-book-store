@@ -198,6 +198,10 @@
     }
   }
 
+  &__form-button:active {
+    background-color: $pink;
+  }
+
   &__checkbox {
     display: flex;
     flex-direction: row;
@@ -243,7 +247,7 @@ label:before {
   width: 18px;
   height: 18px;
   border: 5px solid $gray;
-  vertical-align: middle;
+  vertical-align: middle;+++
 }
 
 input:checked + label:before {

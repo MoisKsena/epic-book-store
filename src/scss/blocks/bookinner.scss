@@ -273,7 +273,11 @@
   }
 
   &__basket-button :disabled {
-     background-color: $pink;
+    background-color: $pink;
+  }
+
+  &__basket-button:active {
+    background-color: $pink;
   }
 
   &__basket-num {
