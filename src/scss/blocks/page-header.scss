@@ -31,6 +31,7 @@
     margin: 0;
     padding: 0;
     justify-content: flex-start;
+    outline: 0;
 
     @media (min-width: $screen-xs) {
       order: 1;
