@@ -3195,7 +3195,7 @@ button:hover {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
-    padding-right: 28px; }
+    padding-right: 26px; }
   .bookinfo__link:hover span {
     color: #d7569c; }
   .bookinfo__link:hover svg {
@@ -3255,7 +3255,7 @@ button:hover {
             grid-template-columns: 1fr;
         grid-gap: 10px;
         -ms-grid-rows: auto 10px auto 10px auto 10px auto 10px auto 10px auto;
-            grid-template-areas: "voting" "newarticle" "photogall" "opinion" "children" "oldbooks"; } }
+            grid-template-areas: "voting" "newarticle" "photogall" "opinion" "children" "oldbooks"; } }
     @media (min-width: 768px) {
       .recommend__mainblock {
         width: 760px;
@@ -3264,7 +3264,7 @@ button:hover {
             -ms-grid-columns: 1fr 10px 1fr 10px 1fr 10px 1fr;
             grid-template-columns: 1fr 1fr 1fr 1fr;
         -ms-grid-rows: auto 10px auto 10px auto 10px auto;
-            grid-template-areas: "newarticle voting voting aside" "photogall voting voting aside" "photogall opinion children aside" "oldbooks oldbooks oldbooks aside"; } }
+            grid-template-areas: "newarticle voting voting aside" "photogall voting voting aside" "photogall opinion children aside" "oldbooks oldbooks oldbooks aside"; } }
     @media (min-width: 1280px) {
       .recommend__mainblock {
         width: 1180px;
@@ -3274,7 +3274,7 @@ button:hover {
             grid-template-columns: 1fr 1fr 1fr 1fr;
             -ms-grid-rows: 170px 10px 170px 10px 180px 10px 170px;
             grid-template-rows: 170px 170px 180px 170px;
-            grid-template-areas: "newarticle voting voting aside" "photogall voting voting aside" "photogall opinion children aside" "oldbooks oldbooks oldbooks aside"; } }
+            grid-template-areas: "newarticle voting voting aside" "photogall voting voting aside" "photogall opinion children aside" "oldbooks oldbooks oldbooks aside"; } }
   .recommend__newarticle {
     grid-area: newarticle;
     margin: 0;
