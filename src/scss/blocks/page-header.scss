@@ -129,5 +129,9 @@
       display: flex;
     }
   }
+
+  &__phone:hover {
+    background-color: transparent;
+  }
 }
 

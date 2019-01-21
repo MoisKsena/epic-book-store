@@ -145,7 +145,7 @@
     padding: 0;
     margin-left: 110px;
     margin-top: 80px;
-    margin-right: 80px;
+    margin-right: 125px;
   }
 }
 
@@ -173,12 +173,12 @@
   }
 
   @media (min-width: $screen-sm) {
-    top: 50%;
+    top: 45%;
     right: 40px;
   }
 
   @media (min-width: $screen-lg) {
-    top: 50%;
+    top: 45%;
     right: 0;
   }
 }
@@ -233,12 +233,12 @@
   }
 
   @media (min-width: $screen-sm) {
-    top: 50%;
+    top: 45%;
     left: 40px;
   }
 
   @media (min-width: $screen-lg) {
-    top: 50%;
+    top: 45%;
     left: 0;
   }
 }
