@@ -41,10 +41,16 @@ var swiper = new Swiper('.swiper-container', {
     });
 
 
+function toggleMenu() {
+  $('.main-nav__burger').toggle();
+  $('.main-nav__burger-menu').toggle();
+};
+
 $('.main-nav__burger').click(function()
   {
-    $('.main-nav__burger').toggle();
-    $('.main-nav__burger-menu').toggle();
+    toggleMenu();
   });
+
+toggleMenu();
 
 
