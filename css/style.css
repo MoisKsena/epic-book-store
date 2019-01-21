@@ -1159,7 +1159,8 @@ button:hover {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
         background-color: transparent;
-        border: none; } }
+        border: none;
+        cursor: pointer; } }
     @media (min-width: 768px) {
       .main-nav__burger {
         display: none; } }
