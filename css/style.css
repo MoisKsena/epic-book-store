@@ -1481,10 +1481,10 @@ button:hover {
 .swiper-btnnext:before {
   position: absolute;
   content: '';
-  width: 20px;
-  height: 3px;
-  top: 16px;
-  left: 14px;
+  width: 18px;
+  height: 2px;
+  top: 17px;
+  left: 15px;
   -webkit-transform: rotate(35deg);
           transform: rotate(35deg);
   background-color: #d7569c; }
@@ -1495,10 +1495,10 @@ button:hover {
 .swiper-btnnext:after {
   position: absolute;
   content: '';
-  width: 20px;
-  height: 3px;
-  bottom: 16px;
-  left: 14px;
+  width: 18px;
+  height: 2px;
+  bottom: 17px;
+  left: 15px;
   -webkit-transform: rotate(-35deg);
           transform: rotate(-35deg);
   background-color: #d7569c; }
@@ -1534,9 +1534,9 @@ button:hover {
 .swiper-btnprev:before {
   position: absolute;
   content: '';
-  width: 20px;
-  height: 3px;
-  top: 16px;
+  width: 18px;
+  height: 2px;
+  top: 17px;
   left: 10px;
   -webkit-transform: rotate(-35deg);
           transform: rotate(-35deg);
@@ -1549,9 +1549,9 @@ button:hover {
 .swiper-btnprev:after {
   position: absolute;
   content: '';
-  width: 20px;
-  height: 3px;
-  bottom: 16px;
+  width: 18px;
+  height: 2px;
+  bottom: 17px;
   left: 10px;
   -webkit-transform: rotate(35deg);
           transform: rotate(35deg);
@@ -2082,9 +2082,9 @@ button:hover {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     margin: 0 auto;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end; }
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
     @media (min-width: 320px) {
       .newitems__list {
         -ms-flex-wrap: nowrap;
@@ -2121,12 +2121,15 @@ button:hover {
   padding: 0; }
   @media (min-width: 320px) {
     .newitems-card {
+      height: auto;
       margin-right: 38px; } }
   @media (min-width: 768px) {
     .newitems-card {
+      height: auto;
       margin-right: 38px; } }
   @media (min-width: 1280px) {
     .newitems-card {
+      height: auto;
       margin-right: 38px; } }
   .newitems-card__img-wrap {
     width: 100%;
@@ -2293,6 +2296,8 @@ button:hover {
     text-decoration: none;
     color: #1f1f1f;
     font-weight: 700; }
+  .footer-nav__link:hover {
+    color: #d7569c; }
 
 .contacts {
   display: -webkit-box;
@@ -2340,15 +2345,15 @@ button:hover {
     display: -ms-flexbox;
     display: flex;
     width: 100%;
-    margin: 0; }
+    margin: 0;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
     @media (min-width: 320px) {
       .contacts__info {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
         padding-top: 44px;
         padding-left: 0; } }
     @media (min-width: 768px) {
@@ -2357,20 +2362,17 @@ button:hover {
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
             -ms-flex-direction: row;
-                flex-direction: row;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap; } }
+                flex-direction: row; } }
     @media (min-width: 1280px) {
       .contacts__info {
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
             -ms-flex-direction: row;
                 flex-direction: row;
-        -ms-flex-wrap: nowrap;
-            flex-wrap: nowrap;
         padding-top: 55px;
         padding-left: 0; } }
   .contacts__info-list {
+    min-width: 300px;
     margin: 0; }
     @media (min-width: 320px) {
       .contacts__info-list {
@@ -2493,6 +2495,7 @@ button:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    position: relative;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -2608,6 +2611,25 @@ button:hover {
         width: 400px;
         padding-bottom: 0;
         margin-bottom: 75px; } }
+  .questions__eror {
+    display: none;
+    font-weight: 500;
+    font-size: 14px;
+    color: #d90000; }
+  .questions__eror-email {
+    position: absolute;
+    top: -20px; }
+  .questions__eror-consent {
+    position: absolute; }
+    @media (min-width: 320px) {
+      .questions__eror-consent {
+        bottom: 130px; } }
+    @media (min-width: 768px) {
+      .questions__eror-consent {
+        bottom: 120px; } }
+    @media (min-width: 1280px) {
+      .questions__eror-consent {
+        bottom: 35px; } }
   .questions input[type="checkbox"] {
     display: none; }
   .questions label:before {
