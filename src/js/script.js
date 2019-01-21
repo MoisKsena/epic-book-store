@@ -41,16 +41,29 @@ var swiper = new Swiper('.swiper-container', {
     });
 
 
+function hideMenu() {
+  $('.main-nav__burger').hide();
+  $('.main-nav__burger-menu').hide();
+}
+
 function toggleMenu() {
   $('.main-nav__burger').toggle();
   $('.main-nav__burger-menu').toggle();
-};
+}
 
 $('.main-nav__burger').click(function()
   {
     toggleMenu();
   });
 
-toggleMenu();
+if(window.matchMedia("(min-width: 420px)").matches)
+{
+ hideMenu();
+
+}
+else{
+ toggleMenu();
+}
+
 
 
