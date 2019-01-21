@@ -162,7 +162,7 @@
   width: 45px;
   height: 45px;
   border-radius: 50%;
-  background-color: $pink-light;
+  background-color: $hover;
   z-index: 1;
   cursor: pointer;
   outline: 0;
@@ -186,12 +186,12 @@
 .swiper-btnnext:before {
   position: absolute;
   content: '';
-  width: 20px;
-  height: 3px;
-  top: 16px;
-  left: 14px;
+  width: 18px;
+  height: 2px;
+  top: 17px;
+  left: 15px;
   transform: rotate(35deg);
-  background-color: $pink;
+  background-color: $active;
 }
 
 .swiper-btnnext:hover::before {
@@ -201,12 +201,12 @@
 .swiper-btnnext:after {
   position: absolute;
   content: '';
-  width: 20px;
-  height: 3px;
-  bottom: 16px;
-  left: 14px;
+  width: 18px;
+  height: 2px;
+  bottom: 17px;
+  left: 15px;
   transform: rotate(-35deg);
-  background-color: $pink;
+  background-color: $active;
 }
 
 .swiper-btnnext:hover::after {
@@ -214,7 +214,7 @@
 }
 
 .swiper-btnnext:hover {
-  background-color: $pink;
+  background-color: $active;
 }
 
 .swiper-btnprev {
@@ -222,7 +222,7 @@
   width: 45px;
   height: 45px;
   border-radius: 50%;
-  background-color: $pink-light;
+  background-color: $hover;
   z-index: 1;
   cursor: pointer;
   outline: 0;
@@ -246,12 +246,12 @@
 .swiper-btnprev:before {
   position: absolute;
   content: '';
-  width: 20px;
-  height: 3px;
-  top: 16px;
+  width: 18px;
+  height: 2px;
+  top: 17px;
   left: 10px;
   transform: rotate(-35deg);
-  background-color: $pink;
+  background-color: $active;
 }
 
 .swiper-btnprev:hover::before {
@@ -262,12 +262,12 @@
 .swiper-btnprev:after {
   position: absolute;
   content: '';
-  width: 20px;
-  height: 3px;
-  bottom: 16px;
+  width: 18px;
+  height: 2px;
+  bottom: 17px;
   left: 10px;
   transform: rotate(35deg);
-  background-color: $pink;
+  background-color: $active;
 }
 
 .swiper-btnprev:hover::after {
@@ -275,7 +275,7 @@
 }
 
 .swiper-btnprev:hover {
-  background-color: $pink;
+  background-color: $active;
   outline: 0;
 }
 

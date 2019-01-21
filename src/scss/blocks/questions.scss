@@ -183,7 +183,7 @@
   }
 
   &__form-button:active {
-    background-color: $pink;
+    background-color: $active;
   }
 
   &__checkbox {
@@ -236,7 +236,7 @@
 
   input:checked + label:before {
     content: 'V';
-    color: $pink;
+    color: $active;
   }
 
   input:disabled + label:before {
@@ -244,22 +244,22 @@
   }
 
   input:required {
-    border-color: $pink-light;
+    border-color: $hover;
     color: $text-color;
   }
 
   input:focus:required{
-    border-color: $pink;
+    border-color: $active;
     color: $text-color;
   }
 
   input:optional {
-    border-color: $pink-light;
+    border-color: $hover;
     color: $text-color;
   }
 
   input:focus:optional{
-    border-color: $pink;
+    border-color: $active;
     color: $text-color;
   }
 }

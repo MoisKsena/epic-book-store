@@ -269,11 +269,11 @@
   }
 
   &__basket-button :disabled {
-    background-color: $pink;
+    background-color: $active;
   }
 
   &__basket-button:active {
-    background-color: $pink;
+    background-color: $active;
   }
 
   &__basket-num {
@@ -375,11 +375,11 @@
     cursor: pointer;
 
     span {
-    color: $pink;
+    color: $active;
     }
 
     svg {
-      fill: $pink;
+      fill: $active;
     }
   }
 

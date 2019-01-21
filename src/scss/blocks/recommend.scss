@@ -226,7 +226,7 @@
 
   &__childrenbook {
     grid-area: children;
-    background-color: $pink;
+    background-color: $active;
     box-shadow: 0px 0px 34px 10px rgba(232,232,232,1);
 
     @media (min-width: $screen-xs) {

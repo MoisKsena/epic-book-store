@@ -27,13 +27,13 @@
     font-size: $font-size-s;
 
     &:hover {
-    background-color: $pink-light;
-    color: $pink;
+    background-color: $hover;
+    color: $active;
     transition: all 0.3s;
     }
 
     &:active {
-      color: $pink;
+      color: $active;
       background-color: transparent;
 
       &:active a {
@@ -55,11 +55,11 @@
   }
 
   .j-current {
-    background-color: $pink-light;
-    color: $pink;
+    background-color: $hover;
+    color: $active;
   }
 
   .j-current:activa {
-    color: $pink;
+    color: $active;
   }
 }

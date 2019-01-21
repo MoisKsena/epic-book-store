@@ -25,7 +25,7 @@ a {
 }
 
 a:visited {
-  background-color: $pink;
+  background-color: $active;
 }
 
 img {
@@ -34,7 +34,7 @@ img {
 
 button:hover {
   outline: 0;
-  background-color: $pink-light;
+  background-color: $hover;
 }
 
 
