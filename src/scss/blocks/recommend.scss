@@ -21,10 +21,6 @@
     margin: 0 auto;
     padding: 0;
 
-    @media (min-width: $screen-xs) {
-
-    }
-
     @media (min-width: $screen-sm) {
       padding-top: 20px;
       padding-bottom: 20px;
@@ -217,9 +213,6 @@
 
   &__btn {
     margin: 0 auto;
-
-    @media (min-width: $screen-xs) {
-    }
 
     @media (min-width: $screen-sm) {
       margin-top: 0;

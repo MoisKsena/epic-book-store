@@ -46,7 +46,7 @@
 
   &__preview {
     grid-area: preview;
-      border: solid 8px $gray;
+    border: solid 8px $gray;
 
     @media (min-width: $screen-xs) {
       display: none;
@@ -374,7 +374,7 @@
     outline: 0;
     cursor: pointer;
 
-    span{
+    span {
     color: $pink;
     }
 
@@ -393,7 +393,7 @@
 
   &__link:focus {
 
-    span{
+    span {
     color: $link-color;
     }
 

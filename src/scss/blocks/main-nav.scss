@@ -98,7 +98,6 @@
   &__burger-linktel {
     font-weight: 700;
     font-size: $font-size-xs;
-
   }
 
   &__burger-linksvg {
@@ -166,19 +165,19 @@
 }
 
 .close:before, .close:after {
-    position: absolute;
-    content: ' ';
-    right: 8px;
-    top: -14px;
-    height: 24px;
-    width: 3px;
-    background-color: black;
-  }
+  position: absolute;
+  content: ' ';
+  right: 8px;
+  top: -14px;
+  height: 24px;
+  width: 3px;
+  background-color: black;
+}
 
-  .close:before {
-      transform: rotate(45deg);
-  }
+.close:before {
+    transform: rotate(45deg);
+}
 
-  .close:after {
-      transform: rotate(-45deg);
-  }
+.close:after {
+    transform: rotate(-45deg);
+}
