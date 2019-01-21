@@ -44,10 +44,10 @@
     display: flex;
     width: 100%;
     margin: 0;
+    flex-wrap: wrap;
 
     @media (min-width: $screen-xs) {
       flex-direction: column;
-      flex-wrap: wrap;
       padding-top: 44px;
       padding-left: 0;
     }
@@ -55,18 +55,17 @@
     @media (min-width: $screen-sm) {
       padding-left: 0;
       flex-direction: row;
-      flex-wrap: wrap;
     }
 
     @media (min-width: $screen-lg) {
       flex-direction: row;
-      flex-wrap: nowrap;
       padding-top: 55px;
       padding-left: 0;
     }
   }
 
   &__info-list {
+    min-width: 300px;
     margin: 0;
 
     @media (min-width: $screen-xs) {
