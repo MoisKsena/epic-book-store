@@ -91,6 +91,7 @@
 
   &__form {
     display: flex;
+    position: relative;
     flex-direction: column;
     padding: 0;
     font-weight: 500;
@@ -213,6 +214,34 @@
       width: 400px;
       padding-bottom: 0;
       margin-bottom: 75px;
+    }
+  }
+
+  &__eror {
+    display: none;
+    font-weight: 500;
+    font-size: $font-size-xs;
+    color: #d90000;
+  }
+
+  &__eror-email {
+    position: absolute;
+    top: -20px;
+  }
+
+  &__eror-consent {
+    position: absolute;
+
+    @media (min-width: $screen-xs) {
+      bottom: 130px;
+    }
+
+    @media (min-width: $screen-sm) {
+      bottom: 120px;
+    }
+
+    @media (min-width: $screen-lg) {
+      bottom: 35px;
     }
   }
 
