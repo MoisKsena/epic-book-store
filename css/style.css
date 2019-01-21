@@ -1099,6 +1099,8 @@ button:hover {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex; } }
+  .page-header__phone:hover {
+    background-color: transparent; }
 
 .main-nav {
   display: -webkit-box;
@@ -1443,7 +1445,7 @@ button:hover {
     padding: 0;
     margin-left: 110px;
     margin-top: 80px;
-    margin-right: 80px; } }
+    margin-right: 125px; } }
 
 .swiper-img {
   display: -webkit-box;
@@ -1469,11 +1471,11 @@ button:hover {
       right: 110px; } }
   @media (min-width: 768px) {
     .swiper-btnnext {
-      top: 50%;
+      top: 45%;
       right: 40px; } }
   @media (min-width: 1280px) {
     .swiper-btnnext {
-      top: 50%;
+      top: 45%;
       right: 0; } }
 
 .swiper-btnnext:before {
@@ -1522,11 +1524,11 @@ button:hover {
       left: 110px; } }
   @media (min-width: 768px) {
     .swiper-btnprev {
-      top: 50%;
+      top: 45%;
       left: 40px; } }
   @media (min-width: 1280px) {
     .swiper-btnprev {
-      top: 50%;
+      top: 45%;
       left: 0; } }
 
 .swiper-btnprev:before {
@@ -1746,7 +1748,7 @@ button:hover {
         padding-bottom: 56px; } }
     @media (min-width: 1280px) {
       .book-card__inner {
-        padding-bottom: 78px; } }
+        padding-bottom: 60px; } }
   .book-card__img-wrap {
     padding: 0;
     margin: 0; }
@@ -2413,6 +2415,8 @@ button:hover {
       @media (min-width: 1280px) {
         .map__wrapper iframe {
           height: 344px; } }
+  .map h2 {
+    display: none; }
 
 .questions {
   width: 100%;
@@ -2641,14 +2645,10 @@ button:hover {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  height: 310px; }
-  .addinfo__bcg {
-    position: absolute;
-    width: 100%;
-    z-index: 0;
-    left: 0;
-    top: 0;
-    height: 310px; }
+  height: 310px;
+  background-image: url(../img/contacts-bcg.png);
+  background-size: cover;
+  background-repeat: no-repeat; }
   .addinfo__text {
     margin: 0 auto;
     padding-top: 70px;
@@ -2682,6 +2682,8 @@ button:hover {
     @media (min-width: 1280px) {
       .addinfo__desc {
         padding-right: 0; } }
+  .addinfo h2 {
+    display: none; }
 
 .bookinner {
   display: -webkit-box;
@@ -3196,20 +3198,31 @@ button:hover {
         -ms-flex-align: baseline;
             align-items: baseline;
     padding-right: 26px; }
-  .bookinfo__link:hover span {
-    color: #d7569c; }
-  .bookinfo__link:hover svg {
-    fill: #d7569c; }
+  .bookinfo__link:hover {
+    background: none;
+    border: none;
+    outline: 0;
+    cursor: pointer; }
+    .bookinfo__link:hover span {
+      color: #d7569c; }
+    .bookinfo__link:hover svg {
+      fill: #d7569c; }
+  .bookinfo__link {
+    padding: 0;
+    background: none;
+    border: none;
+    outline: 0;
+    cursor: pointer; }
+  .bookinfo__link:focus span {
+    color: #1a1ff7; }
+  .bookinfo__link:focus svg {
+    fill: #1a1ff7; }
   .bookinfo__numberlink {
     margin: 0;
     font-weight: 700;
     font-size: 16px;
     color: #1f1f1f;
     padding-left: 8px; }
-  .bookinfo__link:focus span {
-    color: #1a1ff7; }
-  .bookinfo__link:focus svg {
-    fill: #1a1ff7; }
 
 .recommend {
   display: -webkit-box;
@@ -3255,7 +3268,7 @@ button:hover {
             grid-template-columns: 1fr;
         grid-gap: 10px;
         -ms-grid-rows: auto 10px auto 10px auto 10px auto 10px auto 10px auto;
-            grid-template-areas: "voting" "newarticle" "photogall" "opinion" "children" "oldbooks"; } }
+            grid-template-areas: "voting" "newarticle" "photogall" "opinion" "children" "oldbooks"; } }
     @media (min-width: 768px) {
       .recommend__mainblock {
         width: 760px;
@@ -3264,7 +3277,7 @@ button:hover {
             -ms-grid-columns: 1fr 10px 1fr 10px 1fr 10px 1fr;
             grid-template-columns: 1fr 1fr 1fr 1fr;
         -ms-grid-rows: auto 10px auto 10px auto 10px auto;
-            grid-template-areas: "newarticle voting voting aside" "photogall voting voting aside" "photogall opinion children aside" "oldbooks oldbooks oldbooks aside"; } }
+            grid-template-areas: "newarticle voting voting aside" "photogall voting voting aside" "photogall opinion children aside" "oldbooks oldbooks oldbooks aside"; } }
     @media (min-width: 1280px) {
       .recommend__mainblock {
         width: 1180px;
@@ -3274,7 +3287,7 @@ button:hover {
             grid-template-columns: 1fr 1fr 1fr 1fr;
             -ms-grid-rows: 170px 10px 170px 10px 180px 10px 170px;
             grid-template-rows: 170px 170px 180px 170px;
-            grid-template-areas: "newarticle voting voting aside" "photogall voting voting aside" "photogall opinion children aside" "oldbooks oldbooks oldbooks aside"; } }
+            grid-template-areas: "newarticle voting voting aside" "photogall voting voting aside" "photogall opinion children aside" "oldbooks oldbooks oldbooks aside"; } }
   .recommend__newarticle {
     grid-area: newarticle;
     margin: 0;
