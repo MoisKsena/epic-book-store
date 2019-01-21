@@ -77,10 +77,6 @@
     padding: 0;
     margin: 0 auto;
 
-    @media (min-width: $screen-xs) {
-
-    }
-
     @media (min-width: $screen-sm) {
       width: 76px;
       height: auto;
@@ -326,7 +322,6 @@
 
     @media (min-width: $screen-xs) {
       grid-area: discr;
-
     }
 
     @media (min-width: $screen-sm) {
@@ -374,6 +369,10 @@
   }
 
   &__link:hover {
+    background: none;
+    border: none;
+    outline: 0;
+    cursor: pointer;
 
     span{
     color: $pink;
@@ -384,12 +383,12 @@
     }
   }
 
-  &__numberlink {
-    margin: 0;
-    font-weight: 700;
-    font-size: $font-size-s;
-    color: $text-color;
-    padding-left: 8px;
+  &__link {
+    padding: 0;
+    background: none;
+    border: none;
+    outline: 0;
+    cursor: pointer;
   }
 
   &__link:focus {
@@ -401,6 +400,14 @@
     svg {
       fill: $link-color;
     }
+  }
+
+  &__numberlink {
+    margin: 0;
+    font-weight: 700;
+    font-size: $font-size-s;
+    color: $text-color;
+    padding-left: 8px;
   }
 }
 
