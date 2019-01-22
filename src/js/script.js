@@ -59,7 +59,6 @@ $('.main-nav__burger').click(function()
 if(window.matchMedia("(min-width: 420px)").matches)
 {
  hideMenu();
-
 }
 else{
  toggleMenu();
