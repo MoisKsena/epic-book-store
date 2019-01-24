@@ -330,6 +330,13 @@
     font-size: $font-size-xs;
   }
 
+  &__cardinfo-input {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+  }
+
   &__basket {
     display: flex;
     padding: 0;
