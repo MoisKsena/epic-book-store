@@ -93,6 +93,76 @@
     background-color: $dark-gray;
   }
 
+  &__blockprev {
+    display: none;
+    position: absolute;
+    margin: 0;
+    top: 50px;
+    background-color: #130f23;
+
+    @media (min-width: $screen-sm) {
+      width: 700px;
+      height: 460px;
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 760px;
+      height: 460px;
+    }
+  }
+
+  &__blockprev-img {
+    position: absolute;
+    top: 14px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+
+    @media (min-width: $screen-xs) {
+      display: none;
+    }
+
+    @media (min-width: $screen-sm) {
+      display: flex;
+      width: 300px;
+      height: auto;
+    }
+
+    @media (min-width: $screen-lg) {
+      display: flex;
+      width: 300px;
+      height: auto;
+    }
+  }
+
+  &__blockprev-button {
+    position: absolute;
+    height: 460px;
+
+    @media (min-width: $screen-xs) {
+      display: none;
+    }
+
+    @media (min-width: $screen-sm) {
+      display: flex;
+      width: 600px;
+      top: 0;
+      bottom: 0;
+      left: 40px;
+      right: 0;
+    }
+
+    @media (min-width: $screen-lg) {
+      display: flex;
+      width: 680px;
+      top: 0;
+      bottom: 0;
+      left: 40px;
+      right: 0;
+    }
+  }
+
   &__imgwrap {
     grid-area: img;
     padding: 0;
