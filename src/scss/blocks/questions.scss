@@ -225,16 +225,17 @@
     display: none;
     font-weight: 500;
     font-size: $font-size-xs;
-    color: #d90000;
   }
 
   &__eror-email {
     position: absolute;
     top: -20px;
+    color: #d90000;
   }
 
   &__eror-consent {
     position: absolute;
+    color: #d90000;
 
     @media (min-width: $screen-xs) {
       bottom: 130px;
@@ -247,6 +248,128 @@
     @media (min-width: $screen-lg) {
       bottom: 35px;
     }
+  }
+
+  &__eror-success {
+    display: none;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    height: 260px;
+    background-color: #fff;
+    box-shadow: 0px 0px 30px -3px rgba(215,86,157,1);
+
+    @media (min-width: $screen-xs) {
+      width: 280px;
+      bottom: 0;
+      left: 0;
+    }
+
+    @media (min-width: $screen-sm) {
+      width: 364px;
+      bottom: 0;
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 364px;
+      bottom: 0;
+    }
+  }
+
+  &__eror-success-title {
+    margin: 0;
+    padding-left: 34px;
+    padding-top: 52px;
+    padding-bottom: 20px;
+    font-weight: 700;
+    font-size: $font-size-l;
+  }
+
+  &__eror-success-sign {
+    width: 300px;
+    padding-left: 34px;
+    font-weight: 500;
+    font-size: $font-size-s;
+    line-height: 1.5;
+  }
+
+  &__eror-error {
+    display: none;
+    position: absolute;
+    left: 490px;
+    width: 364px;
+    height: 260px;
+    background-color: #fff;
+    box-shadow: 0px 0px 30px -5px rgba(215,86,157,1);
+
+    @media (min-width: $screen-xs) {
+      width: 280px;
+      bottom: 0;
+      left: 0;
+    }
+
+    @media (min-width: $screen-sm) {
+      width: 364px;
+      bottom: 0;
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 364px;
+      bottom: 0;
+    }
+  }
+
+  &__eror-error-title {
+    margin: 0;
+    padding-left: 34px;
+    padding-top: 52px;
+
+    font-weight: 700;
+    font-size: $font-size-l;
+    color: red;
+
+    @media (min-width: $screen-xs) {
+      padding-bottom: 0;
+    }
+
+    @media (min-width: $screen-sm) {
+      padding-bottom: 20px;
+    }
+
+    @media (min-width: $screen-lg) {
+      padding-bottom: 20px;
+    }
+  }
+
+  &__eror-error-sign {
+    padding-left: 34px;
+    font-weight: 500;
+    font-size: $font-size-s;
+    line-height: 1.5;
+
+    @media (min-width: $screen-xs) {
+      width: 270px;
+    }
+
+    @media (min-width: $screen-sm) {
+      width: 340px;
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 340px;
+    }
+  }
+
+  &__eror-success-close {
+    position: absolute;
+    top: 10px;
+    right: -30px;
+  }
+
+  &__eror-error-close {
+    position: absolute;
+    top: 10px;
+    right: -30px;
   }
 
   input[type="checkbox"] {
