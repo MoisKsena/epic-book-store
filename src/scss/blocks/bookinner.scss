@@ -94,22 +94,24 @@
 
   &__preview-hover {
     position: absolute;
-    width: 120px;
-    height: 138px;
     top: 0;
     background-color: transparent;
+
+     @media (min-width: $screen-sm) {
+      height: 90px;
+      width: 75px;
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 120px;
+      height: 138px;
+    }
   }
 
    &__preview-hover:hover {
     cursor: pointer;
     background-color: $dark-gray;
     opacity: 0.7;
-
-
-    @media (min-width: $screen-sm) {
-      height: 90px;
-      width: 75px;
-    }
   }
 
   &__preview-hoversvg {
