@@ -91,6 +91,7 @@
   &__preview-img:hover {
     cursor: pointer;
     background-color: $dark-gray;
+    background-image: url(../img/hover-prev.png);
   }
 
   &__blockprev {
@@ -161,6 +162,12 @@
       left: 40px;
       right: 0;
     }
+  }
+
+  &__blockprev-close {
+    position: absolute;
+    right: -30px;
+    top: 0;
   }
 
   &__imgwrap {
