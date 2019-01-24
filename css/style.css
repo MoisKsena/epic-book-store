@@ -2884,6 +2884,8 @@ button:hover {
         -webkit-box-pack: justify;
             -ms-flex-pack: justify;
                 justify-content: space-between; } }
+  .bookinner__preview-picture {
+    position: relative; }
   .bookinner__preview-img {
     padding: 0;
     margin: 0 auto; }
@@ -2895,10 +2897,22 @@ button:hover {
       .bookinner__preview-img {
         width: 120px;
         height: auto; } }
-  .bookinner__preview-img:hover {
+  .bookinner__preview-hover {
+    position: absolute;
+    width: 120px;
+    height: 138px;
+    top: 0;
+    background-color: transparent; }
+  .bookinner__preview-hover:hover {
     cursor: pointer;
     background-color: #ababab;
-    background-image: url(../img/hover-prev.png); }
+    opacity: 0.7; }
+  .bookinner__preview-hoversvg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; }
   .bookinner__blockprev {
     display: none;
     position: absolute;
