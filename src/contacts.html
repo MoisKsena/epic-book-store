@@ -107,8 +107,10 @@
 
         <div class="questions__form">
           <form class="questions__form-direction" method="post">
-            <input class="questions__form-view" type="email" placeholder="Ваша почта" required>
-            <input class="questions__form-view" type="text" placeholder="Сообщение">
+            <label class="questions__form-label" for="mail">Ваша почта</label>
+            <input class="questions__form-view" type="email" id="mail" placeholder="Ваша почта" required>
+            <label class="questions__form-label" for="message">Сообщение</label>
+            <input class="questions__form-view" type="text" id="message" placeholder="Сообщение">
             <button class="questions__form-button" type="submit">Отправить</button>
             <div class="questions__checkbox">
               <input id="checkbox" type="checkbox" required>

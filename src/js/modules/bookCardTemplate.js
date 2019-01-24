@@ -1,5 +1,5 @@
 const bookCardTemplate = {
-	wrap: '.js-catalog__list',
+	wrap: '.js-catalog',
 	tag: 'div',
 	tagClass: 'book-card',
 	setContent: function(book) {

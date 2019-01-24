@@ -1,5 +1,5 @@
 const catalogManager = {
-	wrap: '.js-catalog__list',
+	wrap: '.js-catalog',
   getElements: function(selector)
   {
     var div_list = document.querySelectorAll(selector); // returns NodeList

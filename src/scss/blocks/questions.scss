@@ -120,6 +120,10 @@
     }
   }
 
+  &__form-label {
+    display: none;
+  }
+
   &__form-view {
     height: 50px;
     padding: 0;
