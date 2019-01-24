@@ -8,6 +8,7 @@
   <script>
     document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
   </script>
+  <script src="js/svg4everybody.min.js"></script>
 </head>
 <body>
 
@@ -94,7 +95,7 @@
   <section class="map">
     <h2>map</h2>
     <div class="map__wrapper">
-      <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aafaf8db71a14d5d1eb11943a95abe21d036241a234cc3999a6769320a7d4599e&amp;source=constructor" frameborder="0"></iframe>
+      <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aafaf8db71a14d5d1eb11943a95abe21d036241a234cc3999a6769320a7d4599e&amp;source=constructor"></iframe>
     </div>
   </section>
 
@@ -106,8 +107,10 @@
 
         <div class="questions__form">
           <form class="questions__form-direction" method="post">
-            <input class="questions__form-view" type="email" placeholder="Ваша почта" required>
-            <input class="questions__form-view" type="text" placeholder="Сообщение">
+            <label class="questions__form-label" for="mail">Ваша почта</label>
+            <input class="questions__form-view" type="email" id="mail" placeholder="Ваша почта" required>
+            <label class="questions__form-label" for="message">Сообщение</label>
+            <input class="questions__form-view" type="text" id="message" placeholder="Сообщение">
             <button class="questions__form-button" type="submit">Отправить</button>
             <div class="questions__checkbox">
               <input id="checkbox" type="checkbox" required>
@@ -118,6 +121,20 @@
           <div class="questions__eror">
             <p class="questions__eror-email">Вы не ввели почту</p>
             <p class="questions__eror-consent">Нужно согласиться с условиями, поставив галочку</p>
+            <div class="questions__eror-success">
+              <p class="questions__eror-success-title">Ваш вопрос  отправлен</p>
+              <p class="questions__eror-success-sign">В ближайшие сутки мы обязательно ответим вам.</p>
+              <div class="questions__eror-success-close">
+                <span class="close"></span>
+              </div>
+            </div>
+            <div class="questions__eror-error">
+              <p class="questions__eror-error-title">Ошибка отправки</p>
+              <p class="questions__eror-error-sign">К сожалению, ваш вопрос  не&nbsp;удалось отправить —  нет&nbsp;соединения с сервером. Пожалуйста, попробуйте позднее.</p>
+              <div class="questions__eror-error-close">
+                <span class="close"></span>
+              </div>
+            </div>
           </div>
         </div>
 

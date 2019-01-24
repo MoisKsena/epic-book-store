@@ -8,6 +8,7 @@
   <script>
     document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
   </script>
+  <script src="js/svg4everybody.min.js"></script>
 </head>
 <body>
 
@@ -94,6 +95,18 @@
             <img class="bookinner__preview-img" src="img/screen3.png" alt="screen3">
           </picture>
         </div>
+        <div class="bookinner__blockprev">
+          <picture>
+            <img class="bookinner__blockprev-img" src="img/screen1-prev.jpg" alt="screen-preview">
+          </picture>
+          <div class="bookinner__blockprev-button">
+            <div class="swiper-btnnext"></div>
+            <div class="swiper-btnprev"></div>
+          </div>
+          <div class="bookinner__blockprev-close">
+            <span class="close"></span>
+          </div>
+        </div>
 
         <div class="bookinner__imgwrap">
           <img class="bookinner__img" src="img/book-superpotrebiteli.jpg" alt="superpotrebiteli">
@@ -109,10 +122,10 @@
             <div class="bookinfo__salecard">
               <div class="bookinfo__cardinfo">
                 <div class="bookinfo__cardinfo-label">
-                  <p><label for="Арктикул">Арктикул</label></p>
-                  <p><label for="В наличии">В наличии</label></p>
-                  <p><label for="Издательство">Издательство</label></p>
-                  <p><label for="Цена">Цена</label></p>
+                  <p><label for="articul" id="articul">Арктикул</label></p>
+                  <p><label for="availability" id="availability">В наличии</label></p>
+                  <p><label for="publishing" id="publishing">Издательство</label></p>
+                  <p><label for="price" id="price">Цена</label></p>
                 </div>
                 <div class="bookinfo__cardinfo-name">
                   <p><span>1090763</span></p>
@@ -189,22 +202,22 @@
         <div class="newitems__list">
           <article class="newitems-card">
             <a href="books_inner.html" class="newitems-card__img-wrap"><img src="img/book-lateralnaya-logika.jpg" alt="lateralnaya-logika" class="newitems-card__img"></a>
-            <h2 class="newitems-card__title"><a href="books_inner.html" class="newitems-card__link">Латеральная логика</a></h2>
+            <h3 class="newitems-card__title"><a href="books_inner.html" class="newitems-card__link">Латеральная логика</a></h3>
             <p class="newitems-card__descr">Головоломный путь к нестандартному мышлению</p>
           </article>
           <article class="newitems-card">
             <a href="books_inner.html" class="newitems-card__img-wrap"><img src="img/book-putevoditel-po-lzhi.jpg" alt="putevoditel-po-lzhi" class="newitems-card__img"></a>
-            <h2 class="newitems-card__title"><a href="books_inner.html" class="newitems-card__link">Путеводитель по лжи</a></h2>
+            <h3 class="newitems-card__title"><a href="books_inner.html" class="newitems-card__link">Путеводитель по лжи</a></h3>
             <p class="newitems-card__descr">Критическое мышление в эпоху постправды</p>
           </article>
           <article class="newitems-card">
             <a href="books_inner.html" class="newitems-card__img-wrap"><img src="img/book-dao-fiziki.jpg" alt="dao-fiziki" class="newitems-card__img"></a>
-            <h2 class="newitems-card__title"><a href="books_inner.html" class="newitems-card__link">Дао физики</a></h2>
+            <h3 class="newitems-card__title"><a href="books_inner.html" class="newitems-card__link">Дао физики</a></h3>
             <p class="newitems-card__descr">Исследование параллелей между современной физикой и восточной философией</p>
           </article>
           <article class="newitems-card">
             <a href="books_inner.html" class="newitems-card__img-wrap"><img src="img/book-ne-ochevidno.jpg" alt="ne-ochevidno" class="newitems-card__img"></a>
-            <h2 class="newitems-card__title"><a href="books_inner.html" class="newitems-card__link">Не очевидно</a></h2>
+            <h3 class="newitems-card__title"><a href="books_inner.html" class="newitems-card__link">Не очевидно</a></h3>
             <p class="newitems-card__descr">Как выявлять тренды раньше других</p>
           </article>
         </div>
