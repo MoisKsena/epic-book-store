@@ -21,6 +21,7 @@
 
     iframe {
       width: 100%;
+      border: none;
 
       @media (min-width: $screen-xs) {
         height: 340px;
