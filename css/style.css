@@ -2899,10 +2899,16 @@ button:hover {
         height: auto; } }
   .bookinner__preview-hover {
     position: absolute;
-    width: 120px;
-    height: 138px;
     top: 0;
     background-color: transparent; }
+    @media (min-width: 768px) {
+      .bookinner__preview-hover {
+        height: 90px;
+        width: 75px; } }
+    @media (min-width: 1280px) {
+      .bookinner__preview-hover {
+        width: 120px;
+        height: 138px; } }
   .bookinner__preview-hover:hover {
     cursor: pointer;
     background-color: #ababab;
