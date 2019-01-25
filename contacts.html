@@ -21,15 +21,15 @@
       <p class="page-header__worktime">с 9:00 до 19:00</p>
 
       <nav class="main-nav">
-        <button class="main-nav__burger" style="display: none;">
+        <button class="main-nav__burger">
           <span class="line"></span>
           <span class="line"></span>
           <span class="line"></span>
         </button>
-        <div class="main-nav__burger">
+        <div class="main-nav__burger" style="display: none;">
            <span class="close"></span>
         </div>
-        <div class="main-nav__burger-menu">
+        <div class="main-nav__burger-menu" style="display: none;">
           <ul class="main-nav__burger-list">
             <li class="main-nav__burger-item">
               <a href="books_inner.html" class="main-nav__burger-link">книги</a>
@@ -58,7 +58,7 @@
             <a href="recommend.html" class="main-nav__link">рекомендации</a>
           </li>
           <li class="main-nav__item">
-            <a href="contacts.html" class="main-nav__link linkactive">контакты</a>
+            <a href="contacts.html" class="main-nav__link main-nav__linkactive">контакты</a>
           </li>
         </ul>
       </nav>
@@ -107,20 +107,41 @@
 
         <div class="questions__form">
           <form class="questions__form-direction" method="post">
-            <label class="questions__form-label" for="mail">Ваша почта</label>
-            <input class="questions__form-view" type="email" id="mail" placeholder="Ваша почта" required>
-            <label class="questions__form-label" for="message">Сообщение</label>
-            <input class="questions__form-view" type="text" id="message" placeholder="Сообщение">
+            <label class="questions__form-label" for="mail">
+              <span class="questions__eror-email">Вы не ввели почту</span>
+              <input class="questions__form-view" type="email" id="mail" placeholder="Ваша почта" required>
+            </label>
+            <label class="questions__form-label" for="message">
+              <input class="questions__form-view" type="text" id="message" placeholder="Сообщение">
+            </label>
             <button class="questions__form-button" type="submit">Отправить</button>
             <div class="questions__checkbox">
-              <input id="checkbox" type="checkbox" required>
-              <label for="checkbox"></label>
-              <p class="questions__checksign">Я согласен(-на) с <a href="#">политикой конфиденциальности</a> и&nbsp;<a href="#">правилами обработки данных</a></p>
+              <label class="questions__checkbox" for="checkbox">
+                <input id="checkbox" type="checkbox" required>
+                <span class="questions__checksign">Я согласен(-на) с <a href="#">политикой&nbsp;конфиденциальности</a> и&nbsp;<a href="#">правилами обработки&nbsp;данных</a></span>
+                <span class="questions__eror-consent">Нужно согласиться с условиями, поставив галочку</span>
+              </label>
             </div>
+            <!-- <div class="questions__checkbox-nocheck">
+              <label class="questions__checkbox" for="checkbox">
+                <input id="checkbox" type="checkbox" required>
+              </label>
+            </div>
+            <div class="questions__checkbox-error">
+              <label class="questions__checkbox" for="checkbox">
+                <input id="checkbox" type="checkbox" required>
+              </label>
+            </div>
+            <div class="questions__checkbox-check">
+              <label class="questions__checkbox" for="checkbox">
+                <input id="checkbox" type="checkbox" required>
+                <svg width="32" height="30">
+                  <use xlink:href="img/sprite.svg#check-mark"></use>
+                </svg>
+              </label>
+            </div> -->
           </form>
           <div class="questions__eror">
-            <p class="questions__eror-email">Вы не ввели почту</p>
-            <p class="questions__eror-consent">Нужно согласиться с условиями, поставив галочку</p>
             <div class="questions__eror-success">
               <p class="questions__eror-success-title">Ваш вопрос  отправлен</p>
               <p class="questions__eror-success-sign">В ближайшие сутки мы обязательно ответим вам.</p>
