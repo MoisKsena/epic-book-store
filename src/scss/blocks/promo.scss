@@ -19,14 +19,10 @@
 
 &__inner {
   display: block;
+  width: 100%;
   margin: 0 auto;
 
-  @media (min-width: $screen-sm) {
-    width: 768px;
-  }
-
   @media (min-width: $screen-lg) {
-    width: 1280px;
     padding: 0 60px;
   }
 }

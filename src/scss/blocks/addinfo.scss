@@ -1,8 +1,9 @@
 .addinfo {
   display: flex;
   position: relative;
-  height: 310px;
+  min-height: 310px;
   background-image: url(../img/contacts-bcg.png);
+  background-color: #d7569c;
   background-size: cover;
   background-repeat: no-repeat;
 
