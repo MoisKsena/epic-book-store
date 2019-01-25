@@ -44,9 +44,7 @@
     "webpack-stream": "^5.2.1"
   },
   "dependencies": {
-    "jQuery": "^1.7.4",
     "jquery": "^3.3.1",
-    "normalize-scss": "^7.0.1",
     "normalize.css": "^8.0.1",
     "picturefill": "^3.0.3",
     "svg4everybody": "^2.1.9",

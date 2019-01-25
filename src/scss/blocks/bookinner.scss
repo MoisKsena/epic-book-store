@@ -124,17 +124,21 @@
 
   &__blockprev {
     display: none;
-    position: absolute;
-    margin: 0;
-    top: 50px;
+    position: fixed;
+    margin: 0 auto;
     background-color: #130f23;
 
     @media (min-width: $screen-sm) {
-      width: 700px;
+      top: 15%;
+      width: 680px;
       height: 460px;
     }
 
     @media (min-width: $screen-lg) {
+      top: 15%;
+      bottom: 25%;
+      left: 25%;
+      right: 25%;
       width: 760px;
       height: 460px;
     }
@@ -194,8 +198,11 @@
 
   &__blockprev-close {
     position: absolute;
+    outline: 0;
+    border: none;
     right: -30px;
     top: 0;
+    cursor: pointer;
   }
 
   &__imgwrap {
