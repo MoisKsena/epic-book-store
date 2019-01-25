@@ -2621,7 +2621,7 @@ button:hover {
         padding-bottom: 0;
         margin-bottom: 75px; } }
   .questions__eror {
-    /* display: none; */
+    display: none;
     font-weight: 500;
     font-size: 14px; }
   .questions__eror-email {
