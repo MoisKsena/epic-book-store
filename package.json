@@ -4,7 +4,8 @@
   "description": "Start project.",
   "scripts": {
     "test": "stylelint \"src/**/*.scss\" ‑‑syntax=scss",
-    "start": "gulp"
+    "start": "gulp",
+    "build": "npm start build"
   },
   "lint‑staged": {
     "*.css": "stylelint",

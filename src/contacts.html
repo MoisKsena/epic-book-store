@@ -115,31 +115,19 @@
               <input class="questions__form-view" type="text" id="message" placeholder="Сообщение">
             </label>
             <button class="questions__form-button" type="submit">Отправить</button>
-            <div class="questions__checkbox">
-              <label class="questions__checkbox" for="checkbox">
-                <input id="checkbox" type="checkbox" required>
-                <span class="questions__checksign">Я согласен(-на) с <a href="#">политикой&nbsp;конфиденциальности</a> и&nbsp;<a href="#">правилами обработки&nbsp;данных</a></span>
-                <span class="questions__eror-consent">Нужно согласиться с условиями, поставив галочку</span>
-              </label>
-            </div>
-            <!-- <div class="questions__checkbox-nocheck">
-              <label class="questions__checkbox" for="checkbox">
-                <input id="checkbox" type="checkbox" required>
-              </label>
-            </div>
-            <div class="questions__checkbox-error">
-              <label class="questions__checkbox" for="checkbox">
-                <input id="checkbox" type="checkbox" required>
-              </label>
-            </div>
-            <div class="questions__checkbox-check">
-              <label class="questions__checkbox" for="checkbox">
-                <input id="checkbox" type="checkbox" required>
+            <label class="questions__checkbox" for="checkbox">
+              <input id="checkbox" type="checkbox" required>
+              <div class="questions__checkbox"></div>
+              <span class="questions__checkbox-nocheck"></span>
+              <span class="questions__checkbox-error"></span>
+              <span class="questions__checkbox-check">
                 <svg width="32" height="30">
                   <use xlink:href="img/sprite.svg#check-mark"></use>
                 </svg>
-              </label>
-            </div> -->
+              </span>
+              <span class="questions__checksign">Я согласен(-на) с <a href="#">политикой&nbsp;конфиденциальности</a> и&nbsp;<a href="#">правилами обработки&nbsp;данных</a></span>
+              <span class="questions__eror-consent">Нужно согласиться с условиями, поставив галочку</span>
+            </label>
           </form>
           <div class="questions__eror">
             <div class="questions__eror-success">

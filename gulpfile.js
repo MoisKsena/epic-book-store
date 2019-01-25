@@ -143,6 +143,8 @@ function deploy(cb) {
 }
 exports.deploy = deploy;
 
+
+
 function serve() {
   browserSync.init({
     server: dir.build,
@@ -165,8 +167,15 @@ function serve() {
   ));
 }
 
+function buildSteps() {
+  return parallel(styles, copyHTML, copyImg, buildSvgSprite, copyBookImg, copyVendorsJs, copyVendorsCss, copyFonts, javascript);
+}
 exports.default = series(
   clean,
-  parallel(styles, copyHTML, copyImg, buildSvgSprite, copyBookImg, copyVendorsJs, copyVendorsCss, copyFonts, javascript),
+  buildSteps(),
   serve
+);
+exports.build = series(
+  clean,
+  buildSteps()
 );
