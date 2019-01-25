@@ -13,7 +13,7 @@
 
     @media (min-width: $screen-xs) {
       display: grid;
-      width: 300px;
+      width: 100%;
       grid-template-columns: 1fr;
       grid-template-areas:
         "title"
@@ -208,7 +208,7 @@
   &__imgwrap {
     grid-area: img;
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
 
     @media (min-width: $screen-xs) {
       grid-area: img;
@@ -233,13 +233,12 @@
 
   &__title {
     grid-area: title;
-    margin-left: 40px;
     padding: 0;
 
     @media (min-width: $screen-xs) {
       grid-area: title;
       width: 300px;
-      margin-left: 0;
+      margin: 0 auto;
     }
 
     @media (min-width: $screen-sm) {
@@ -274,33 +273,34 @@
     font-weight: 500;
     font-size: $font-size-s;
   }
-}
 
-.bookinfo {
-  grid-area: bookinfo;
-  flex-direction: row;
-  flex-wrap: wrap;
-  padding: 0;
-
-  @media (min-width: $screen-xs) {
+  &__info {
     grid-area: bookinfo;
-    margin-left: 0;
-  }
-
-  @media (min-width: $screen-sm) {
-    grid-area: bookinfo;
-    margin-left: 40px;
-  }
-
-  @media (min-width: $screen-lg) {
-    grid-area: bookinfo;
-    margin-left: 0;
-  }
-
-  &__salecard {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
 
     @media (min-width: $screen-xs) {
-      margin-top: 36px;
+      grid-area: bookinfo;
+      margin-left: 0;
+    }
+
+    @media (min-width: $screen-sm) {
+      grid-area: bookinfo;
+      margin-left: 40px;
+    }
+
+    @media (min-width: $screen-lg) {
+      grid-area: bookinfo;
+      margin-left: 0;
+    }
+  }
+
+  &__info-salecard {
+
+    @media (min-width: $screen-xs) {
+      padding-top: 36px;
+      margin: auto;
       width: 300px;
     }
 
@@ -311,7 +311,7 @@
 
     @media (min-width: $screen-lg) {
       width: 616px;
-      padding-left: 56px;
+      padding-left: 40px;
       margin-top: 0;
     }
   }
@@ -393,7 +393,7 @@
     }
   }
 
-  &__basket-button :disabled {
+  &__basket-button:disabled {
     background-color: $active;
   }
 
@@ -443,7 +443,7 @@
 
   &__discr {
     grid-area: discr;
-    margin: 0;
+    margin: 0 auto;
 
     @media (min-width: $screen-xs) {
       grid-area: discr;
@@ -488,9 +488,18 @@
     padding: 0;
     margin-top: 50px;
   }
+
   &__item {
     align-items: baseline;
     padding-right: 26px;
+  }
+
+  &__link {
+    padding: 0;
+    background: none;
+    border: none;
+    outline: 0;
+    cursor: pointer;
   }
 
   &__link:hover {
@@ -506,14 +515,6 @@
     svg {
       fill: $active;
     }
-  }
-
-  &__link {
-    padding: 0;
-    background: none;
-    border: none;
-    outline: 0;
-    cursor: pointer;
   }
 
   &__link:focus {
@@ -535,5 +536,6 @@
     padding-left: 8px;
   }
 }
+
 
 

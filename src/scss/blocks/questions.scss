@@ -121,6 +121,10 @@
   }
 
   &__form-label {
+
+
+  }
+  & label:before {
     display: none;
   }
 
@@ -222,7 +226,7 @@
   }
 
   &__eror {
-    display: none;
+    /* display: none; */
     font-weight: 500;
     font-size: $font-size-xs;
   }

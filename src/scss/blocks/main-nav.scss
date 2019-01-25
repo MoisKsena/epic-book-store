@@ -159,10 +159,10 @@
     color: $active;
     font-weight: 700;
   }
-}
 
-.linkactive {
+  &__linkactive {
   color: $active;
+  }
 }
 
 .close:before, .close:after {
