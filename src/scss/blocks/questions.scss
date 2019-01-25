@@ -122,8 +122,8 @@
 
   &__form-label {
 
-
   }
+
   & label:before {
     display: none;
   }
@@ -163,6 +163,7 @@
     height: 50px;
     margin: 0;
     padding: 0;
+    left: 0;
     background-color: $text-color;
     border: none;
     font-weight: 700;
@@ -173,21 +174,18 @@
       width: 90%;
       position: absolute;
       bottom: 88px;
-      left: 15px;
     }
 
     @media (min-width: $screen-sm) {
       width: 50%;
       position: absolute;
       bottom: 60px;
-      left: 25px;
     }
 
     @media (min-width: $screen-lg) {
       width: 30%;
       position: relative;
       bottom: 0;
-      left: 0;
     }
   }
 
@@ -202,6 +200,22 @@
     align-items: baseline;
   }
 
+  &__checkbox-nocheck {
+    display: flex;
+    position: absolute;
+    top: 50px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: baseline;
+  }
+
+  &__checkbox-check {
+    display: none;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: baseline;
+  }
+
   &__checksign {
     padding: 0;
     margin: 0;
@@ -210,6 +224,7 @@
     line-height: 1.5;
 
     @media (min-width: $screen-xs) {
+      width: 250px;
       padding-bottom: 180px;
     }
 
@@ -226,23 +241,26 @@
   }
 
   &__eror {
-    /* display: none; */
+    display: none;
     font-weight: 500;
     font-size: $font-size-xs;
   }
 
   &__eror-email {
+    display: none;
     position: absolute;
     top: -20px;
     color: #d90000;
   }
 
   &__eror-consent {
+    display: none;
     position: absolute;
     color: #d90000;
+    left: 0;
 
     @media (min-width: $screen-xs) {
-      bottom: 130px;
+      bottom: 140px;
     }
 
     @media (min-width: $screen-sm) {
@@ -253,6 +271,58 @@
       bottom: 35px;
     }
   }
+
+  &__checkbox-nocheck {
+    display: none;
+    position: absolute;
+
+    @media (min-width: $screen-xs) {
+      top: 188px;
+    }
+
+    @media (min-width: $screen-sm) {
+      top: 96px;
+    }
+
+    @media (min-width: $screen-lg) {
+      top: 98px;
+    }
+  }
+
+  &__checkbox-error {
+    display: none;
+    position: absolute;
+
+    @media (min-width: $screen-xs) {
+      top: 188px;
+    }
+
+    @media (min-width: $screen-sm) {
+      top: 96px;
+    }
+
+    @media (min-width: $screen-lg) {
+      top: 96px;
+    }
+  }
+
+  &__checkbox-check {
+    display: none;
+    position: absolute;
+
+    @media (min-width: $screen-xs) {
+      top: 202px;
+    }
+
+    @media (min-width: $screen-sm) {
+      top: 108px;
+    }
+
+    @media (min-width: $screen-lg) {
+      top: 110px;
+    }
+  }
+
 
   &__eror-success {
     display: none;
@@ -378,20 +448,12 @@
     outline: 0;
     cursor: pointer;
   }
-/*
-  &__eror-error-close {
-    position: absolute;
-    top: 10px;
-    right: -30px;
-    outline: 0;
-    cursor: pointer;
-  } */
 
   input[type="checkbox"] {
     display: none;
   }
 
-  label:before {
+  &__checkbox:before {
     display: inline-block;
     content: " ";
     color: #000;
@@ -401,20 +463,47 @@
     text-indent: 0px;
     width: 18px;
     height: 18px;
+    top: 15px;
     border: 5px solid $gray;
     vertical-align: middle;
   }
 
-  input:checked + label:before {
-    content: 'V';
-    color: $active;
+  &__checkbox-nocheck:before {
+    display: inline-block;
+    content: " ";
+    color: #000;
+    margin-right: 15px;
+    position: relative;
+    text-align: center;
+    text-indent: 0px;
+    width: 18px;
+    height: 18px;
+    top: 15px;
+    border: 5px solid $active;
+    vertical-align: middle;
   }
 
-  input:disabled + label:before {
-    color: red;
+  &__checkbox-error:before {
+    display: inline-block;
+    content: " ";
+    color: #000;
+    margin-right: 15px;
+    position: relative;
+    text-align: center;
+    text-indent: 0px;
+    width: 18px;
+    height: 18px;
+    top: 15px;
+    border: 5px solid red;
+    vertical-align: middle;
   }
 
-  input:required {
+  input:hover {
+    border-color: $hover;
+    color: $text-color;
+  }
+
+  input:required:hover {
     border-color: $hover;
     color: $text-color;
   }
@@ -424,12 +513,7 @@
     color: $text-color;
   }
 
-  input:optional {
-    border-color: $hover;
-    color: $text-color;
-  }
-
-  input:focus:optional{
+  input:focus {
     border-color: $active;
     color: $text-color;
   }

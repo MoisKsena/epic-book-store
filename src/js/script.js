@@ -56,13 +56,5 @@ $('.main-nav__burger').click(function()
     toggleMenu();
   });
 
-if(window.matchMedia("(min-width: 420px)").matches)
-{
- hideMenu();
-}
-else{
- toggleMenu();
-}
-
 
 
