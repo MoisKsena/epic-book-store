@@ -188,6 +188,13 @@
     background-color: $active;
   }
 
+  &__check {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: baseline;
+  }
+
   &__checkbox {
     display: flex;
     flex-direction: row;
@@ -196,18 +203,19 @@
   }
 
   &__checkbox-nocheck {
-    display: flex;
-    position: absolute;
-    top: 50px;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    display: none;
+    align-items: baseline;
+  }
+
+  &__checkbox-error {
+    display: none;
     align-items: baseline;
   }
 
   &__checkbox-check {
     display: none;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    position: relative;
+    top: 15px;
     align-items: baseline;
   }
 
@@ -266,58 +274,6 @@
       bottom: 35px;
     }
   }
-
-  &__checkbox-nocheck {
-    display: none;
-    position: absolute;
-
-    @media (min-width: $screen-xs) {
-      top: 188px;
-    }
-
-    @media (min-width: $screen-sm) {
-      top: 96px;
-    }
-
-    @media (min-width: $screen-lg) {
-      top: 98px;
-    }
-  }
-
-  &__checkbox-error {
-    display: none;
-    position: absolute;
-
-    @media (min-width: $screen-xs) {
-      top: 188px;
-    }
-
-    @media (min-width: $screen-sm) {
-      top: 96px;
-    }
-
-    @media (min-width: $screen-lg) {
-      top: 96px;
-    }
-  }
-
-  &__checkbox-check {
-    display: none;
-    position: absolute;
-
-    @media (min-width: $screen-xs) {
-      top: 202px;
-    }
-
-    @media (min-width: $screen-sm) {
-      top: 108px;
-    }
-
-    @media (min-width: $screen-lg) {
-      top: 110px;
-    }
-  }
-
 
   &__eror-success {
     display: none;
