@@ -1298,13 +1298,10 @@ button:hover {
       height: 600px; } }
   .promo__inner {
     display: block;
+    width: 100%;
     margin: 0 auto; }
-    @media (min-width: 768px) {
-      .promo__inner {
-        width: 768px; } }
     @media (min-width: 1280px) {
       .promo__inner {
-        width: 1280px;
         padding: 0 60px; } }
 
 .swiper-container {
@@ -2425,7 +2422,15 @@ button:hover {
 .questions {
   width: 100%;
   margin: 0 auto;
-  background-color: #f5f5f5; }
+  background-color: #f5f5f5;
+  /*
+  &__eror-error-close {
+    position: absolute;
+    top: 10px;
+    right: -30px;
+    outline: 0;
+    cursor: pointer;
+  } */ }
   @media (min-width: 320px) {
     .questions {
       min-height: 630px;
@@ -2616,7 +2621,7 @@ button:hover {
         padding-bottom: 0;
         margin-bottom: 75px; } }
   .questions__eror {
-    display: none;
+    /* display: none; */
     font-weight: 500;
     font-size: 14px; }
   .questions__eror-email {
@@ -2637,24 +2642,28 @@ button:hover {
         bottom: 35px; } }
   .questions__eror-success {
     display: none;
-    position: absolute;
+    position: fixed;
     margin: 0;
     padding: 0;
     height: 260px;
     background-color: #fff;
     -webkit-box-shadow: 0px 0px 30px -3px #d7569d;
-            box-shadow: 0px 0px 30px -3px #d7569d; }
+            box-shadow: 0px 0px 30px -3px #d7569d;
+    z-index: 1; }
     @media (min-width: 320px) {
       .questions__eror-success {
         width: 280px;
-        bottom: 0;
-        left: 0; } }
+        top: 25%;
+        left: 10%; } }
     @media (min-width: 768px) {
       .questions__eror-success {
         width: 364px;
-        bottom: 0; } }
+        top: 25%;
+        left: 30%; } }
     @media (min-width: 1280px) {
       .questions__eror-success {
+        top: 25%;
+        left: 35%;
         width: 364px;
         bottom: 0; } }
   .questions__eror-success-title {
@@ -2672,26 +2681,28 @@ button:hover {
     line-height: 1.5; }
   .questions__eror-error {
     display: none;
-    position: absolute;
+    position: fixed;
     left: 490px;
     width: 364px;
     height: 260px;
     background-color: #fff;
     -webkit-box-shadow: 0px 0px 30px -5px #d7569d;
-            box-shadow: 0px 0px 30px -5px #d7569d; }
+            box-shadow: 0px 0px 30px -5px #d7569d;
+    z-index: 1; }
     @media (min-width: 320px) {
       .questions__eror-error {
         width: 280px;
-        bottom: 0;
-        left: 0; } }
+        top: 30%;
+        left: 10%; } }
     @media (min-width: 768px) {
       .questions__eror-error {
         width: 364px;
-        bottom: 0; } }
+        left: 25%; } }
     @media (min-width: 1280px) {
       .questions__eror-error {
         width: 364px;
-        bottom: 0; } }
+        top: 25%;
+        left: 35%; } }
   .questions__eror-error-title {
     margin: 0;
     padding-left: 34px;
@@ -2722,14 +2733,13 @@ button:hover {
     @media (min-width: 1280px) {
       .questions__eror-error-sign {
         width: 340px; } }
-  .questions__eror-success-close {
+  .questions__eror-success-close, .questions__eror-error-close {
     position: absolute;
     top: 10px;
-    right: -30px; }
-  .questions__eror-error-close {
-    position: absolute;
-    top: 10px;
-    right: -30px; }
+    right: -30px;
+    border: none;
+    outline: 0;
+    cursor: pointer; }
   .questions input[type="checkbox"] {
     display: none; }
   .questions label:before {
@@ -2767,8 +2777,9 @@ button:hover {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  height: 310px;
+  min-height: 310px;
   background-image: url(../img/contacts-bcg.png);
+  background-color: #d7569c;
   background-size: cover;
   background-repeat: no-repeat; }
   .addinfo__text {
@@ -2921,16 +2932,20 @@ button:hover {
     right: 0; }
   .bookinner__blockprev {
     display: none;
-    position: absolute;
-    margin: 0;
-    top: 50px;
+    position: fixed;
+    margin: 0 auto;
     background-color: #130f23; }
     @media (min-width: 768px) {
       .bookinner__blockprev {
-        width: 700px;
+        top: 15%;
+        width: 680px;
         height: 460px; } }
     @media (min-width: 1280px) {
       .bookinner__blockprev {
+        top: 15%;
+        bottom: 25%;
+        left: 25%;
+        right: 25%;
         width: 760px;
         height: 460px; } }
   .bookinner__blockprev-img {
@@ -2985,8 +3000,11 @@ button:hover {
         right: 0; } }
   .bookinner__blockprev-close {
     position: absolute;
+    border: none;
     right: -30px;
-    top: 0; }
+    top: 0;
+    outline: 0;
+    cursor: pointer; }
   .bookinner__imgwrap {
     grid-area: img;
     padding: 0;
@@ -3098,6 +3116,7 @@ button:hover {
   .bookinfo__cardinfo-input {
     margin: 0;
     padding: 0;
+    outline: 0;
     border: none;
     background-color: transparent; }
   .bookinfo__basket {
