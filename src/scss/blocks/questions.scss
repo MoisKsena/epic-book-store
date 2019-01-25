@@ -222,7 +222,7 @@
   }
 
   &__eror {
-    display: none;
+    /* display: none; */
     font-weight: 500;
     font-size: $font-size-xs;
   }
@@ -252,25 +252,29 @@
 
   &__eror-success {
     display: none;
-    position: absolute;
+    position: fixed;
     margin: 0;
     padding: 0;
     height: 260px;
     background-color: #fff;
     box-shadow: 0px 0px 30px -3px rgba(215,86,157,1);
+    z-index: 1;
 
     @media (min-width: $screen-xs) {
       width: 280px;
-      bottom: 0;
-      left: 0;
+      top: 25%;
+      left: 10%;
     }
 
     @media (min-width: $screen-sm) {
       width: 364px;
-      bottom: 0;
+      top: 25%;
+      left: 30%;
     }
 
     @media (min-width: $screen-lg) {
+      top: 25%;
+      left: 35%;
       width: 364px;
       bottom: 0;
     }
@@ -295,27 +299,29 @@
 
   &__eror-error {
     display: none;
-    position: absolute;
+    position: fixed;
     left: 490px;
     width: 364px;
     height: 260px;
     background-color: #fff;
     box-shadow: 0px 0px 30px -5px rgba(215,86,157,1);
+    z-index: 1;
 
     @media (min-width: $screen-xs) {
       width: 280px;
-      bottom: 0;
-      left: 0;
+      top: 30%;
+      left: 10%;
     }
 
     @media (min-width: $screen-sm) {
       width: 364px;
-      bottom: 0;
+      left: 25%;
     }
 
     @media (min-width: $screen-lg) {
       width: 364px;
-      bottom: 0;
+      top: 25%;
+      left: 35%;
     }
   }
 
@@ -360,17 +366,22 @@
     }
   }
 
-  &__eror-success-close {
+  &__eror-success-close, &__eror-error-close {
     position: absolute;
     top: 10px;
     right: -30px;
+    border: none;
+    outline: 0;
+    cursor: pointer;
   }
-
+/*
   &__eror-error-close {
     position: absolute;
     top: 10px;
     right: -30px;
-  }
+    outline: 0;
+    cursor: pointer;
+  } */
 
   input[type="checkbox"] {
     display: none;
