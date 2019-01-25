@@ -3110,6 +3110,19 @@ button:hover {
         bottom: 0; } }
   .questions__form-button:active {
     background-color: #d7569c; }
+  .questions__check {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline; }
   .questions__checkbox {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3124,28 +3137,19 @@ button:hover {
         -ms-flex-align: baseline;
             align-items: baseline; }
   .questions__checkbox-nocheck {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: absolute;
-    top: 50px;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+    display: none;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline; }
+  .questions__checkbox-error {
+    display: none;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline; }
   .questions__checkbox-check {
     display: none;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+    position: relative;
+    top: 15px;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline; }
@@ -3191,42 +3195,6 @@ button:hover {
     @media (min-width: 1280px) {
       .questions__eror-consent {
         bottom: 35px; } }
-  .questions__checkbox-nocheck {
-    display: none;
-    position: absolute; }
-    @media (min-width: 320px) {
-      .questions__checkbox-nocheck {
-        top: 188px; } }
-    @media (min-width: 768px) {
-      .questions__checkbox-nocheck {
-        top: 96px; } }
-    @media (min-width: 1280px) {
-      .questions__checkbox-nocheck {
-        top: 98px; } }
-  .questions__checkbox-error {
-    display: none;
-    position: absolute; }
-    @media (min-width: 320px) {
-      .questions__checkbox-error {
-        top: 188px; } }
-    @media (min-width: 768px) {
-      .questions__checkbox-error {
-        top: 96px; } }
-    @media (min-width: 1280px) {
-      .questions__checkbox-error {
-        top: 96px; } }
-  .questions__checkbox-check {
-    display: none;
-    position: absolute; }
-    @media (min-width: 320px) {
-      .questions__checkbox-check {
-        top: 202px; } }
-    @media (min-width: 768px) {
-      .questions__checkbox-check {
-        top: 108px; } }
-    @media (min-width: 1280px) {
-      .questions__checkbox-check {
-        top: 110px; } }
   .questions__eror-success {
     display: none;
     position: fixed;
