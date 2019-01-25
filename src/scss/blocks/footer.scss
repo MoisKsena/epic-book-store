@@ -8,7 +8,7 @@
   align-items: center;
 
   @media (min-width: $screen-xs) {
-     height: 80px;
+    height: 80px;
   }
 
   @media (min-width: $screen-sm) {
@@ -72,6 +72,7 @@
     @media (min-width: $screen-xs) {
       padding-top: 8px;
     }
+
     @media (min-width: $screen-sm) {
       padding-top: 0;
     }

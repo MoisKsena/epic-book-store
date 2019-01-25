@@ -27,9 +27,9 @@
     font-size: $font-size-s;
 
     &:hover {
-    background-color: $hover;
-    color: $active;
-    transition: all 0.3s;
+      background-color: $hover;
+      color: $active;
+      transition: all 0.3s;
     }
 
     &:active {
@@ -37,8 +37,8 @@
       background-color: transparent;
 
       &:active a {
-      color: $gray;
-      background-color: transparent;
+        color: $gray;
+        background-color: transparent;
       }
     }
   }

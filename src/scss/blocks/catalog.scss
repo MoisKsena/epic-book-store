@@ -87,16 +87,16 @@
   }
 
   .j-active::after {
-     display: block;
-     content: '';
-     position: absolute;
-     width: 65%;
-     height: 3px;
-     right: 0;
-     bottom: 0;
-     background-color: $active;
-     color: $link-color;
-     transition: all 0.5s;
+    display: block;
+    content: '';
+    position: absolute;
+    width: 65%;
+    height: 3px;
+    right: 0;
+    bottom: 0;
+    background-color: $active;
+    color: $link-color;
+    transition: all 0.5s;
   }
 
   &__list-wrap {

@@ -4,7 +4,6 @@
   "description": "Start project.",
   "scripts": {
     "test": "stylelint \"src/**/*.scss\" ‑‑syntax=scss",
-    "lint‑staged": "lint‑staged",
     "start": "gulp"
   },
   "lint‑staged": {

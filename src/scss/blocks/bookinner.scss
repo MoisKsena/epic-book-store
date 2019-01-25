@@ -97,7 +97,7 @@
     top: 0;
     background-color: transparent;
 
-     @media (min-width: $screen-sm) {
+    @media (min-width: $screen-sm) {
       height: 90px;
       width: 75px;
     }
@@ -108,7 +108,7 @@
     }
   }
 
-   &__preview-hover:hover {
+  &__preview-hover:hover {
     cursor: pointer;
     background-color: $dark-gray;
     opacity: 0.7;
@@ -510,7 +510,7 @@
     cursor: pointer;
 
     span {
-    color: $active;
+      color: $active;
     }
 
     svg {
@@ -521,7 +521,7 @@
   &__link:focus {
 
     span {
-    color: $link-color;
+      color: $link-color;
     }
 
     svg {
@@ -537,6 +537,3 @@
     padding-left: 8px;
   }
 }
-
-
-

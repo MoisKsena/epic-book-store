@@ -161,7 +161,7 @@
   }
 
   &__linkactive {
-  color: $active;
+    color: $active;
   }
 }
 
@@ -172,13 +172,13 @@
   top: -14px;
   height: 24px;
   width: 3px;
-  background-color: black;
+  background-color: #000;
 }
 
 .close:before {
-    transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .close:after {
-    transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
