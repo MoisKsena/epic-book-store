@@ -111,23 +111,26 @@
               <span class="questions__eror-email">Вы не ввели почту</span>
               <input class="questions__form-view" type="email" id="mail" placeholder="Ваша почта" required>
             </label>
-            <label class="questions__form-label" for="message">
+            <label for="message">
               <input class="questions__form-view" type="text" id="message" placeholder="Сообщение">
             </label>
             <button class="questions__form-button" type="submit">Отправить</button>
-            <label class="questions__check" for="checkbox">
-              <input id="checkbox" type="checkbox" required>
-              <span class="questions__checkbox"></span>
+            <div class="questions__form-checkbox">
+              <input id="check1" type="checkbox" name="check" value="check1" required>
+              <label class="questions__check" for="check1">
+                <span class="questions__checksign">Я согласен(-на) с <a href="#">политикой&nbsp;конфиденциальности</a> и&nbsp;<a href="#">правилами обработки&nbsp;данных</a></span>
+                <span class="questions__eror-consent">Нужно согласиться с условиями, поставив галочку</span>
+              </label>
+            </div>
+              <!-- <span class="questions__checkbox"></span>
               <span class="questions__checkbox-nocheck"></span>
               <span class="questions__checkbox-error"></span>
               <span class="questions__checkbox-check">
                 <svg width="32" height="30">
                   <use xlink:href="img/sprite.svg#check-mark"></use>
                 </svg>
-              </span>
-              <span class="questions__checksign">Я согласен(-на) с <a href="#">политикой&nbsp;конфиденциальности</a> и&nbsp;<a href="#">правилами обработки&nbsp;данных</a></span>
-              <span class="questions__eror-consent">Нужно согласиться с условиями, поставив галочку</span>
-            </label>
+              </span> -->
+
           </form>
           <div class="questions__eror">
             <div class="questions__eror-success">
